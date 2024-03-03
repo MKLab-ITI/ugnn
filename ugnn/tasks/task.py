@@ -20,7 +20,8 @@ class ClassificationTask:
         # just in case, disable any gradient computations
         self.x.requires_grad_(False)
         self.edges.requires_grad_(False)
-        self.labels.requires_grad_(False)
+        if self.labels is not None:
+            self.labels.requires_grad_(False)
 
     def range(self, start: float, end: float):
         # end is non-inclusive

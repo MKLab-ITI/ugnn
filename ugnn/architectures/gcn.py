@@ -10,9 +10,9 @@ class GCN(torch.nn.Module):
         self.conv2 = GCNConv(hidden, classes)
 
     def forward(self, data):
-        x, edge_index = data.x, data.edge_index
+        x, edges = data.x, data.edges
         x = F.dropout(x, training=self.training)
-        x = self.relu(self.conv1(x, edge_index))
+        x = F.relu(self.conv1(x, edges))
         x = F.dropout(x, training=self.training)
-        x = self.conv2(x, edge_index)
+        x = self.conv2(x, edges)
         return x

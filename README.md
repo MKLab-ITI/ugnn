@@ -2,7 +2,7 @@
 
 This is an experimentation framework assessing
 how well graph neural networks (GNN) can minimize
-various functions on the node domain.
+various attributed graph functions on the node domain.
 
 
 **Author:** Emmanouil (Manios) Krasanakis <br>
@@ -41,4 +41,3 @@ acc = training(
 )
 print(f'{model.__class__.__name__} accuracy {acc:.4f}')
 ```
-

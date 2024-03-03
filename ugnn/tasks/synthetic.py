@@ -55,3 +55,27 @@ class DegreeTask(RandomGraphTask):
 class TrianglesTask(RandomGraphTask):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs, replicate=_count_triangles)
+
+
+class DiffusionTask(ClassificationTask):
+    def __init__(self,
+                 nodes: int = 20,
+                 max_density: float = 0.1,
+                 graphs: int = 100,
+                 alpha: float = 0.1,
+                 feats: int = 16,
+                 classes: int = 4,
+                 **kwargs
+                 ):
+        edges = torch.cat(
+            [graph * nodes + torch.tensor(_graph_generator(nodes, random.uniform(0, max_density)))
+             for graph in range(graphs)],
+            dim=1)
+        from ugnn.architectures.appnp import APPNP
+        x = torch.randn(graphs*nodes, feats)
+        model = APPNP(feats, classes, alpha=alpha, hidden=feats)
+        model.eval()
+        out = model.forward(ClassificationTask(x, edges, None, classes=classes))
+        out = out / out.mean(0, keepdim=True)[0]
+        labels = out.argmax(dim=1)
+        super().__init__(x, edges, labels, classes=classes, **kwargs)
