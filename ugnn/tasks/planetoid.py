@@ -5,10 +5,12 @@ from torch_geometric.datasets import Planetoid
 
 class PlanetoidTask(ClassificationTask):
     def __init__(self, name, device, **kwargs):
-        dataset = Planetoid(root=f'/tmp/{name}',
-                            name=name,
-                            transform=T.Compose([T.NormalizeFeatures()]),
-                            **kwargs)
+        dataset = Planetoid(
+            root=f"/tmp/{name}",
+            name=name,
+            transform=T.Compose([T.NormalizeFeatures()]),
+            **kwargs,
+        )
         data = dataset[0]
         self.data = data
         data = data.to(device)
@@ -16,7 +18,9 @@ class PlanetoidTask(ClassificationTask):
 
     def to(self, device):
         if self.labels.device is not device:
-            raise Exception("PlanetoidTask device can change only during its construction")
+            raise Exception(
+                "PlanetoidTask device can change only during its construction"
+            )
         return self
 
     def split(self):

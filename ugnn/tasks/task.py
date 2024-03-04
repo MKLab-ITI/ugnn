@@ -3,19 +3,21 @@ import torch
 
 
 class ClassificationTask:
-    def __init__(self,
-                 x: torch.Tensor,
-                 edges: torch.Tensor,
-                 labels: torch.Tensor,
-                 mask=None,
-                 l1: float = 0,
-                 classes=None):
+    def __init__(
+        self,
+        x: torch.Tensor,
+        edges: torch.Tensor,
+        labels: torch.Tensor,
+        mask=None,
+        l1: float = 0,
+        classes=None,
+    ):
         self.x = x
         self.edges = edges
         self.labels = labels
         self.mask = mask
         self.l1 = l1
-        self.classes = int(labels.max().detach())+1 if classes is None else classes
+        self.classes = int(labels.max().detach()) + 1 if classes is None else classes
         self.feats = x.shape[1]
         # just in case, disable any gradient computations
         self.x.requires_grad_(False)
@@ -27,24 +29,23 @@ class ClassificationTask:
         # end is non-inclusive
         num_nodes = self.labels.shape[0]
         mask = torch.zeros(num_nodes, dtype=torch.bool, device=self.labels.device)
-        mask[torch.arange(int(num_nodes*start), int(num_nodes*end))] = 1
+        mask[torch.arange(int(num_nodes * start), int(num_nodes * end))] = 1
         return self.on(mask)
 
     def to(self, device: torch.device):
-        return ClassificationTask(self.x.to(device),
-                                  self.edges.to(device),
-                                  self.labels.to(device),
-                                  None if self.mask is None else self.mask.to(device),
-                                  l1=self.l1,
-                                  classes=self.classes)
+        return ClassificationTask(
+            self.x.to(device),
+            self.edges.to(device),
+            self.labels.to(device),
+            None if self.mask is None else self.mask.to(device),
+            l1=self.l1,
+            classes=self.classes,
+        )
 
     def on(self, mask: torch.Tensor):
-        return ClassificationTask(self.x,
-                                  self.edges,
-                                  self.labels,
-                                  mask,
-                                  l1=self.l1,
-                                  classes=self.classes)
+        return ClassificationTask(
+            self.x, self.edges, self.labels, mask, l1=self.l1, classes=self.classes
+        )
 
     def out(self, model: torch.nn.Module):
         x = model(self)
@@ -55,7 +56,7 @@ class ClassificationTask:
         out = self.out(model)
         loss = F.nll_loss(out[self.mask, :], self.labels[self.mask])
         if self.l1 != 0:
-            loss = loss + self.l1*torch.mean(out.abs())
+            loss = loss + self.l1 * torch.mean(out.abs())
         return loss
 
     def evaluate(self, model: torch.nn.Module):
@@ -70,13 +71,13 @@ class ClassificationTask:
         assert validation > 0
         return {
             "train": self.range(0, training),
-            "valid": self.range(training, training+validation),
-            "test": self.range(training+validation, 1)
+            "valid": self.range(training, training + validation),
+            "test": self.range(training + validation, 1),
         }
 
     def overtrain(self):
         return {
             "train": self.range(0, 1),
             "valid": self.range(0, 1),
-            "test": self.range(0, 1)
+            "test": self.range(0, 1),
         }

@@ -8,7 +8,9 @@ class APPNP(torch.nn.Module):
         super().__init__()
         self.embed1 = torch.nn.Linear(feats, hidden)
         self.embed2 = torch.nn.Linear(hidden, classes)
-        self.conv = GraphConv(edge_dropout=lambda x: F.dropout(x, p=0.5, training=self.training))
+        self.conv = GraphConv(
+            edge_dropout=lambda x: F.dropout(x, p=0.5, training=self.training)
+        )
         self.alpha = alpha
         self.depth = depth
 
@@ -21,5 +23,5 @@ class APPNP(torch.nn.Module):
         x = self.embed2(x)
         h0 = x
         for _ in range(self.depth):
-            x = self.conv(x, edges)*(1-self.alpha)+self.alpha*h0
+            x = self.conv(x, edges) * (1 - self.alpha) + self.alpha * h0
         return x

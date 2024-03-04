@@ -12,8 +12,8 @@ class Universal(torch.nn.Module):
         self.adjust1 = torch.nn.ModuleList()
         self.adjust2 = torch.nn.ModuleList()
         for _ in range(classes):
-            self.adjust1.append(torch.nn.Linear(1+feats, 3+feats))
-            self.adjust2.append(torch.nn.Linear(3+feats, 1))
+            self.adjust1.append(torch.nn.Linear(1 + feats, 3 + feats))
+            self.adjust2.append(torch.nn.Linear(3 + feats, 1))
 
         self.conv = GraphConv()
         self.diffusion = [0.9 for _ in range(depth)]
@@ -25,12 +25,12 @@ class Universal(torch.nn.Module):
         x = F.relu(self.linear1(x))
         x = F.dropout(x, training=self.training)
         x = self.linear2(x)
-        
+
         # propagate
         h0 = x
         for diffusion in self.diffusion:
             x = self.conv(x, edges) * diffusion + (1.0 - diffusion) * h0
-        #x = x-x.min()
+        # x = x-x.min()
         # create a transformation for each class to serve as new propagation features
         transformed = list()
         for cl in range(data.classes):
@@ -40,7 +40,7 @@ class Universal(torch.nn.Module):
             xcl = self.adjust2[cl](xcl)
             transformed.append(xcl)
         x = torch.cat(transformed, dim=1)
-        #x = x-x.min()
+        # x = x-x.min()
 
         # propagate again
         h0 = x

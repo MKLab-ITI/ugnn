@@ -1,9 +1,19 @@
 import torch
 
 
-def training(model, optimizer, train, valid, test, epochs=10000, patience=100, verbose=None, clip=None):
-    best_valid_loss = float('inf')
-    best_train_loss = float('inf')
+def training(
+    model,
+    optimizer,
+    train,
+    valid,
+    test,
+    epochs=10000,
+    patience=100,
+    verbose=None,
+    clip=None,
+):
+    best_valid_loss = float("inf")
+    best_train_loss = float("inf")
     best_state = None
     max_patience = patience
     patience = 0
@@ -38,12 +48,13 @@ def training(model, optimizer, train, valid, test, epochs=10000, patience=100, v
         # print current status
         if verbose is not None:
             print(
-                f'\r{verbose} Epoch {epoch}'
-                f'\tloss {valid_loss:.3f} (best {best_valid_loss:.3f})'
-                f'\ttrain acc {train_acc:.3f}'
-                f'\tvalid acc {valid_acc:.3f}'
-                f'\ttest acc {test_acc:.3f}',
-                end='')
+                f"\r{verbose} Epoch {epoch}"
+                f"\tloss {valid_loss:.3f} (best {best_valid_loss:.3f})"
+                f"\ttrain acc {train_acc:.3f}"
+                f"\tvalid acc {valid_acc:.3f}"
+                f"\ttest acc {test_acc:.3f}",
+                end="",
+            )
         # stop if running out of patience
         if patience < 0:
             break

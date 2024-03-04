@@ -9,7 +9,9 @@ class GCNII(torch.nn.Module):
         super(GCNII, self).__init__()
         self.convs = torch.nn.ModuleList()
         for layer in range(nlayers):
-            self.convs.append(GCN2Conv(hidden, layer=layer+1, theta=theta, alpha=alpha))
+            self.convs.append(
+                GCN2Conv(hidden, layer=layer + 1, theta=theta, alpha=alpha)
+            )
         self.layer1 = torch.nn.Linear(feats, hidden)
         self.layer2 = torch.nn.Linear(hidden, classes)
 
@@ -18,7 +20,7 @@ class GCNII(torch.nn.Module):
         x = F.dropout(x, training=self.training)
         x = F.relu(self.layer1(x))
         h0 = x
-        for i,con in enumerate(self.convs):
+        for i, con in enumerate(self.convs):
             x = F.dropout(x, training=self.training)
             x = F.relu(con(x, h0, edges))
         x = F.dropout(x, training=self.training)
