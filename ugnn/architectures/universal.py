@@ -4,17 +4,19 @@ from ugnn.utils import GraphConv
 
 
 class Universal(torch.nn.Module):
-    def __init__(self, feats, classes, hidden=64, depth=10, preservation=0):
+    def __init__(self, feats, classes, hidden=64, depth=20):
         super().__init__()
         self.linear1 = torch.nn.Linear(feats, hidden)
         self.linear2 = torch.nn.Linear(hidden, classes)
-        self.adjust1 = torch.nn.Linear(1 + classes + feats, hidden)
-        self.adjust2 = torch.nn.Linear(hidden, 1)
+
+        self.adjust1 = torch.nn.ModuleList()
+        self.adjust2 = torch.nn.ModuleList()
+        for _ in range(classes):
+            self.adjust1.append(torch.nn.Linear(1+feats, 3+feats))
+            self.adjust2.append(torch.nn.Linear(3+feats, 1))
 
         self.conv = GraphConv()
-        self.advanced = False
-        self.class_indicator = None
-        self.diffusion = [0.9 for _ in range(depth)]#torch.nn.ParameterList([torch.nn.Parameter(torch.tensor(0.9)) for _ in range(10)])
+        self.diffusion = [0.9 for _ in range(depth)]
 
     def forward(self, data):
         x, edges = data.x, data.edges
@@ -23,27 +25,23 @@ class Universal(torch.nn.Module):
         x = F.relu(self.linear1(x))
         x = F.dropout(x, training=self.training)
         x = self.linear2(x)
+        
         # propagate
         h0 = x
         for diffusion in self.diffusion:
             x = self.conv(x, edges) * diffusion + (1.0 - diffusion) * h0
-        # create class indicator if not existing
-        if self.class_indicator is None:
-            num_samples = data.x.shape[0]
-            class_indicator = torch.zeros(num_samples * data.classes, data.classes, device=x.device)
-            for cl in range(data.classes):
-                class_indicator[(cl * num_samples):(cl * num_samples + num_samples), cl] = 1
-            class_indicator.requires_grad_(False)
-            self.class_indicator = class_indicator
-        # create repeated node features
-        x = x.t()
-        original_size = x.size()
-        x = x.reshape(-1, 1)
-        x = torch.concat([x, self.class_indicator, data.x.repeat(data.classes, 1)], dim=1)
-        # transform and get back to original shape
-        x = F.relu(self.adjust1(x))
-        x = self.adjust2(x)
-        x = x.reshape(original_size).t()
+        #x = x-x.min()
+        # create a transformation for each class to serve as new propagation features
+        transformed = list()
+        for cl in range(data.classes):
+            xcl = x[:, cl].reshape(-1, 1)
+            xcl = torch.cat([xcl, data.x], dim=1)
+            xcl = F.relu(self.adjust1[cl](xcl))
+            xcl = self.adjust2[cl](xcl)
+            transformed.append(xcl)
+        x = torch.cat(transformed, dim=1)
+        #x = x-x.min()
+
         # propagate again
         h0 = x
         for diffusion in self.diffusion:

@@ -5,44 +5,53 @@ import torch
 import numpy as np
 import random
 
-setting = "diffusion"
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print(f"Device:\t {device}")
+setting = "square"  # (cora | citeseer | pubmed | diffusion | degree | triangle | square)  [overtrain]
+compare = [architectures.MLP, architectures.GCN, architectures.GCNII, architectures.APPNP, architectures.Universal]
+compare = [architectures.MLP, architectures.GCN, architectures.APPNP, architectures.UniversalP]
 
-#from matplotlib import pyplot as plt
-#plt.hist(task.labels.cpu().numpy(), bins=task.classes)
-#plt.show()
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print("Device:".ljust(10)+str(device))
 
 
 def run(Model, task, splits, **kwargs):
-    print()
-    model = Model(task.feats, task.classes, hidden=64).to(device)
+    model = Model(task.feats, task.classes).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01, weight_decay=5e-4)
-    return training(
+    acc = training(
         model=model,
         optimizer=optimizer,
         verbose=model.__class__.__name__,
         **splits,
         **kwargs
     )
+    #print()
+    return acc
 
 
 # make comparisons
-compare = [architectures.MLP, architectures.GCN, architectures.GCNII, architectures.APPNP, architectures.Universal]
 results = [list() for _ in compare]
-
-print(f"Setting:\t {setting}")
+print("Setting:".ljust(10)+setting)
 for _ in range(20):
     if "diffusion" in setting:
-        task = tasks.DiffusionTask(nodes=100, max_density=0.01, graphs=1000, alpha=random.uniform(0, 0.5)).to(device)
+        task = tasks.DiffusionTask(nodes=100, max_density=0.01, graphs=100, alpha=random.uniform(0, 0.5)).to(device)
     elif "degree" in setting:
-        task = tasks.DegreeTask(nodes=100, max_density=0.5, graphs=1000).to(device)
+        task = tasks.DegreeTask(nodes=100, max_density=0.1, graphs=100).to(device)
     elif "triangle" in setting:
-        task = tasks.TrianglesTask(nodes=100, max_density=0.5, graphs=1000).to(device)
+        task = tasks.TrianglesTask(nodes=100, max_density=0.1, graphs=100).to(device)
+    elif "square" in setting:
+        task = tasks.SquareCliqueTask(nodes=20, max_density=0.5, graphs=100).to(device)
     elif "cora" in setting:
         task = tasks.PlanetoidTask("Cora", device)
+    elif "citeseer" in setting:
+        task = tasks.PlanetoidTask("Citeseer", device)
+    elif "pubmed" in setting:
+        task = tasks.PlanetoidTask("Pubmed", device)
     else:
         raise Exception("invalid setting")
+
+    #from matplotlib import pyplot as plt
+    #plt.hist(task.labels.cpu().numpy(), bins=task.classes)
+    #plt.show()
+
     splits = task.overtrain() if "overtrain" in setting else task.split()
     for architecture, result in zip(compare, results):
         result.append(float(run(architecture, task, splits)))
@@ -54,4 +63,3 @@ for _ in range(20):
 
 print("Standard deviations")
 print(" ".join([f'{np.std(result):.3f}'.ljust(8) for result in results]))
-

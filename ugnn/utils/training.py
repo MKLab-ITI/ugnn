@@ -20,7 +20,7 @@ def training(model, optimizer, train, valid, test, epochs=10000, patience=100, v
         model.eval()
         with torch.no_grad():
             valid_loss = valid.loss(model)
-            #train_loss = train.loss(model)
+            train_loss = train.loss(model)
         # check for patience
         if valid_loss < best_valid_loss:
             if verbose is not None:
@@ -31,9 +31,9 @@ def training(model, optimizer, train, valid, test, epochs=10000, patience=100, v
             best_valid_loss = valid_loss
             patience = max_patience
             best_state = model.state_dict()
-        #elif train_loss < best_train_loss:
-        #    best_train_loss = train_loss
-        #    patience = max_patience
+        elif train_loss < best_train_loss:
+            best_train_loss = train_loss
+            patience = max_patience
         patience -= 1
         # print current status
         if verbose is not None:

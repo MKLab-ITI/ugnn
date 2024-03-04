@@ -54,7 +54,6 @@ class ClassificationTask:
     def loss(self, model: torch.nn.Module):
         out = self.out(model)
         loss = F.nll_loss(out[self.mask, :], self.labels[self.mask])
-        out = F.log_softmax(out, dim=1)
         if self.l1 != 0:
             loss = loss + self.l1*torch.mean(out.abs())
         return loss
