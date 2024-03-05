@@ -12,8 +12,8 @@ class Universal(torch.nn.Module):
         self.adjust1 = torch.nn.ModuleList()
         self.adjust2 = torch.nn.ModuleList()
         for _ in range(classes):
-            self.adjust1.append(torch.nn.Linear(1 + feats, 3 + feats))
-            self.adjust2.append(torch.nn.Linear(3 + feats, 1))
+            self.adjust1.append(torch.nn.Linear(1 + feats, hidden))
+            self.adjust2.append(torch.nn.Linear(hidden, 1))
 
         self.conv = GraphConv()
         self.diffusion = [0.9 for _ in range(depth)]

@@ -1,9 +1,10 @@
 import torch
 import random
-from ugnn.tasks.task import ClassificationTask
+from ugnn.tasks.task import ClassificationTask, RegressionTask
 
 
 def _graph_generator(num_nodes, density):
+    num_nodes = random.randint(num_nodes//2, num_nodes)
     nodes1 = list()
     nodes2 = list()
     for i in range(num_nodes):
@@ -13,7 +14,7 @@ def _graph_generator(num_nodes, density):
                 nodes2.append(j)
                 nodes2.append(i)
                 nodes1.append(j)
-    return [nodes1, nodes2]
+    return [nodes1, nodes2], num_nodes
 
 
 def _count_neighbors(edge_index, num_nodes):
@@ -73,17 +74,24 @@ class RandomGraphTask(ClassificationTask):
     ):
         if replicate is None:
             raise Exception("Must provide a method to replicate")
+        generated = [_graph_generator(nodes, random.uniform(0, max_density)) for _ in range(graphs)]
         edges = torch.cat(
             [
                 graph * nodes
-                + torch.tensor(_graph_generator(nodes, random.uniform(0, max_density)))
+                + torch.tensor(generated[graph][0])
                 for graph in range(graphs)
             ],
             dim=1,
         )
+        mask_mask = torch.zeros(nodes * graphs, dtype=torch.bool)
+        for graph in range(graphs):
+            for node in range(generated[graph][1]):
+                mask_mask[graph*nodes+node] = 1
         x = torch.eye(nodes, nodes).repeat(graphs, 1)
+        #sizes = torch.tensor([[generated[graph][1]/nodes, len(generated[graph][0])/nodes/nodes] for graph in range(graphs) for _ in range(nodes)])
+        #x = torch.cat([x, sizes], dim=1)
         labels = replicate(edges, nodes * graphs)
-        super().__init__(x, edges, labels, **kwargs)
+        super().__init__(x, edges, labels, **kwargs, mask_mask=mask_mask)
 
 
 class DegreeTask(RandomGraphTask):
@@ -106,7 +114,9 @@ class TrianglesTask(RandomGraphTask):
         super().__init__(*args, **kwargs, replicate=_count_triangles)
 
 
-class DiffusionTask(ClassificationTask):
+
+class PropagationTask(ClassificationTask):
+    # features -> classes
     def __init__(
         self,
         nodes: int = 20,
@@ -134,3 +144,32 @@ class DiffusionTask(ClassificationTask):
         out = out / out.mean(0, keepdim=True)[0]
         labels = out.argmax(dim=1)
         super().__init__(x, edges, labels, classes=classes, **kwargs)
+
+
+class DiffusionTask(RegressionTask):
+    # features -> scores
+    def __init__(
+        self,
+        nodes: int = 20,
+        max_density: float = 0.1,
+        graphs: int = 100,
+        alpha: float = 0.1,
+        feats: int = 16,
+        classes: int = 4,
+        **kwargs
+    ):
+        edges = torch.cat(
+            [
+                graph * nodes
+                + torch.tensor(_graph_generator(nodes, random.uniform(0, max_density)))
+                for graph in range(graphs)
+            ],
+            dim=1,
+        )
+        from ugnn.architectures.appnp import APPNP
+
+        x = torch.randn(graphs * nodes, feats)
+        model = APPNP(feats, classes, alpha=alpha, hidden=feats)
+        model.eval()
+        out = model.forward(ClassificationTask(x, edges, None, classes=classes))
+        super().__init__(x, edges, out, classes=classes, **kwargs)

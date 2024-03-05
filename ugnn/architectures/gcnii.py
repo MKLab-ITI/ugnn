@@ -5,7 +5,7 @@ from torch_geometric.nn.conv.gcn2_conv import GCN2Conv
 
 class GCNII(torch.nn.Module):
     # https://pytorch-geometric.readthedocs.io/en/latest/_modules/torch_geometric/nn/conv/gcn2_conv.html
-    def __init__(self, feats, classes, nlayers=16, hidden=64, theta=0.6, alpha=0.1):
+    def __init__(self, feats, classes, nlayers=64, hidden=64, theta=0.6, alpha=0.1):
         super(GCNII, self).__init__()
         self.convs = torch.nn.ModuleList()
         for layer in range(nlayers):
