@@ -5,7 +5,7 @@ import torch
 import numpy as np
 import random
 from datetime import datetime
-import sys
+import sys, math
 
 
 starting_time = datetime.now()
@@ -15,14 +15,23 @@ compare = [
     #architectures.GCN,
     #architectures.GCNII,
     #architectures.APPNP,
+    #architectures.S2GC,
     architectures.UniversalP,
 ]
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Device:".ljust(10) + str(device))
 
 
-def run(Model, task, splits, **kwargs):
-    model = Model(task.feats, task.classes).to(device)
+def run(Model, task, splits, verbose=True, hidden=64, **kwargs):
+    from ugnn.utils import GraphConv
+    GraphConv._cached_edge_index = None
+    GraphConv._cached_adj_t = None
+    if hidden is None:
+        hidden = int(math.log2(task.feats))
+        hidden = hidden ** int((hidden - 1) // 2)
+        print(f"Automatically detecting hidden dimensions: {hidden}")
+
+    model = Model(task.feats, task.classes, hidden=hidden).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01, weight_decay=5e-4)
     acc = training(
         model=model,
@@ -31,7 +40,8 @@ def run(Model, task, splits, **kwargs):
         **splits,
         **kwargs,
     )
-    # print()
+    if verbose:
+        print()
     return acc
 
 
@@ -79,7 +89,9 @@ def printall():
     print("Standard deviations")
     print(" ".join([f"{np.std(result):.3f}".ljust(8) for result in results]))
     from scipy.stats import rankdata
-    ranks = len(compare)+1-rankdata(np.array(results), axis=0).T
+    ranks = rankdata(np.array(results), axis=0).T
+    if "diffusion" not in setting:
+        ranks = len(compare) + 1 - ranks
     ranks = ranks.mean(axis=0)
     print("Nemenyi ranks")
     print(" ".join([f"{rank:.3f}".ljust(8) for rank in ranks]))

@@ -70,6 +70,7 @@ class RandomGraphTask(ClassificationTask):
         max_density: float = 0.1,
         graphs: int = 100,
         replicate=None,
+        graph_ids=False,
         **kwargs
     ):
         if replicate is None:
@@ -88,6 +89,13 @@ class RandomGraphTask(ClassificationTask):
             for node in range(generated[graph][1]):
                 mask_mask[graph*nodes+node] = 1
         x = torch.eye(nodes, nodes).repeat(graphs, 1)
+
+        if graph_ids:
+            graph_embeddings = torch.zeros(nodes*graphs, graphs)
+            for graph in range(graphs):
+                graph_embeddings[graph*nodes:(graph*nodes+nodes), graph] = 1
+            x = torch.cat([x, graph_embeddings], dim=1)
+
         #sizes = torch.tensor([[generated[graph][1]/nodes, len(generated[graph][0])/nodes/nodes] for graph in range(graphs) for _ in range(nodes)])
         #x = torch.cat([x, sizes], dim=1)
         labels = replicate(edges, nodes * graphs)
