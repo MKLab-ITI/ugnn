@@ -9,12 +9,20 @@ various attributed graph functions on the node domain.
 **Contact:** maniospas@hotmail.com <br>
 **License:** Apache 2<br>
 
+## :fire: About
+
+- Based on torch geometric.
+- Modular architecture definition.
+- Implementation of several diffusion-based architectures (GCN, GCNII, APPNP, S2GC, DeepSet on graphs).
+- Several benchmarking tasks for the ability to approximate equivariant attributed graph functions.
+- Uniform interface that treats multiple graphs as one disconnected graph.
+
 ## :rocket: Quickstart
 First declare a predictive task on which to assess 
 a GNN architecture, and obtain its training-test-validation
 data subtasks. If there are multiple graphs, 
 they are packed together in one unconnected graph.
-A quick way for doing this is like this:
+A quick way for creating this setup is:
 
 ```python
 from ugnn import tasks
@@ -22,11 +30,15 @@ import torch
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 task = tasks.DegreeTask(nodes=20, max_density=0.5, graphs=1000).to(device)
-splits = task.split() # default split 
+splits = task.split() # default split dictionary 
 ```
 
 Then declare an architecture and train it. Training returns
-the test accuracy, but test nodes are never used internally.
+the test accuracy, but test nodes are never used for training
+or validation. Training has a default `patience=100` that waits
+for that many epochs for either training or validation loss
+to decrease. Losses and predictive performances are obtained
+from the predictive tasks.
 
 ```python
 from ugnn import architectures

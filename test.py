@@ -11,7 +11,7 @@ import sys, math
 
 
 starting_time = datetime.now()
-setting = "cora"  # (cora | citeseer | pubmed | scoreentropy | scorediffusion | propagation | degree | triangle | square)  [overtrain]
+setting = "degree"  # (cora | citeseer | pubmed | scoreentropy | scorediffusion | propagation | degree | triangle | square)  [overtrain]
 compare = [
     # architectures.MLP,
     # architectures.GCN,
