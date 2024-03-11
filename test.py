@@ -13,11 +13,11 @@ import sys, math
 starting_time = datetime.now()
 setting = "cora"  # (cora | citeseer | pubmed | scoreentropy | scorediffusion | propagation | degree | triangle | square)  [overtrain]
 compare = [
-    #architectures.MLP,
-    #architectures.GCN,
-    #architectures.GCNII,
-    #architectures.APPNP,
-    #architectures.S2GC,
+    # architectures.MLP,
+    # architectures.GCN,
+    # architectures.GCNII,
+    # architectures.APPNP,
+    # architectures.S2GC,
     architectures.UniversalP,
 ]
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -26,6 +26,7 @@ print("Device:".ljust(10) + str(device))
 
 def run(Model, task, splits, verbose=True, hidden=64, **kwargs):
     from ugnn.utils import GraphConv
+
     GraphConv._cached_edge_index = None
     GraphConv._cached_adj_t = None
     if hidden is None:
@@ -33,9 +34,9 @@ def run(Model, task, splits, verbose=True, hidden=64, **kwargs):
         hidden = hidden ** int((hidden - 1) // 2)
         print(f"Automatically detecting hidden dimensions: {hidden}")
 
-    #if Model == architectures.FDiff:
+    # if Model == architectures.FDiff:
     #    model = Model(task.feats, task.classes, traindata=splits["train"], hidden=hidden).to(device)
-    #else:
+    # else:
     model = Model(task.feats, task.classes, hidden=hidden).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01, weight_decay=5e-4)
     acc = training(
@@ -88,7 +89,8 @@ for _ in range(5):
     for architecture, result in zip(compare, results):
         result.append(float(run(architecture, task, splits)))
     print("\r".ljust(80), end="")
-    print("\r"+" ".join([f"{result[-1]:.4f}".ljust(8) for result in results]))
+    print("\r" + " ".join([f"{result[-1]:.4f}".ljust(8) for result in results]))
+
 
 def printall():
     print(" ".join([architecture.__name__.ljust(8) for architecture in compare]))
@@ -96,6 +98,7 @@ def printall():
     print("Standard deviations")
     print(" ".join([f"{np.std(result):.4f}".ljust(8) for result in results]))
     from scipy.stats import rankdata
+
     ranks = rankdata(np.array(results), axis=0).T
     if "score" not in setting:
         ranks = len(compare) + 1 - ranks
@@ -106,5 +109,7 @@ def printall():
 
 print("\n==== Summary ====")
 printall()
-with open(f'results/{setting} [{str(starting_time).replace(":", "-")}].txt', 'w') as sys.stdout:
+with open(
+    f'results/{setting} [{str(starting_time).replace(":", "-")}].txt', "w"
+) as sys.stdout:
     printall()

@@ -16,11 +16,13 @@ class DiffusionTask(RegressionTask):
         classes: int = 4,
         **kwargs
     ):
-        generated = [graph_generator(nodes, random.uniform(0, max_density)) for _ in range(graphs)]
+        generated = [
+            graph_generator(nodes, random.uniform(0, max_density))
+            for _ in range(graphs)
+        ]
         edges = torch.cat(
             [
-                graph * nodes
-                + torch.tensor(generated[graph][0])
+                graph * nodes + torch.tensor(generated[graph][0])
                 for graph in range(graphs)
             ],
             dim=1,
@@ -28,7 +30,7 @@ class DiffusionTask(RegressionTask):
         mask_mask = torch.zeros(nodes * graphs, dtype=torch.bool)
         for graph in range(graphs):
             for node in range(generated[graph][1]):
-                mask_mask[graph*nodes+node] = 1
+                mask_mask[graph * nodes + node] = 1
 
         from ugnn.architectures.appnp import APPNP
 

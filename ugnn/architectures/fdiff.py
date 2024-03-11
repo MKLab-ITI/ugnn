@@ -27,7 +27,7 @@ class FDiff(torch.nn.Module):
         trueonehot = torch.zeros(x.shape[0], self.traindata.classes, device=x.device)
         nz = self.traindata.mask.nonzero()
         trueonehot[nz, self.traindata.labels] = 1
-        err = trueonehot-x
+        err = trueonehot - x
         h0 = err
         for _ in range(self.depth):
             err = self.converr(err, edges)
@@ -36,6 +36,6 @@ class FDiff(torch.nn.Module):
 
         h0 = x
         for _ in range(self.depth):
-            x = self.conv(x, edges)*0.9 + h0*0.1
+            x = self.conv(x, edges) * 0.9 + h0 * 0.1
 
-        return torch.log(x+1)
+        return torch.log(x + 1)

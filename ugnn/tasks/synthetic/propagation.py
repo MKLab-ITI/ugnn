@@ -17,11 +17,13 @@ class PropagationTask(ClassificationTask):
         **kwargs
     ):
 
-        generated = [graph_generator(nodes, random.uniform(0, max_density)) for _ in range(graphs)]
+        generated = [
+            graph_generator(nodes, random.uniform(0, max_density))
+            for _ in range(graphs)
+        ]
         edges = torch.cat(
             [
-                graph * nodes
-                + torch.tensor(generated[graph][0])
+                graph * nodes + torch.tensor(generated[graph][0])
                 for graph in range(graphs)
             ],
             dim=1,
@@ -29,7 +31,7 @@ class PropagationTask(ClassificationTask):
         mask_mask = torch.zeros(nodes * graphs, dtype=torch.bool)
         for graph in range(graphs):
             for node in range(generated[graph][1]):
-                mask_mask[graph*nodes+node] = 1
+                mask_mask[graph * nodes + node] = 1
 
         from ugnn.architectures.appnp import APPNP
 
@@ -39,4 +41,6 @@ class PropagationTask(ClassificationTask):
         out = model.forward(ClassificationTask(x, edges, None, classes=classes))
         out = out / out.mean(0, keepdim=True)[0]
         labels = out.argmax(dim=1)
-        super().__init__(x, edges, labels, classes=classes, mask_mask=mask_mask, **kwargs)
+        super().__init__(
+            x, edges, labels, classes=classes, mask_mask=mask_mask, **kwargs
+        )

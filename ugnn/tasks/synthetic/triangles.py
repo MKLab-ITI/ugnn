@@ -10,7 +10,6 @@ def _count_triangles(edge_index, num_nodes):
     return triangle_counts.type(torch.LongTensor)
 
 
-
 class TrianglesTask(RandomGraphTask):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs, replicate=_count_triangles)

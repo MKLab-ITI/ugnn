@@ -35,15 +35,15 @@ class PlanetoidTask(ClassificationTask):
 
         for label in unique_labels:
             # Find indices of the current class
-            indices = torch.where(labels==label)[0]
+            indices = torch.where(labels == label)[0]
 
             # Shuffle indices to ensure random selection
             indices = indices[torch.randperm(len(indices))]
 
             # Assign indices to each split
             train_indices = indices[:ntrain]
-            valid_indices = indices[ntrain:ntrain + nvalid]
-            test_indices = indices[ntrain + nvalid:ntrain + nvalid + ntest]
+            valid_indices = indices[ntrain : ntrain + nvalid]
+            test_indices = indices[ntrain + nvalid : ntrain + nvalid + ntest]
 
             # Update masks
             train_mask[train_indices] = True
@@ -59,8 +59,8 @@ class PlanetoidTask(ClassificationTask):
             "valid": self.on(valid_mask),
             "test": self.on(test_mask),
         }
-        #return {
+        # return {
         #    "train": self.on(self.data.val_mask),
         #    "valid": self.on(self.data.test_mask),
         #    "test": self.on(self.data.train_mask),
-        #}
+        # }

@@ -10,7 +10,7 @@ class MLP(torch.nn.Module):
 
     def forward(self, data):
         x = data.x
-        x = F.dropout(x, training=self.training and x.shape[1]>1)
+        x = F.dropout(x, training=self.training and x.shape[1] > 1)
         x = F.relu(self.layer1(x))
         x = F.dropout(x, training=self.training)
         x = self.layer2(x)
