@@ -9,8 +9,8 @@ class MLP(torch.nn.Module):
         self.layer2 = torch.nn.Linear(hidden, classes)
 
     def forward(self, data):
-        x, edge_index = data.x, data.edges
-        x = F.dropout(x, training=self.training)
+        x = data.x
+        x = F.dropout(x, training=self.training and x.shape[1]>1)
         x = F.relu(self.layer1(x))
         x = F.dropout(x, training=self.training)
         x = self.layer2(x)

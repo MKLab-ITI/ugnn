@@ -11,7 +11,7 @@ class GCN(torch.nn.Module):
 
     def forward(self, data):
         x, edges = data.x, data.edges
-        x = F.dropout(x, training=self.training)
+        x = F.dropout(x, training=self.training and x.shape[1]>1)
         x = F.relu(self.conv1(x, edges))
         x = F.dropout(x, training=self.training)
         x = self.conv2(x, edges)

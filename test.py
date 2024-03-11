@@ -7,9 +7,11 @@ import random
 from datetime import datetime
 import sys, math
 
+# TODO: SMP architecture here: https://github.com/cvignac/SMP/blob/master/models/smp_layers.py
+
 
 starting_time = datetime.now()
-setting = "cora"  # (cora | citeseer | pubmed | diffusion | propagation | degree | triangle | square)  [overtrain]
+setting = "cora"  # (cora | citeseer | pubmed | scoreentropy | scorediffusion | propagation | degree | triangle | square)  [overtrain]
 compare = [
     #architectures.MLP,
     #architectures.GCN,
@@ -31,6 +33,9 @@ def run(Model, task, splits, verbose=True, hidden=64, **kwargs):
         hidden = hidden ** int((hidden - 1) // 2)
         print(f"Automatically detecting hidden dimensions: {hidden}")
 
+    #if Model == architectures.FDiff:
+    #    model = Model(task.feats, task.classes, traindata=splits["train"], hidden=hidden).to(device)
+    #else:
     model = Model(task.feats, task.classes, hidden=hidden).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01, weight_decay=5e-4)
     acc = training(
@@ -60,6 +65,8 @@ for _ in range(5):
         ).to(device)
     elif "degree" in setting:
         task = tasks.DegreeTask(nodes=100, max_density=0.1, graphs=100).to(device)
+    elif "entropy" in setting:
+        task = tasks.EntropyTask(nodes=100, graphs=100).to(device)
     elif "triangle" in setting:
         task = tasks.TrianglesTask(nodes=100, max_density=0.1, graphs=100).to(device)
     elif "square" in setting:
@@ -81,20 +88,20 @@ for _ in range(5):
     for architecture, result in zip(compare, results):
         result.append(float(run(architecture, task, splits)))
     print("\r".ljust(80), end="")
-    print("\r"+" ".join([f"{result[-1]:.3f}".ljust(8) for result in results]))
+    print("\r"+" ".join([f"{result[-1]:.4f}".ljust(8) for result in results]))
 
 def printall():
     print(" ".join([architecture.__name__.ljust(8) for architecture in compare]))
-    print(" ".join([f"{np.mean(result):.3f}".ljust(8) for result in results]))
+    print(" ".join([f"{np.mean(result):.4f}".ljust(8) for result in results]))
     print("Standard deviations")
-    print(" ".join([f"{np.std(result):.3f}".ljust(8) for result in results]))
+    print(" ".join([f"{np.std(result):.4f}".ljust(8) for result in results]))
     from scipy.stats import rankdata
     ranks = rankdata(np.array(results), axis=0).T
-    if "diffusion" not in setting:
+    if "score" not in setting:
         ranks = len(compare) + 1 - ranks
     ranks = ranks.mean(axis=0)
     print("Nemenyi ranks")
-    print(" ".join([f"{rank:.3f}".ljust(8) for rank in ranks]))
+    print(" ".join([f"{rank:.1f}".ljust(8) for rank in ranks]))
 
 
 print("\n==== Summary ====")
