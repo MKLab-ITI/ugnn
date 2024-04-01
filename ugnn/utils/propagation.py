@@ -26,6 +26,7 @@ class GraphConv(MessagePassing):
         add_self_loops: bool = True,
         normalize: bool = True,
         edge_dropout=lambda x: x,
+        force_edge_weight: bool = False,
         **kwargs,
     ):
         kwargs.setdefault("aggr", "add")
@@ -39,7 +40,8 @@ class GraphConv(MessagePassing):
         self._cached_edge_index = None
         self._cached_adj_t = None
         self.edge_dropout = edge_dropout
-
+        self.force_edge_weight = force_edge_weight
+        self.last_edge_weight = None
         self.reset_parameters()
 
     def reset_parameters(self):
@@ -95,9 +97,11 @@ class GraphConv(MessagePassing):
                 else:
                     edge_index = cache
 
+        if not self.force_edge_weight or self.last_edge_weight is None:
+            self.last_edge_weight = self.edge_dropout(edge_weight)
         # propagate_type: (x: Tensor, edge_weight: OptTensor)
         out = self.propagate(
-            edge_index, x=x, edge_weight=self.edge_dropout(edge_weight), size=None
+            edge_index, x=x, edge_weight=self.last_edge_weight, size=None
         )
         return out
 

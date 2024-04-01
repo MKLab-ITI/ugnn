@@ -61,14 +61,27 @@ class ClassificationTask:
             deviation=self.deviation,
         )
 
-    def out(self, model: torch.nn.Module):
+    def out(self, model: torch.nn.Module, noise: float = 0):
         x = model(self)
+        if noise != 0:
+            x = x + noise * (2 * torch.rand(*x.shape, device=x.device) - 1) * x
         x = F.log_softmax(x, dim=1)
         return x
 
-    def loss(self, model: torch.nn.Module):
-        out = self.out(model)
-        loss = F.nll_loss(out[self.mask, :], self.labels[self.mask])
+    def loss(self, model: torch.nn.Module, noise: float = 0, avoid=None, towards=None):
+        out = self.out(model, noise)
+        out = out[self.mask, :]
+        labels = self.labels[self.mask]
+        loss = F.nll_loss(out, labels)
+        if avoid is not None:
+            avoidout = self.out(avoid)
+            avoidout = avoidout[self.mask, :]
+            loss = loss - torch.mean(torch.sigmoid((out - avoidout) ** 2))
+        if towards is not None:
+            avoidout = self.out(towards)
+            avoidout = avoidout[self.mask, :]
+            loss = loss + torch.mean(torch.sigmoid((out - avoidout) ** 2))
+        # loss = torch.exp(loss)
         if self.l1 != 0:
             loss = loss + self.l1 * torch.mean(out.abs())
         return loss

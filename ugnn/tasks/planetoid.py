@@ -15,6 +15,8 @@ class PlanetoidTask(ClassificationTask):
         data = dataset[0]
         self.data = data
         data = data.to(device)
+        # data.x = torch.concat([data.x, torch.eye(data.x.shape[0], data.x.shape[0], device=data.x.device)], dim=1)
+        # data.x = torch.eye(data.x.shape[0], data.x.shape[0], device=data.x.device)
         super().__init__(data.x, data.edge_index, data.y, dataset.num_classes)
 
     def to(self, device):
@@ -53,7 +55,7 @@ class PlanetoidTask(ClassificationTask):
         return train_mask, valid_mask, test_mask
 
     def split(self):
-        train_mask, valid_mask, test_mask = self._create_masks(20, 20, 200)
+        train_mask, valid_mask, test_mask = self._create_masks(50, 50, 100)
         return {
             "train": self.on(train_mask),
             "valid": self.on(valid_mask),

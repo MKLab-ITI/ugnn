@@ -44,3 +44,5 @@ class SquareCliqueTask(RandomGraphTask):
             graphs=graphs,
             replicate=lambda edges, nodes: _count_square_cliques(edges, nodes, graphs)
         )
+        # print(torch.sum(self.labels[self.mask_mask]==0))
+        # print(torch.sum(self.labels[self.mask_mask]==1))

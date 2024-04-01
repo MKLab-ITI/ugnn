@@ -13,10 +13,12 @@ class APPNP(torch.nn.Module):
         )
         self.alpha = alpha
         self.depth = depth
+        self.feats_dropout = True
 
     def forward(self, data):
         x, edges = data.x, data.edges
-        x = F.dropout(x, training=self.training and x.shape[1] > 1)
+        if self.feats_dropout:
+            x = F.dropout(x, training=self.training and x.shape[1] > 1)
         x = self.embed1(x)
         x = F.relu(x)
         x = F.dropout(x, training=self.training)

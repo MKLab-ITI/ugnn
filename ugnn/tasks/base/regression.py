@@ -29,7 +29,7 @@ class RegressionTask:
             self.labels = self.labels.detach()
             self.labels.requires_grad_(False)
         self.deviation = (
-            (lambda x, y: ((x - y) ** 2).sum() ** 0.5 * y.shape[0] ** 0.5)
+            (lambda x, y: torch.mean((x - y) ** 2) ** 0.5)
             if deviation is None
             else deviation
         )
@@ -70,7 +70,7 @@ class RegressionTask:
 
     def loss(self, model: torch.nn.Module):
         out = self.out(model)
-        loss = torch.mean((out[self.mask, :] - self.labels[self.mask, :]) ** 2)
+        loss = torch.mean((out[self.mask, :] - self.labels[self.mask, :]) ** 2) ** 0.5
         if self.l1 != 0:
             loss = loss + self.l1 * torch.mean(out.abs())
         return loss
@@ -78,7 +78,7 @@ class RegressionTask:
     def evaluate(self, model: torch.nn.Module):
         out = self.out(model)
         correct = self.deviation(out[self.mask, :], self.labels[self.mask, :])
-        return float(correct) / int(self.mask.sum())
+        return float(correct)  # / int(self.mask.sum())
 
     def split(self, training=0.5, validation=0.25):
         assert training + validation < 1
