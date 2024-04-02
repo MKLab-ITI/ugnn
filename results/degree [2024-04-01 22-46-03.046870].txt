@@ -1,0 +1,6 @@
+MLP      GCN      GAT      GCNII    APPNP    Universal
+0.1553   0.2701   0.1722   0.1754   0.1583   0.4465  
+Standard deviations
+0.0395   0.0506   0.0571   0.0457   0.0358   0.0540  
+Nemenyi ranks
+4.8      2.1      4.6      3.7      4.8      1.0     

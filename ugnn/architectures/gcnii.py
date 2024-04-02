@@ -21,12 +21,12 @@ class GCNII(torch.nn.Module):
 
     def forward(self, data):
         x, edges = data.x, data.edges
-        x = F.dropout(x, training=self.training)
+        x = F.dropout(x, training=self.training, p=0.6)
         x = F.relu(self.layer1(x))
         h0 = x
         for i, con in enumerate(self.convs):
-            x = F.dropout(x, training=self.training)
+            x = F.dropout(x, training=self.training, p=0.6)
             x = F.relu(con(x, h0, edges))
-        x = F.dropout(x, training=self.training)
+        x = F.dropout(x, training=self.training, p=0.6)
         x = self.layer2(x)
         return x

@@ -12,24 +12,23 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Device:".ljust(10) + str(device))
 
 for setting in [
-    "degree",
-    "cora",
-    "citeseer",
-    "pubmed",
-    "propagation",
-    "degree",
-    "triangle",
+    #"scoreentropy",
+    #"scorediffusion",
+    #"cora",
+    #"citeseer",
+    #"pubmed",
+    #"propagation",
+    #"degree",
+    #"triangle",
     "square",
-    "scoreentropy",
-    "scorediffusion",
 ]:
     starting_time = datetime.now()
     # setting = setting+" overtrain"
-    setting = "cora"  # (cora | citeseer | pubmed | scoreentropy | scorediffusion | propagation | degree | triangle | square)  [overtrain]
+    #setting = "degree"  # (cora | citeseer | pubmed | scoreentropy | scorediffusion | propagation | degree | triangle | square)  [overtrain]
     compare = [
-        # architectures.MLP,
-        # architectures.GCN,
-        # architectures.GAT,
+        architectures.MLP,
+        architectures.GCN,
+        architectures.GAT,
         architectures.GCNII,
         # architectures.S2GC,
         architectures.APPNP,
@@ -48,12 +47,15 @@ for setting in [
         bestacc = None
         bestvaliation = float("inf")
         for retry in range(1):
+            #task.l1 = 0.01 if architectures.Universal.__name__ is Model.__name__ else 0
+            #splits["train"].l1 = task.l1
             model = Model(task.feats, task.classes, hidden=hidden).to(device)
             optimizer = torch.optim.Adam(model.parameters(), lr=0.01, weight_decay=5e-4)
             acc, validation = training(
                 model=model,
                 optimizer=optimizer,
                 verbose=model.__class__.__name__,
+                #clip=1 if architectures.Universal.__name__ is Model.__name__ else None,
                 **splits,
                 **kwargs,
             )
@@ -82,7 +84,7 @@ for setting in [
         elif "entropy" in setting:
             task = tasks.EntropyTask(nodes=100, graphs=100).to(device)
         elif "triangle" in setting:
-            task = tasks.TrianglesTask(nodes=100, max_density=0.1, graphs=100).to(
+            task = tasks.TrianglesTask(nodes=20, max_density=0.1, graphs=100).to(
                 device
             )
         elif "square" in setting:
