@@ -8,7 +8,7 @@ class GAT(torch.nn.Module):
     def __init__(self, feats, classes, hidden=64, heads=8):
         super(GAT, self).__init__()
         self.conv1 = GATConv(feats, hidden // heads, heads=heads, dropout=0.6)
-        self.conv2 = GATConv(hidden, classes, heads=heads, dropout=0.6)
+        self.conv2 = GATConv(hidden, classes, heads=1, dropout=0.6)
 
     def forward(self, data):
         x, edges = data.x, data.edges

@@ -12,18 +12,21 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Device:".ljust(10) + str(device))
 
 for setting in [
+    "diffusion",
     #"scoreentropy",
     #"scorediffusion",
-    #"cora",
-    #"citeseer",
-    #"pubmed",
-    #"propagation",
+    "cora",
+    "citeseer",
+    "pubmed",
+    "propagation",
+    "diffusion",
+    "propagationfixed",
     #"degree",
     #"triangle",
-    "square",
+    #"square",
 ]:
     starting_time = datetime.now()
-    # setting = setting+" overtrain"
+    #setting = setting+" overtrain"
     #setting = "degree"  # (cora | citeseer | pubmed | scoreentropy | scorediffusion | propagation | degree | triangle | square)  [overtrain]
     compare = [
         architectures.MLP,
@@ -77,8 +80,10 @@ for setting in [
             ).to(device)
         elif "propagation" in setting:
             task = tasks.PropagationTask(
-                nodes=100, max_density=0.1, graphs=100, alpha=random.uniform(0, 0.5)
+                nodes=100, max_density=0.1, graphs=100, alpha=0.9 if "fixed" in setting else random.uniform(0, 0.5)
             ).to(device)
+        elif "longest" in setting:
+            task = tasks.DiameterTask(nodes=20, max_density=0.1, graphs=500).to(device)
         elif "degree" in setting:
             task = tasks.DegreeTask(nodes=100, max_density=0.1, graphs=100).to(device)
         elif "entropy" in setting:
