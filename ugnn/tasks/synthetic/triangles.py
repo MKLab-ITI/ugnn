@@ -23,7 +23,7 @@ def _count_triangles(edge_index, num_nodes, graphs):
                     counts[ni] += 1
                     counts[nj] += 1
                     counts[nk] += 1
-    return counts.type(torch.LongTensor) // 3
+    return counts
 
 
 class TrianglesTask(RandomGraphTask):
@@ -32,5 +32,6 @@ class TrianglesTask(RandomGraphTask):
             *args,
             graphs=graphs,
             **kwargs,
-            replicate=lambda edges, nodes: _count_triangles(edges, nodes, graphs)
+            replicate=lambda edges, nodes: _count_triangles(edges, nodes, graphs),
+            #deviation=lambda x, y: (x-y).abs().sum()
         )

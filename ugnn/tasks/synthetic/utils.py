@@ -27,7 +27,9 @@ class RandomGraphTask(ClassificationTask):
         graphs: int = 100,
         replicate=None,
         graph_ids=False,
-        index_smoothing_depth=0,
+        index_smoothing_depth=0,  # 1 for adjacency (4 for de=True), None for only rni, 0 to deactivate
+        rni=0, # 7 for 100 nodes
+        de=False, # distance encoding instead of rni
         **kwargs
     ):
         if replicate is None:
@@ -47,15 +49,37 @@ class RandomGraphTask(ClassificationTask):
         for graph in range(graphs):
             for node in range(generated[graph][1]):
                 mask_mask[graph * nodes + node] = 1
-        x = torch.eye(nodes, nodes).repeat(graphs, 1)
-
-        if index_smoothing_depth > 0:
+        if de:
             from ugnn.utils import GraphConv
+            gc = GraphConv(normalize=True, add_self_loops=False)
+            x = torch.zeros(nodes, nodes).repeat(graphs, 1)
+            for graph in range(graphs):
+                for node1, node2 in zip(generated[graph][0][1], generated[graph][0][1]):
+                    x[graph * nodes + node1][node2] = 1
+            gamma = 1
+            accum = x
+            for i in range(index_smoothing_depth):
+                gamma *= 0.9
+                accum = accum + gamma*x
+                x = gc(x, edges)
+            x = accum
+        elif index_smoothing_depth is None:
+            pass
+        else:
+            x = torch.eye(nodes, nodes).repeat(graphs, 1)
+            if index_smoothing_depth > 0:
+                from ugnn.utils import GraphConv
+                gc = GraphConv(normalize=index_smoothing_depth>1, add_self_loops=index_smoothing_depth>1)
+                with torch.no_grad():
+                    for _ in range(index_smoothing_depth):
+                        x = gc(x, edges)
 
-            gc = GraphConv()
-            with torch.no_grad():
-                for _ in range(index_smoothing_depth):
-                    x = gc(x, edges)
+        if rni > 0:
+            xnew = torch.ceil(torch.rand(nodes * graphs, rni)/0.01)*0.01
+            if index_smoothing_depth is None:
+                x = xnew
+            else:
+                x = torch.cat([x, xnew], dim=1)
 
         if graph_ids:
             graph_embeddings = torch.zeros(nodes * graphs, graphs)

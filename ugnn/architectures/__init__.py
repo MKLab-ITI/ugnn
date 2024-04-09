@@ -1,5 +1,6 @@
 from ugnn.architectures.mlp import MLP
 from ugnn.architectures.gcn import GCN
+from ugnn.architectures.gcnnri import GCNNRI
 from ugnn.architectures.appnp import APPNP
 from ugnn.architectures.gat import GAT
 from ugnn.architectures.jacobi import JacobiConv
@@ -7,5 +8,6 @@ from ugnn.architectures.fdiff import FDiff
 from ugnn.architectures.deepset import DeepSet
 from ugnn.architectures.s2gc import S2GC
 from ugnn.architectures.gcnii import GCNII
-from ugnn.architectures.universalp import UniversalP
+from ugnn.architectures.mpnn import MPNN
 from ugnn.architectures.universal import Universal
+from ugnn.architectures.gnnml1 import GNNML1

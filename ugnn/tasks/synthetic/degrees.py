@@ -10,5 +10,5 @@ class DegreeTask(RandomGraphTask):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs,
                          replicate=_count_neighbors,
-                         #deviation=lambda x, y: torch.mean((x-y).abs())
+                         #deviation=lambda x, y: (x-y).abs().sum()
         )

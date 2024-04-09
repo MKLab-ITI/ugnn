@@ -68,22 +68,16 @@ class ClassificationTask:
         x = F.log_softmax(x, dim=1)
         return x
 
-    def loss(self, model: torch.nn.Module, noise: float = 0, avoid=None, towards=None):
-        out = self.out(model, noise)
-        out = out[self.mask, :]
+    def loss(self, model: torch.nn.Module, noise: float = 0, towards=None):
+        outall = self.out(model, noise)
+        out = outall[self.mask, :]
         labels = self.labels[self.mask]
         loss = F.nll_loss(out, labels)
-        if avoid is not None:
-            avoidout = self.out(avoid)
-            avoidout = avoidout[self.mask, :]
-            loss = loss - torch.mean(torch.sigmoid((out - avoidout) ** 2))
-        if towards is not None:
-            avoidout = self.out(towards)
-            avoidout = avoidout[self.mask, :]
-            loss = loss + torch.mean(torch.sigmoid((out - avoidout) ** 2))
         # loss = torch.exp(loss)
         if self.l1 != 0:
-            loss = loss + self.l1 * torch.mean(out.abs())
+            #towards = torch.empty(outall.shape[0], outall.shape[1], device=out.device)
+            #torch.nn.init.uniform_(towards, a=-1.0, b=1.0)
+            loss = loss + self.l1 * torch.mean((outall-towards).abs())
         return loss
 
     def evaluate(self, model: torch.nn.Module):

@@ -11,16 +11,18 @@ import sys, math
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Device:".ljust(10) + str(device))
 
+
+def universalNRI(*args, **kwargs):
+    return architectures.Universal(*args, **kwargs, nri=32)
+
+
 for setting in [
-    "diffusion",
-    #"scoreentropy",
-    #"scorediffusion",
-    "cora",
+    "longest",
     "citeseer",
     "pubmed",
     "propagation",
-    "diffusion",
-    "propagationfixed",
+    #"scorediffusionfixed",
+    #"scorediffusionfixed overtrain",
     #"degree",
     #"triangle",
     #"square",
@@ -29,13 +31,16 @@ for setting in [
     #setting = setting+" overtrain"
     #setting = "degree"  # (cora | citeseer | pubmed | scoreentropy | scorediffusion | propagation | degree | triangle | square)  [overtrain]
     compare = [
-        architectures.MLP,
-        architectures.GCN,
-        architectures.GAT,
-        architectures.GCNII,
-        # architectures.S2GC,
-        architectures.APPNP,
-        architectures.Universal,
+        #architectures.MLP,
+        #architectures.GCN,
+        #architectures.GCNNRI,
+        #architectures.GNNML1,
+        #architectures.GAT,
+        #architectures.GCNII,
+        #architectures.APPNP,
+        #architectures.Universal,
+        universalNRI,
+        architectures.GCNNRI,
     ]
 
     def run(Model, task, splits, verbose=True, hidden=64, **kwargs):
@@ -50,15 +55,16 @@ for setting in [
         bestacc = None
         bestvaliation = float("inf")
         for retry in range(1):
-            #task.l1 = 0.01 if architectures.Universal.__name__ is Model.__name__ else 0
-            #splits["train"].l1 = task.l1
+            task.l1 = 5e-4 if architectures.Universal.__name__ is Model.__name__ else 0
+            splits["train"].l1 = task.l1
             model = Model(task.feats, task.classes, hidden=hidden).to(device)
             optimizer = torch.optim.Adam(model.parameters(), lr=0.01, weight_decay=5e-4)
             acc, validation = training(
                 model=model,
                 optimizer=optimizer,
                 verbose=model.__class__.__name__,
-                #clip=1 if architectures.Universal.__name__ is Model.__name__ else None,
+                #patience=5000 if architectures.Universal.__name__ is Model.__name__ else 100,
+                #clip=10 if architectures.Universal.__name__ is Model.__name__ else None,
                 **splits,
                 **kwargs,
             )
@@ -76,20 +82,20 @@ for setting in [
     for _ in range(20):
         if "diffusion" in setting:
             task = tasks.DiffusionTask(
-                nodes=100, max_density=0.1, graphs=100, alpha=random.uniform(0, 0.5)
+                nodes=100, max_density=0.1, graphs=100, alpha=0.1 if "fixed" in setting else random.uniform(0, 0.5)
             ).to(device)
         elif "propagation" in setting:
             task = tasks.PropagationTask(
-                nodes=100, max_density=0.1, graphs=100, alpha=0.9 if "fixed" in setting else random.uniform(0, 0.5)
+                nodes=100, max_density=0.1, graphs=100, alpha=0.1 if "fixed" in setting else random.uniform(0, 0.5)
             ).to(device)
         elif "longest" in setting:
-            task = tasks.DiameterTask(nodes=20, max_density=0.1, graphs=500).to(device)
+            task = tasks.DiameterTask(nodes=100, max_density=0.1, graphs=100).to(device)
         elif "degree" in setting:
             task = tasks.DegreeTask(nodes=100, max_density=0.1, graphs=100).to(device)
         elif "entropy" in setting:
             task = tasks.EntropyTask(nodes=100, graphs=100).to(device)
         elif "triangle" in setting:
-            task = tasks.TrianglesTask(nodes=20, max_density=0.1, graphs=100).to(
+            task = tasks.TrianglesTask(nodes=50, max_density=0.1, graphs=100).to(
                 device
             )
         elif "square" in setting:
@@ -113,13 +119,13 @@ for setting in [
         for architecture, result in zip(compare, results):
             result.append(float(run(architecture, task, splits)))
         print("\r".ljust(80), end="")
-        print("\r" + " ".join([f"{result[-1]:.4f}".ljust(8) for result in results]))
+        print("\r" + " ".join([f"{result[-1]:.5f}".ljust(8) for result in results]))
 
     def printall():
         print(" ".join([architecture.__name__.ljust(8) for architecture in compare]))
-        print(" ".join([f"{np.mean(result):.4f}".ljust(8) for result in results]))
+        print(" ".join([f"{np.mean(result):.5f}".ljust(8) for result in results]))
         print("Standard deviations")
-        print(" ".join([f"{np.std(result):.4f}".ljust(8) for result in results]))
+        print(" ".join([f"{np.std(result):.5f}".ljust(8) for result in results]))
         from scipy.stats import rankdata
 
         ranks = rankdata(np.array(results), axis=0).T
