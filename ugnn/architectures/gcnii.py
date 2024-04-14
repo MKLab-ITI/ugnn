@@ -1,9 +1,10 @@
 import torch
 import torch.nn.functional as F
 from torch_geometric.nn.conv.gcn2_conv import GCN2Conv
+from ugnn.utils import HashedModule
 
 
-class GCNII(torch.nn.Module):
+class GCNII(HashedModule):
     # https://pytorch-geometric.readthedocs.io/en/latest/_modules/torch_geometric/nn/conv/gcn2_conv.html
     def __init__(
         self, feats, classes, nlayers=64, hidden=64, theta=0.6, alpha=0.1, cached=True
@@ -19,7 +20,7 @@ class GCNII(torch.nn.Module):
         self.layer1 = torch.nn.Linear(feats, hidden)
         self.layer2 = torch.nn.Linear(hidden, classes)
 
-    def forward(self, data):
+    def _forward(self, data):
         x, edges = data.x, data.edges
         x = F.dropout(x, training=self.training, p=0.6)
         x = F.relu(self.layer1(x))

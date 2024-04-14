@@ -1,0 +1,1168 @@
+C:\Users\manio\PycharmProjects\universal_gnn\venv\Scripts\python.exe C:\Users\manio\PycharmProjects\universal_gnn\test.py 
+Device:   cuda
+Setting:  cora
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 829           	train loss 0.117 (best 0.109)	valid loss 1.056 (best 1.032)	best test loss 0.990	train eval 1.00000	valid eval 0.66857	test eval 0.67500
+GCN Epoch 669           	train loss 0.171 (best 0.171)	valid loss 0.546 (best 0.538)	best test loss 0.531	train eval 0.98571	valid eval 0.85143	test eval 0.84853
+APPNP Epoch 744         	train loss 0.257 (best 0.253)	valid loss 0.556 (best 0.547)	best test loss 0.528	train eval 0.97143	valid eval 0.86286	test eval 0.85588
+GAT Epoch 783           	train loss 0.221 (best 0.209)	valid loss 0.566 (best 0.544)	best test loss 0.536	train eval 0.98000	valid eval 0.86000	test eval 0.85441
+GCNII Epoch 875         	train loss 0.382 (best 0.377)	valid loss 0.658 (best 0.647)	best test loss 0.617	train eval 0.95143	valid eval 0.86000	test eval 0.85735
+GCNNRI Epoch 260        	train loss 0.015 (best 0.004)	valid loss 2.786 (best 1.033)	best test loss 3.304	train eval 0.73143	valid eval 0.65429	test eval 0.63676
+Universal Epoch 465     	train loss 0.093 (best 0.008)	valid loss 1.147 (best 0.467)	best test loss 0.615	train eval 0.96286	valid eval 0.85143	test eval 0.85000
+0.67500  0.84853  0.85588  0.85441  0.85735  0.63676  0.85000 
+MLP Epoch 635           	train loss 0.110 (best 0.107)	valid loss 1.168 (best 1.142)	best test loss 1.041	train eval 1.00000	valid eval 0.61429	test eval 0.68529
+GCN Epoch 598           	train loss 0.219 (best 0.218)	valid loss 0.613 (best 0.596)	best test loss 0.530	train eval 0.99143	valid eval 0.86000	test eval 0.86618
+APPNP Epoch 927         	train loss 0.324 (best 0.322)	valid loss 0.605 (best 0.600)	best test loss 0.525	train eval 0.96286	valid eval 0.86571	test eval 0.88676
+GAT Epoch 899           	train loss 0.293 (best 0.286)	valid loss 0.636 (best 0.619)	best test loss 0.556	train eval 0.97429	valid eval 0.83429	test eval 0.85147
+GCNII Epoch 876         	train loss 0.549 (best 0.511)	valid loss 0.758 (best 0.717)	best test loss 0.668	train eval 0.93714	valid eval 0.84571	test eval 0.87059
+GCNNRI Epoch 416        	train loss 0.012 (best 0.005)	valid loss 1.684 (best 0.846)	best test loss 1.866	train eval 0.90286	valid eval 0.78571	test eval 0.79853
+Universal Epoch 354     	train loss 0.017 (best 0.008)	valid loss 0.894 (best 0.522)	best test loss 0.654	train eval 0.94286	valid eval 0.86571	test eval 0.87647
+0.68529  0.86618  0.88676  0.85147  0.87059  0.79853  0.87647 
+MLP Epoch 926           	train loss 0.107 (best 0.106)	valid loss 1.015 (best 0.999)	best test loss 1.049	train eval 1.00000	valid eval 0.67714	test eval 0.67059
+GCN Epoch 943           	train loss 0.216 (best 0.212)	valid loss 0.558 (best 0.547)	best test loss 0.573	train eval 0.97429	valid eval 0.85143	test eval 0.82941
+APPNP Epoch 1049        	train loss 0.321 (best 0.313)	valid loss 0.559 (best 0.545)	best test loss 0.564	train eval 0.95143	valid eval 0.87429	test eval 0.83382
+GAT Epoch 636           	train loss 0.274 (best 0.272)	valid loss 0.591 (best 0.566)	best test loss 0.594	train eval 0.97429	valid eval 0.84000	test eval 0.81912
+GCNII Epoch 922         	train loss 0.471 (best 0.453)	valid loss 0.663 (best 0.647)	best test loss 0.648	train eval 0.94000	valid eval 0.86286	test eval 0.85294
+GCNNRI Epoch 280        	train loss 0.047 (best 0.020)	valid loss 2.607 (best 0.901)	best test loss 3.093	train eval 0.89429	valid eval 0.78571	test eval 0.74118
+Universal Epoch 878     	train loss 0.008 (best 0.003)	valid loss 0.746 (best 0.478)	best test loss 1.196	train eval 0.98857	valid eval 0.86000	test eval 0.83088
+0.67059  0.82941  0.83382  0.81912  0.85294  0.74118  0.83088 
+MLP Epoch 907           	train loss 0.114 (best 0.107)	valid loss 1.092 (best 1.079)	best test loss 1.003	train eval 1.00000	valid eval 0.66857	test eval 0.68676
+GCN Epoch 641           	train loss 0.213 (best 0.210)	valid loss 0.593 (best 0.581)	best test loss 0.475	train eval 0.98286	valid eval 0.83143	test eval 0.88088
+APPNP Epoch 996         	train loss 0.313 (best 0.310)	valid loss 0.593 (best 0.584)	best test loss 0.497	train eval 0.96286	valid eval 0.84286	test eval 0.89265
+GAT Epoch 452           	train loss 0.290 (best 0.280)	valid loss 0.643 (best 0.609)	best test loss 0.496	train eval 0.97714	valid eval 0.82286	test eval 0.88235
+GCNII Epoch 997         	train loss 0.488 (best 0.471)	valid loss 0.712 (best 0.695)	best test loss 0.625	train eval 0.93429	valid eval 0.86000	test eval 0.87647
+GCNNRI Epoch 522        	train loss 0.017 (best 0.004)	valid loss 2.569 (best 0.954)	best test loss 0.815	train eval 0.88857	valid eval 0.72286	test eval 0.72794
+Universal Epoch 578     	train loss 0.010 (best 0.003)	valid loss 0.800 (best 0.524)	best test loss 0.657	train eval 0.95429	valid eval 0.83429	test eval 0.88235
+0.68676  0.88088  0.89265  0.88235  0.87647  0.72794  0.88235 
+MLP Epoch 726           	train loss 0.111 (best 0.104)	valid loss 0.999 (best 0.981)	best test loss 1.011	train eval 1.00000	valid eval 0.69143	test eval 0.69706
+GCN Epoch 1065          	train loss 0.215 (best 0.207)	valid loss 0.605 (best 0.602)	best test loss 0.559	train eval 0.96857	valid eval 0.81429	test eval 0.85147
+APPNP Epoch 1226        	train loss 0.306 (best 0.299)	valid loss 0.607 (best 0.580)	best test loss 0.553	train eval 0.95714	valid eval 0.86000	test eval 0.86176
+GAT Epoch 620           	train loss 0.275 (best 0.269)	valid loss 0.633 (best 0.625)	best test loss 0.584	train eval 0.98571	valid eval 0.81714	test eval 0.84265
+GCNII Epoch 1175        	train loss 0.438 (best 0.429)	valid loss 0.691 (best 0.676)	best test loss 0.639	train eval 0.94286	valid eval 0.85143	test eval 0.85735
+GCNNRI Epoch 315        	train loss 0.075 (best 0.012)	valid loss 2.467 (best 1.164)	best test loss 2.927	train eval 0.62286	valid eval 0.55714	test eval 0.57353
+Universal Epoch 455     	train loss 0.012 (best 0.008)	valid loss 0.950 (best 0.526)	best test loss 0.665	train eval 0.97714	valid eval 0.84000	test eval 0.85294
+0.69706  0.85147  0.86176  0.84265  0.85735  0.57353  0.85294 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.683    0.855    0.866    0.850    0.863    0.696    0.859   
+Standard deviations
+0.009    0.017    0.021    0.020    0.009    0.080    0.019   
+Nemenyi ranks
+6.6      4.2      1.4      4.1      2.4      6.4      2.9     
+Latex
+0.683 (6.6) & 0.855 (4.2) & 0.866 (1.4) & 0.850 (4.1) & 0.863 (2.4) & 0.696 (6.4) & 0.859 (2.9)
+Setting:  citeseer
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 994           	train loss 0.093 (best 0.091)	valid loss 1.084 (best 1.058)	best test loss 1.188	train eval 1.00000	valid eval 0.63667	test eval 0.56833
+GCN Epoch 716           	train loss 0.200 (best 0.198)	valid loss 0.866 (best 0.866)	best test loss 1.003	train eval 0.99333	valid eval 0.75333	test eval 0.65500
+APPNP Epoch 945         	train loss 0.327 (best 0.318)	valid loss 0.909 (best 0.881)	best test loss 1.003	train eval 0.95667	valid eval 0.75000	test eval 0.64167
+GAT Epoch 642           	train loss 0.316 (best 0.312)	valid loss 0.908 (best 0.903)	best test loss 1.025	train eval 0.99000	valid eval 0.74667	test eval 0.65167
+GCNII Epoch 921         	train loss 0.683 (best 0.643)	valid loss 1.064 (best 1.029)	best test loss 1.086	train eval 0.90667	valid eval 0.72333	test eval 0.66833
+GCNNRI Epoch 240        	train loss 0.019 (best 0.011)	valid loss 2.836 (best 1.222)	best test loss 5.408	train eval 0.67667	valid eval 0.57000	test eval 0.50667
+Universal Epoch 441     	train loss 0.009 (best 0.007)	valid loss 1.445 (best 0.874)	best test loss 2.141	train eval 0.92333	valid eval 0.73333	test eval 0.63667
+0.56833  0.65500  0.64167  0.65167  0.66833  0.50667  0.63667 
+MLP Epoch 920           	train loss 0.103 (best 0.097)	valid loss 1.131 (best 1.115)	best test loss 1.213	train eval 1.00000	valid eval 0.61000	test eval 0.57333
+GCN Epoch 805           	train loss 0.230 (best 0.224)	valid loss 0.935 (best 0.930)	best test loss 1.057	train eval 0.97333	valid eval 0.70667	test eval 0.62000
+APPNP Epoch 1085        	train loss 0.372 (best 0.364)	valid loss 0.948 (best 0.918)	best test loss 1.051	train eval 0.95667	valid eval 0.72000	test eval 0.65500
+GAT Epoch 571           	train loss 0.372 (best 0.363)	valid loss 0.993 (best 0.979)	best test loss 1.094	train eval 0.97333	valid eval 0.72333	test eval 0.62500
+GCNII Epoch 714         	train loss 0.839 (best 0.807)	valid loss 1.127 (best 1.109)	best test loss 1.173	train eval 0.89000	valid eval 0.67333	test eval 0.64167
+GCNNRI Epoch 619        	train loss 0.971 (best 0.026)	valid loss 1.522 (best 1.291)	best test loss 5.547	train eval 0.75333	valid eval 0.55333	test eval 0.45500
+Universal Epoch 648     	train loss 0.032 (best 0.019)	valid loss 1.575 (best 0.882)	best test loss 1.961	train eval 0.91333	valid eval 0.69333	test eval 0.63667
+0.57333  0.62000  0.65500  0.62500  0.64167  0.45500  0.63667 
+MLP Epoch 732           	train loss 0.107 (best 0.098)	valid loss 1.185 (best 1.174)	best test loss 1.165	train eval 1.00000	valid eval 0.61000	test eval 0.58667
+GCN Epoch 861           	train loss 0.211 (best 0.209)	valid loss 0.991 (best 0.962)	best test loss 0.965	train eval 0.99333	valid eval 0.67000	test eval 0.67833
+APPNP Epoch 841         	train loss 0.343 (best 0.337)	valid loss 0.967 (best 0.958)	best test loss 0.955	train eval 0.95667	valid eval 0.68667	test eval 0.67833
+GAT Epoch 480           	train loss 0.336 (best 0.329)	valid loss 1.034 (best 1.024)	best test loss 0.987	train eval 0.99000	valid eval 0.65667	test eval 0.66000
+GCNII Epoch 729         	train loss 0.759 (best 0.736)	valid loss 1.104 (best 1.079)	best test loss 1.087	train eval 0.88333	valid eval 0.67667	test eval 0.66333
+GCNNRI Epoch 405        	train loss 0.060 (best 0.045)	valid loss 3.686 (best 1.521)	best test loss 6.335	train eval 0.51000	valid eval 0.34333	test eval 0.33833
+Universal Epoch 547     	train loss 0.013 (best 0.007)	valid loss 1.573 (best 0.929)	best test loss 2.079	train eval 0.88333	valid eval 0.67667	test eval 0.68000
+0.58667  0.67833  0.67833  0.66000  0.66333  0.33833  0.68000 
+MLP Epoch 740           	train loss 0.103 (best 0.099)	valid loss 1.132 (best 1.127)	best test loss 1.124	train eval 1.00000	valid eval 0.60000	test eval 0.63000
+GCN Epoch 809           	train loss 0.229 (best 0.224)	valid loss 0.893 (best 0.886)	best test loss 0.934	train eval 0.98667	valid eval 0.74000	test eval 0.69333
+APPNP Epoch 1157        	train loss 0.516 (best 0.355)	valid loss 1.033 (best 0.884)	best test loss 0.940	train eval 0.94667	valid eval 0.73333	test eval 0.71000
+GAT Epoch 479           	train loss 0.363 (best 0.360)	valid loss 0.959 (best 0.937)	best test loss 0.969	train eval 0.98000	valid eval 0.72000	test eval 0.69833
+GCNII Epoch 759         	train loss 0.812 (best 0.724)	valid loss 1.103 (best 1.027)	best test loss 1.060	train eval 0.88000	valid eval 0.73000	test eval 0.72833
+GCNNRI Epoch 515        	train loss 0.064 (best 0.026)	valid loss 3.417 (best 1.311)	best test loss 1.349	train eval 0.62000	valid eval 0.49333	test eval 0.50500
+Universal Epoch 462     	train loss 0.028 (best 0.016)	valid loss 1.426 (best 0.833)	best test loss 1.619	train eval 0.91333	valid eval 0.74000	test eval 0.70833
+0.63000  0.69333  0.71000  0.69833  0.72833  0.50500  0.70833 
+MLP Epoch 716           	train loss 0.102 (best 0.099)	valid loss 1.122 (best 1.108)	best test loss 1.178	train eval 1.00000	valid eval 0.64667	test eval 0.61167
+GCN Epoch 861           	train loss 0.235 (best 0.230)	valid loss 0.922 (best 0.898)	best test loss 0.974	train eval 0.98000	valid eval 0.68333	test eval 0.66667
+APPNP Epoch 1069        	train loss 0.355 (best 0.345)	valid loss 0.916 (best 0.893)	best test loss 0.964	train eval 0.94333	valid eval 0.70667	test eval 0.69333
+GAT Epoch 619           	train loss 0.352 (best 0.345)	valid loss 0.944 (best 0.923)	best test loss 0.995	train eval 0.96333	valid eval 0.69333	test eval 0.66833
+GCNII Epoch 839         	train loss 0.732 (best 0.687)	valid loss 1.029 (best 1.010)	best test loss 1.076	train eval 0.88667	valid eval 0.69000	test eval 0.69500
+GCNNRI Epoch 334        	train loss 0.021 (best 0.017)	valid loss 3.412 (best 1.416)	best test loss 4.004	train eval 0.53000	valid eval 0.42000	test eval 0.41000
+Universal Epoch 670     	train loss 0.024 (best 0.017)	valid loss 1.595 (best 0.869)	best test loss 1.680	train eval 0.89000	valid eval 0.70667	test eval 0.68333
+0.61167  0.66667  0.69333  0.66833  0.69500  0.41000  0.68333 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.594    0.663    0.676    0.661    0.679    0.443    0.669   
+Standard deviations
+0.023    0.025    0.025    0.024    0.030    0.063    0.028   
+Nemenyi ranks
+6.0      3.9      2.3      4.0      1.8      7.0      3.0     
+Latex
+0.594 (6.0) & 0.663 (3.9) & 0.676 (2.3) & 0.661 (4.0) & 0.679 (1.8) & 0.443 (7.0) & 0.669 (3.0)
+Setting:  pubmed
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 469           	train loss 0.039 (best 0.038)	valid loss 0.582 (best 0.552)	best test loss 0.497	train eval 1.00000	valid eval 0.78667	test eval 0.81333
+GCN Epoch 958           	train loss 0.121 (best 0.116)	valid loss 0.456 (best 0.442)	best test loss 0.419	train eval 0.99333	valid eval 0.84000	test eval 0.85333
+APPNP Epoch 708         	train loss 0.197 (best 0.187)	valid loss 0.470 (best 0.438)	best test loss 0.418	train eval 0.98667	valid eval 0.84667	test eval 0.88000
+GAT Epoch 654           	train loss 0.174 (best 0.170)	valid loss 0.499 (best 0.457)	best test loss 0.464	train eval 0.98667	valid eval 0.83333	test eval 0.84333
+GCNII Epoch 894         	train loss 0.235 (best 0.226)	valid loss 0.449 (best 0.438)	best test loss 0.428	train eval 0.97333	valid eval 0.83333	test eval 0.86667
+GCNNRI Epoch 451        	train loss 1.099 (best 0.001)	valid loss 1.099 (best 0.528)	best test loss 1.675	train eval 0.84000	valid eval 0.80667	test eval 0.82333
+Universal Epoch 311     	train loss 0.010 (best 0.006)	valid loss 0.754 (best 0.452)	best test loss 0.652	train eval 0.86667	valid eval 0.82000	test eval 0.86333
+0.81333  0.85333  0.88000  0.84333  0.86667  0.82333  0.86333 
+MLP Epoch 746           	train loss 0.047 (best 0.041)	valid loss 0.631 (best 0.551)	best test loss 0.605	train eval 1.00000	valid eval 0.77333	test eval 0.76333
+GCN Epoch 794           	train loss 0.104 (best 0.102)	valid loss 0.538 (best 0.500)	best test loss 0.520	train eval 0.98667	valid eval 0.86000	test eval 0.81333
+APPNP Epoch 972         	train loss 0.180 (best 0.176)	valid loss 0.496 (best 0.472)	best test loss 0.512	train eval 0.97333	valid eval 0.85333	test eval 0.82667
+GAT Epoch 535           	train loss 0.168 (best 0.157)	valid loss 0.513 (best 0.457)	best test loss 0.490	train eval 0.98667	valid eval 0.84667	test eval 0.81333
+GCNII Epoch 968         	train loss 0.240 (best 0.229)	valid loss 0.486 (best 0.475)	best test loss 0.510	train eval 0.97333	valid eval 0.85333	test eval 0.82333
+GCNNRI Epoch 311        	train loss 0.001 (best 0.001)	valid loss 1.467 (best 0.656)	best test loss 2.007	train eval 0.83333	valid eval 0.70667	test eval 0.71333
+Universal Epoch 344     	train loss 0.054 (best 0.006)	valid loss 0.742 (best 0.528)	best test loss 0.897	train eval 0.88000	valid eval 0.82000	test eval 0.82000
+0.76333  0.81333  0.82667  0.81333  0.82333  0.71333  0.82000 
+MLP Epoch 669           	train loss 0.044 (best 0.041)	valid loss 0.480 (best 0.468)	best test loss 0.577	train eval 1.00000	valid eval 0.78667	test eval 0.77667
+GCN Epoch 824           	train loss 0.112 (best 0.101)	valid loss 0.421 (best 0.409)	best test loss 0.400	train eval 0.98000	valid eval 0.84000	test eval 0.85000
+APPNP Epoch 868         	train loss 0.157 (best 0.154)	valid loss 0.407 (best 0.397)	best test loss 0.397	train eval 0.98000	valid eval 0.84667	test eval 0.85000
+GAT Epoch 790           	train loss 0.145 (best 0.134)	valid loss 0.450 (best 0.437)	best test loss 0.438	train eval 0.98000	valid eval 0.84667	test eval 0.82667
+GCNII Epoch 772         	train loss 0.236 (best 0.226)	valid loss 0.441 (best 0.425)	best test loss 0.417	train eval 0.97333	valid eval 0.85333	test eval 0.85000
+GCNNRI Epoch 257        	train loss 0.503 (best 0.000)	valid loss 0.785 (best 0.640)	best test loss 2.075	train eval 0.82667	valid eval 0.79333	test eval 0.76333
+Universal Epoch 367     	train loss 0.008 (best 0.004)	valid loss 0.605 (best 0.397)	best test loss 0.798	train eval 0.96000	valid eval 0.83333	test eval 0.84333
+0.77667  0.85000  0.85000  0.82667  0.85000  0.76333  0.84333 
+MLP Epoch 776           	train loss 0.047 (best 0.044)	valid loss 0.458 (best 0.425)	best test loss 0.606	train eval 1.00000	valid eval 0.85333	test eval 0.76000
+GCN Epoch 913           	train loss 0.118 (best 0.115)	valid loss 0.394 (best 0.366)	best test loss 0.527	train eval 0.99333	valid eval 0.83333	test eval 0.79667
+APPNP Epoch 805         	train loss 0.193 (best 0.190)	valid loss 0.412 (best 0.384)	best test loss 0.529	train eval 0.95333	valid eval 0.85333	test eval 0.81000
+GAT Epoch 487           	train loss 0.174 (best 0.164)	valid loss 0.422 (best 0.402)	best test loss 0.501	train eval 0.97333	valid eval 0.84667	test eval 0.80667
+GCNII Epoch 725         	train loss 0.247 (best 0.242)	valid loss 0.422 (best 0.409)	best test loss 0.517	train eval 0.95333	valid eval 0.86667	test eval 0.80667
+GCNNRI Epoch 356        	train loss 0.002 (best 0.001)	valid loss 1.607 (best 0.444)	best test loss 1.711	train eval 0.86000	valid eval 0.81333	test eval 0.78667
+Universal Epoch 347     	train loss 0.012 (best 0.008)	valid loss 0.592 (best 0.394)	best test loss 0.885	train eval 0.94000	valid eval 0.85333	test eval 0.82333
+0.76000  0.79667  0.81000  0.80667  0.80667  0.78667  0.82333 
+MLP Epoch 686           	train loss 0.041 (best 0.039)	valid loss 0.540 (best 0.519)	best test loss 0.572	train eval 1.00000	valid eval 0.75333	test eval 0.77667
+GCN Epoch 849           	train loss 0.097 (best 0.093)	valid loss 0.370 (best 0.350)	best test loss 0.553	train eval 0.98667	valid eval 0.84000	test eval 0.81000
+APPNP Epoch 823         	train loss 0.165 (best 0.150)	valid loss 0.393 (best 0.356)	best test loss 0.539	train eval 0.98000	valid eval 0.86000	test eval 0.80667
+GAT Epoch 733           	train loss 0.136 (best 0.127)	valid loss 0.397 (best 0.372)	best test loss 0.554	train eval 0.98667	valid eval 0.84000	test eval 0.81667
+GCNII Epoch 803         	train loss 0.204 (best 0.204)	valid loss 0.401 (best 0.395)	best test loss 0.530	train eval 0.96000	valid eval 0.87333	test eval 0.82667
+GCNNRI Epoch 244        	train loss 1.244 (best 0.001)	valid loss 1.240 (best 0.654)	best test loss 2.385	train eval 0.77333	valid eval 0.61333	test eval 0.65000
+Universal Epoch 413     	train loss 0.012 (best 0.010)	valid loss 0.451 (best 0.354)	best test loss 0.961	train eval 0.98667	valid eval 0.86667	test eval 0.79333
+0.77667  0.81000  0.80667  0.81667  0.82667  0.65000  0.79333 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.778    0.825    0.835    0.821    0.835    0.747    0.829   
+Standard deviations
+0.019    0.023    0.027    0.013    0.021    0.060    0.024   
+Nemenyi ranks
+6.4      3.7      2.0      4.0      2.1      6.6      3.2     
+Latex
+0.778 (6.4) & 0.825 (3.7) & 0.835 (2.0) & 0.821 (4.0) & 0.835 (2.1) & 0.747 (6.6) & 0.829 (3.2)
+Setting:  triangle
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 186           	train loss 1.518 (best 1.517)	valid loss 1.539 (best 1.538)	best test loss 1.514	train eval 0.54335	valid eval 0.53309	test eval 0.54165
+GCN Epoch 907           	train loss 1.434 (best 1.425)	valid loss 1.443 (best 1.435)	best test loss 1.421	train eval 0.54335	valid eval 0.53309	test eval 0.54165
+APPNP Epoch 469         	train loss 1.588 (best 1.584)	valid loss 1.594 (best 1.589)	best test loss 1.571	train eval 0.54335	valid eval 0.53309	test eval 0.54165
+GAT Epoch 279           	train loss 1.525 (best 1.508)	valid loss 1.548 (best 1.526)	best test loss 1.503	train eval 0.54335	valid eval 0.53309	test eval 0.54165
+GCNII Epoch 1852        	train loss 1.512 (best 1.510)	valid loss 1.529 (best 1.527)	best test loss 1.505	train eval 0.54335	valid eval 0.53309	test eval 0.54165
+GCNNRI Epoch 1240       	train loss 1.001 (best 0.997)	valid loss 1.041 (best 1.037)	best test loss 1.033	train eval 0.59950	valid eval 0.58876	test eval 0.58989
+Universal Epoch 4799    	train loss 1.019 (best 1.001)	valid loss 1.112 (best 1.088)	best test loss 1.057	train eval 0.60194	valid eval 0.57966	test eval 0.58868
+0.54165  0.54165  0.54165  0.54165  0.54165  0.58989  0.58868 
+MLP Epoch 267           	train loss 1.564 (best 1.563)	valid loss 1.459 (best 1.458)	best test loss 1.590	train eval 0.51739	valid eval 0.53674	test eval 0.50343
+GCN Epoch 1173          	train loss 1.468 (best 1.457)	valid loss 1.407 (best 1.392)	best test loss 1.497	train eval 0.51999	valid eval 0.53875	test eval 0.50562
+APPNP Epoch 204         	train loss 1.633 (best 1.630)	valid loss 1.525 (best 1.521)	best test loss 1.650	train eval 0.51739	valid eval 0.53674	test eval 0.50343
+GAT Epoch 316           	train loss 1.577 (best 1.554)	valid loss 1.449 (best 1.439)	best test loss 1.585	train eval 0.51739	valid eval 0.53674	test eval 0.50343
+GCNII Epoch 1527        	train loss 1.564 (best 1.563)	valid loss 1.459 (best 1.458)	best test loss 1.588	train eval 0.51739	valid eval 0.53674	test eval 0.50343
+GCNNRI Epoch 137        	train loss 1.581 (best 1.524)	valid loss 1.499 (best 1.417)	best test loss 1.560	train eval 0.51739	valid eval 0.53674	test eval 0.50343
+Universal Epoch 4033    	train loss 1.060 (best 1.056)	valid loss 1.093 (best 1.081)	best test loss 1.152	train eval 0.57166	valid eval 0.57392	test eval 0.54697
+0.50343  0.50562  0.50343  0.50343  0.50343  0.50343  0.54697 
+MLP Epoch 277           	train loss 1.532 (best 1.532)	valid loss 1.613 (best 1.612)	best test loss 1.604	train eval 0.53821	valid eval 0.50308	test eval 0.51503
+GCN Epoch 1878          	train loss 1.414 (best 1.407)	valid loss 1.489 (best 1.483)	best test loss 1.469	train eval 0.53821	valid eval 0.50308	test eval 0.51503
+APPNP Epoch 175         	train loss 1.586 (best 1.585)	valid loss 1.658 (best 1.655)	best test loss 1.656	train eval 0.53821	valid eval 0.50308	test eval 0.51503
+GAT Epoch 190           	train loss 1.541 (best 1.514)	valid loss 1.633 (best 1.595)	best test loss 1.587	train eval 0.53821	valid eval 0.50308	test eval 0.51503
+GCNII Epoch 3879        	train loss 1.505 (best 1.501)	valid loss 1.581 (best 1.578)	best test loss 1.571	train eval 0.53821	valid eval 0.50308	test eval 0.51503
+GCNNRI Epoch 405        	train loss 1.242 (best 1.225)	valid loss 1.360 (best 1.346)	best test loss 1.308	train eval 0.56558	valid eval 0.52693	test eval 0.53987
+Universal Epoch 4240    	train loss 1.024 (best 1.006)	valid loss 1.204 (best 1.176)	best test loss 1.124	train eval 0.59690	valid eval 0.54463	test eval 0.56250
+0.51503  0.51503  0.51503  0.51503  0.51503  0.53987  0.56250 
+MLP Epoch 177           	train loss 1.557 (best 1.556)	valid loss 1.737 (best 1.735)	best test loss 1.617	train eval 0.53751	valid eval 0.46209	test eval 0.51380
+GCN Epoch 2374          	train loss 1.433 (best 1.426)	valid loss 1.585 (best 1.583)	best test loss 1.483	train eval 0.53769	valid eval 0.46222	test eval 0.51389
+APPNP Epoch 501         	train loss 1.612 (best 1.603)	valid loss 1.759 (best 1.758)	best test loss 1.659	train eval 0.53751	valid eval 0.46209	test eval 0.51380
+GAT Epoch 183           	train loss 1.581 (best 1.534)	valid loss 1.802 (best 1.706)	best test loss 1.597	train eval 0.53751	valid eval 0.46209	test eval 0.51380
+GCNII Epoch 2420        	train loss 1.533 (best 1.530)	valid loss 1.701 (best 1.700)	best test loss 1.590	train eval 0.53751	valid eval 0.46209	test eval 0.51380
+GCNNRI Epoch 957        	train loss 1.086 (best 1.033)	valid loss 1.313 (best 1.251)	best test loss 1.136	train eval 0.58879	valid eval 0.51111	test eval 0.55774
+Universal Epoch 2260    	train loss 1.069 (best 1.067)	valid loss 1.283 (best 1.276)	best test loss 1.147	train eval 0.58978	valid eval 0.51150	test eval 0.56090
+0.51380  0.51389  0.51380  0.51380  0.51380  0.55774  0.56090 
+MLP Epoch 174           	train loss 1.634 (best 1.634)	valid loss 1.614 (best 1.613)	best test loss 1.565	train eval 0.49876	valid eval 0.53241	test eval 0.53776
+GCN Epoch 2003          	train loss 1.541 (best 1.534)	valid loss 1.526 (best 1.515)	best test loss 1.477	train eval 0.49876	valid eval 0.53254	test eval 0.53781
+APPNP Epoch 156         	train loss 1.700 (best 1.695)	valid loss 1.689 (best 1.683)	best test loss 1.636	train eval 0.49876	valid eval 0.53241	test eval 0.53776
+GAT Epoch 276           	train loss 1.644 (best 1.622)	valid loss 1.616 (best 1.600)	best test loss 1.550	train eval 0.49876	valid eval 0.53241	test eval 0.53776
+GCNII Epoch 1790        	train loss 1.623 (best 1.622)	valid loss 1.604 (best 1.601)	best test loss 1.554	train eval 0.49876	valid eval 0.53241	test eval 0.53776
+GCNNRI Epoch 1818       	train loss 1.087 (best 1.076)	valid loss 1.127 (best 1.114)	best test loss 1.082	train eval 0.55114	valid eval 0.57292	test eval 0.57717
+Universal Epoch 4413    	train loss 1.115 (best 1.112)	valid loss 1.152 (best 1.142)	best test loss 1.094	train eval 0.56053	valid eval 0.56806	test eval 0.57863
+0.53776  0.53781  0.53776  0.53776  0.53776  0.57717  0.57863 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.522    0.523    0.522    0.522    0.522    0.554    0.568   
+Standard deviations
+0.015    0.014    0.015    0.015    0.015    0.030    0.015   
+Nemenyi ranks
+5.2      3.6      5.2      5.2      5.2      2.4      1.2     
+Latex
+0.522 (5.2) & 0.523 (3.6) & 0.522 (5.2) & 0.522 (5.2) & 0.522 (5.2) & 0.554 (2.4) & 0.568 (1.2)
+Setting:  square
+C:\Users\manio\PycharmProjects\universal_gnn\venv\Scripts\python.exe C:\Users\manio\PycharmProjects\universal_gnn\test.py 
+Device:   cuda
+Setting:  square
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 221           	train loss 0.589 (best 0.588)	valid loss 0.564 (best 0.562)	best test loss 0.595	train eval 0.72220	valid eval 0.74922	test eval 0.71477
+GCN Epoch 167           	train loss 0.643 (best 0.539)	valid loss 0.673 (best 0.536)	best test loss 0.547	train eval 0.72220	valid eval 0.74922	test eval 0.71477
+APPNP Epoch 111         	train loss 0.597 (best 0.595)	valid loss 0.582 (best 0.570)	best test loss 0.603	train eval 0.72220	valid eval 0.74922	test eval 0.71477
+GAT Epoch 557           	train loss 0.539 (best 0.525)	valid loss 0.507 (best 0.495)	best test loss 0.536	train eval 0.72220	valid eval 0.74922	test eval 0.71477
+GCNII Epoch 418         	train loss 0.586 (best 0.584)	valid loss 0.560 (best 0.559)	best test loss 0.591	train eval 0.72220	valid eval 0.74922	test eval 0.71477
+GCNNRI Epoch 1276       	train loss 0.583 (best 0.148)	valid loss 0.557 (best 0.317)	best test loss 0.380	train eval 0.90117	valid eval 0.85847	test eval 0.85780
+Universal Epoch 2420    	train loss 0.206 (best 0.202)	valid loss 0.295 (best 0.292)	best test loss 0.279	train eval 0.91820	valid eval 0.87027	test eval 0.87018
+0.71477  0.71477  0.71477  0.71477  0.71477  0.85780  0.87018 
+MLP Epoch 237           	train loss 0.613 (best 0.613)	valid loss 0.609 (best 0.608)	best test loss 0.619	train eval 0.69466	valid eval 0.69967	test eval 0.68658
+GCN Epoch 163           	train loss 0.707 (best 0.553)	valid loss 0.773 (best 0.567)	best test loss 0.565	train eval 0.69466	valid eval 0.69967	test eval 0.68658
+APPNP Epoch 450         	train loss 0.619 (best 0.616)	valid loss 0.612 (best 0.608)	best test loss 0.619	train eval 0.69466	valid eval 0.69967	test eval 0.68658
+GAT Epoch 551           	train loss 0.570 (best 0.542)	valid loss 0.568 (best 0.536)	best test loss 0.555	train eval 0.69466	valid eval 0.69967	test eval 0.68658
+GCNII Epoch 536         	train loss 0.612 (best 0.610)	valid loss 0.607 (best 0.603)	best test loss 0.615	train eval 0.69466	valid eval 0.69967	test eval 0.68658
+GCNNRI Epoch 1454       	train loss 0.224 (best 0.178)	valid loss 0.573 (best 0.369)	best test loss 0.443	train eval 0.87182	valid eval 0.82492	test eval 0.82906
+Universal Epoch 2648    	train loss 0.215 (best 0.215)	valid loss 0.406 (best 0.395)	best test loss 0.381	train eval 0.90426	valid eval 0.81902	test eval 0.85252
+0.68658  0.68658  0.68658  0.68658  0.68658  0.82906  0.85252 
+MLP Epoch 132           	train loss 0.616 (best 0.616)	valid loss 0.597 (best 0.596)	best test loss 0.630	train eval 0.69047	valid eval 0.71467	test eval 0.67269
+GCN Epoch 148           	train loss 0.672 (best 0.566)	valid loss 0.658 (best 0.548)	best test loss 0.568	train eval 0.69047	valid eval 0.71467	test eval 0.67269
+APPNP Epoch 443         	train loss 0.617 (best 0.616)	valid loss 0.597 (best 0.595)	best test loss 0.624	train eval 0.68853	valid eval 0.71200	test eval 0.66925
+GAT Epoch 452           	train loss 0.582 (best 0.562)	valid loss 0.545 (best 0.527)	best test loss 0.575	train eval 0.69047	valid eval 0.71467	test eval 0.67269
+GCNII Epoch 640         	train loss 0.611 (best 0.608)	valid loss 0.588 (best 0.586)	best test loss 0.622	train eval 0.69047	valid eval 0.71467	test eval 0.67269
+GCNNRI Epoch 1439       	train loss 0.211 (best 0.206)	valid loss 0.362 (best 0.313)	best test loss 0.301	train eval 0.90889	valid eval 0.85667	test eval 0.86903
+Universal Epoch 2338    	train loss 0.225 (best 0.221)	valid loss 0.340 (best 0.308)	best test loss 0.295	train eval 0.90210	valid eval 0.85600	test eval 0.87527
+0.67269  0.67269  0.66925  0.67269  0.67269  0.86903  0.87527 
+MLP Epoch 151           	train loss 0.631 (best 0.631)	valid loss 0.638 (best 0.637)	best test loss 0.645	train eval 0.66874	valid eval 0.65762	test eval 0.64793
+GCN Epoch 148           	train loss 0.900 (best 0.551)	valid loss 0.894 (best 0.542)	best test loss 0.551	train eval 0.73966	valid eval 0.76954	test eval 0.74316
+APPNP Epoch 290         	train loss 0.626 (best 0.625)	valid loss 0.630 (best 0.629)	best test loss 0.635	train eval 0.66687	valid eval 0.65762	test eval 0.64517
+GAT Epoch 537           	train loss 0.567 (best 0.539)	valid loss 0.589 (best 0.553)	best test loss 0.563	train eval 0.66874	valid eval 0.65762	test eval 0.64793
+GCNII Epoch 445         	train loss 0.624 (best 0.623)	valid loss 0.631 (best 0.629)	best test loss 0.637	train eval 0.66874	valid eval 0.65762	test eval 0.64793
+GCNNRI Epoch 653        	train loss 0.267 (best 0.267)	valid loss 0.417 (best 0.391)	best test loss 0.384	train eval 0.87216	valid eval 0.83642	test eval 0.83966
+Universal Epoch 1947    	train loss 0.182 (best 0.177)	valid loss 0.285 (best 0.279)	best test loss 0.265	train eval 0.92162	valid eval 0.86821	test eval 0.88696
+0.64793  0.74316  0.64517  0.64793  0.64793  0.83966  0.88696 
+MLP Epoch 166           	train loss 0.631 (best 0.630)	valid loss 0.633 (best 0.632)	best test loss 0.632	train eval 0.66897	valid eval 0.66828	test eval 0.66832
+GCN Epoch 150           	train loss 0.821 (best 0.566)	valid loss 0.768 (best 0.551)	best test loss 0.567	train eval 0.73141	valid eval 0.74367	test eval 0.72315
+APPNP Epoch 185         	train loss 0.630 (best 0.629)	valid loss 0.632 (best 0.631)	best test loss 0.631	train eval 0.66834	valid eval 0.66707	test eval 0.66729
+GAT Epoch 623           	train loss 0.557 (best 0.547)	valid loss 0.559 (best 0.547)	best test loss 0.554	train eval 0.66897	valid eval 0.66828	test eval 0.66832
+GCNII Epoch 513         	train loss 0.626 (best 0.623)	valid loss 0.628 (best 0.625)	best test loss 0.626	train eval 0.66897	valid eval 0.66828	test eval 0.66832
+GCNNRI Epoch 674        	train loss 0.282 (best 0.281)	valid loss 0.392 (best 0.346)	best test loss 0.373	train eval 0.84719	valid eval 0.85404	test eval 0.83592
+Universal Epoch 2072    	train loss 0.215 (best 0.208)	valid loss 0.339 (best 0.309)	best test loss 0.300	train eval 0.89614	valid eval 0.85706	test eval 0.86303
+0.66832  0.72315  0.66729  0.66832  0.66832  0.83592  0.86303 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.678    0.708    0.677    0.678    0.678    0.846    0.870   
+Standard deviations
+0.022    0.025    0.023    0.022    0.022    0.015    0.012   
+Nemenyi ranks
+4.9      4.1      6.2      4.9      4.9      2.0      1.0     
+Latex
+0.678 (4.9) & 0.708 (4.1) & 0.677 (6.2) & 0.678 (4.9) & 0.678 (4.9) & 0.846 (2.0) & 0.870 (1.0)
+Setting:  longest
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 225           	train loss 2.216 (best 2.216)	valid loss 1.913 (best 1.898)	best test loss 2.016	train eval 0.34982	valid eval 0.36838	test eval 0.35342
+GCN Epoch 1468          	train loss 2.008 (best 2.004)	valid loss 1.681 (best 1.678)	best test loss 1.787	train eval 0.38322	valid eval 0.42196	test eval 0.39938
+APPNP Epoch 209         	train loss 2.241 (best 2.236)	valid loss 1.938 (best 1.919)	best test loss 2.035	train eval 0.34982	valid eval 0.36838	test eval 0.35342
+GAT Epoch 624           	train loss 2.138 (best 2.113)	valid loss 1.974 (best 1.938)	best test loss 1.996	train eval 0.35114	valid eval 0.36926	test eval 0.35431
+GCNII Epoch 1354        	train loss 2.215 (best 2.215)	valid loss 1.911 (best 1.903)	best test loss 2.012	train eval 0.34982	valid eval 0.36838	test eval 0.35342
+GCNNRI Epoch 551        	train loss 1.223 (best 1.209)	valid loss 1.084 (best 1.069)	best test loss 1.121	train eval 0.56699	valid eval 0.61317	test eval 0.59299
+Universal Epoch 4816    	train loss 0.807 (best 0.805)	valid loss 0.946 (best 0.927)	best test loss 0.896	train eval 0.68810	valid eval 0.64856	test eval 0.65793
+0.35342  0.39938  0.35342  0.35431  0.35342  0.59299  0.65793 
+MLP Epoch 232           	train loss 2.008 (best 2.007)	valid loss 1.936 (best 1.934)	best test loss 2.036	train eval 0.32984	valid eval 0.33364	test eval 0.34438
+GCN Epoch 1107          	train loss 1.829 (best 1.822)	valid loss 1.771 (best 1.763)	best test loss 1.868	train eval 0.39936	valid eval 0.40869	test eval 0.38562
+APPNP Epoch 227         	train loss 2.017 (best 2.008)	valid loss 1.943 (best 1.935)	best test loss 2.042	train eval 0.33796	valid eval 0.32770	test eval 0.33253
+GAT Epoch 455           	train loss 1.920 (best 1.904)	valid loss 1.885 (best 1.864)	best test loss 1.929	train eval 0.33004	valid eval 0.33377	test eval 0.34442
+GCNII Epoch 1113        	train loss 1.992 (best 1.990)	valid loss 1.919 (best 1.917)	best test loss 2.018	train eval 0.33475	valid eval 0.33827	test eval 0.34789
+GCNNRI Epoch 3172       	train loss 2.024 (best 0.790)	valid loss 1.960 (best 1.062)	best test loss 1.082	train eval 0.67238	valid eval 0.60174	test eval 0.60569
+Universal Epoch 3177    	train loss 0.701 (best 0.693)	valid loss 1.018 (best 0.987)	best test loss 0.964	train eval 0.73869	valid eval 0.63055	test eval 0.65001
+0.34438  0.38562  0.33253  0.34442  0.34789  0.60569  0.65001 
+MLP Epoch 245           	train loss 2.052 (best 2.051)	valid loss 1.917 (best 1.914)	best test loss 2.075	train eval 0.33293	valid eval 0.35821	test eval 0.34456
+GCN Epoch 1069          	train loss 1.830 (best 1.823)	valid loss 1.729 (best 1.715)	best test loss 1.861	train eval 0.39539	valid eval 0.40451	test eval 0.38841
+APPNP Epoch 420         	train loss 2.055 (best 2.047)	valid loss 1.930 (best 1.919)	best test loss 2.082	train eval 0.32523	valid eval 0.35475	test eval 0.33790
+GAT Epoch 511           	train loss 1.950 (best 1.938)	valid loss 1.864 (best 1.840)	best test loss 1.950	train eval 0.33497	valid eval 0.35911	test eval 0.34570
+GCNII Epoch 930         	train loss 2.030 (best 2.029)	valid loss 1.896 (best 1.893)	best test loss 2.054	train eval 0.33287	valid eval 0.35834	test eval 0.34444
+GCNNRI Epoch 1919       	train loss 2.083 (best 0.838)	valid loss 1.974 (best 0.994)	best test loss 1.051	train eval 0.65613	valid eval 0.62768	test eval 0.61910
+Universal Epoch 3431    	train loss 0.727 (best 0.723)	valid loss 0.971 (best 0.952)	best test loss 0.949	train eval 0.71942	valid eval 0.64422	test eval 0.65675
+0.34456  0.38841  0.33790  0.34570  0.34444  0.61910  0.65675 
+MLP Epoch 293           	train loss 2.032 (best 2.032)	valid loss 2.202 (best 2.184)	best test loss 2.122	train eval 0.34153	valid eval 0.32010	test eval 0.33740
+GCN Epoch 831           	train loss 1.833 (best 1.826)	valid loss 1.965 (best 1.959)	best test loss 1.896	train eval 0.39626	valid eval 0.42199	test eval 0.41590
+APPNP Epoch 267         	train loss 2.046 (best 2.041)	valid loss 2.312 (best 2.229)	best test loss 2.156	train eval 0.34153	valid eval 0.32010	test eval 0.33740
+GAT Epoch 510           	train loss 1.971 (best 1.952)	valid loss 2.166 (best 2.139)	best test loss 2.055	train eval 0.34996	valid eval 0.32633	test eval 0.34427
+GCNII Epoch 986         	train loss 2.030 (best 2.030)	valid loss 2.205 (best 2.192)	best test loss 2.122	train eval 0.34153	valid eval 0.32010	test eval 0.33740
+GCNNRI Epoch 1871       	train loss 0.920 (best 0.871)	valid loss 1.309 (best 1.284)	best test loss 1.159	train eval 0.62520	valid eval 0.58265	test eval 0.58793
+Universal Epoch 4578    	train loss 0.790 (best 0.725)	valid loss 1.373 (best 1.290)	best test loss 1.053	train eval 0.71665	valid eval 0.61442	test eval 0.64499
+0.33740  0.41590  0.33740  0.34427  0.33740  0.58793  0.64499 
+MLP Epoch 481           	train loss 1.929 (best 1.929)	valid loss 2.113 (best 2.094)	best test loss 2.025	train eval 0.34773	valid eval 0.36234	test eval 0.35721
+GCN Epoch 1219          	train loss 1.776 (best 1.767)	valid loss 1.944 (best 1.936)	best test loss 1.843	train eval 0.39107	valid eval 0.40768	test eval 0.40755
+APPNP Epoch 236         	train loss 1.940 (best 1.933)	valid loss 2.242 (best 2.114)	best test loss 2.077	train eval 0.34773	valid eval 0.36234	test eval 0.35721
+GAT Epoch 478           	train loss 1.854 (best 1.837)	valid loss 2.056 (best 2.034)	best test loss 1.950	train eval 0.35142	valid eval 0.36478	test eval 0.36087
+GCNII Epoch 589         	train loss 1.922 (best 1.922)	valid loss 2.129 (best 2.107)	best test loss 2.029	train eval 0.34773	valid eval 0.36234	test eval 0.35721
+GCNNRI Epoch 1776       	train loss 0.977 (best 0.897)	valid loss 1.339 (best 1.289)	best test loss 1.166	train eval 0.60630	valid eval 0.57026	test eval 0.58089
+Universal Epoch 4226    	train loss 0.687 (best 0.660)	valid loss 1.289 (best 1.239)	best test loss 1.003	train eval 0.72570	valid eval 0.62450	test eval 0.65373
+0.35721  0.40755  0.35721  0.36087  0.35721  0.58089  0.65373 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.347    0.399    0.344    0.350    0.348    0.597    0.653   
+Standard deviations
+0.007    0.011    0.010    0.007    0.007    0.014    0.005   
+Nemenyi ranks
+5.8      3.0      6.4      4.2      5.6      2.0      1.0     
+Latex
+0.347 (5.8) & 0.399 (3.0) & 0.344 (6.4) & 0.350 (4.2) & 0.348 (5.6) & 0.597 (2.0) & 0.653 (1.0)
+Setting:  diffusion
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+
+
+C:\Users\manio\PycharmProjects\universal_gnn\venv\Scripts\python.exe C:\Users\manio\PycharmProjects\universal_gnn\test.py 
+Device:   cuda
+Setting:  diffusion
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 246           	train loss 0.035 (best 0.034)	valid loss 0.036 (best 0.035)	best test loss 0.035	train eval 0.03428	valid eval 0.03535	test eval 0.03489
+GCN Epoch 958           	train loss 0.033 (best 0.033)	valid loss 0.034 (best 0.033)	best test loss 0.033	train eval 0.03266	valid eval 0.03344	test eval 0.03298
+APPNP Epoch 627         	train loss 0.045 (best 0.043)	valid loss 0.047 (best 0.044)	best test loss 0.044	train eval 0.04253	valid eval 0.04382	test eval 0.04301
+GAT Epoch 489           	train loss 0.035 (best 0.034)	valid loss 0.036 (best 0.035)	best test loss 0.035	train eval 0.03450	valid eval 0.03536	test eval 0.03493
+GCNII Epoch 175         	train loss 0.036 (best 0.036)	valid loss 0.037 (best 0.037)	best test loss 0.036	train eval 0.03595	valid eval 0.03708	test eval 0.03646
+GCNNRI Epoch 385        	train loss 0.035 (best 0.032)	valid loss 0.036 (best 0.033)	best test loss 0.033	train eval 0.03242	valid eval 0.03290	test eval 0.03244
+Universal Epoch 999     	train loss 0.014 (best 0.013)	valid loss 0.014 (best 0.013)	best test loss 0.013	train eval 0.01259	valid eval 0.01268	test eval 0.01261
+0.03489  0.03298  0.04301  0.03493  0.03646  0.03244  0.01261 
+MLP Epoch 215           	train loss 0.038 (best 0.038)	valid loss 0.038 (best 0.037)	best test loss 0.037	train eval 0.03762	valid eval 0.03744	test eval 0.03719
+GCN Epoch 1543          	train loss 0.033 (best 0.033)	valid loss 0.033 (best 0.033)	best test loss 0.033	train eval 0.03333	valid eval 0.03335	test eval 0.03313
+APPNP Epoch 103         	train loss 0.156 (best 0.106)	valid loss 0.156 (best 0.093)	best test loss 0.105	train eval 0.09389	valid eval 0.09324	test eval 0.09341
+GAT Epoch 238           	train loss 0.038 (best 0.038)	valid loss 0.038 (best 0.038)	best test loss 0.038	train eval 0.03802	valid eval 0.03794	test eval 0.03758
+GCNII Epoch 231         	train loss 0.041 (best 0.041)	valid loss 0.041 (best 0.040)	best test loss 0.040	train eval 0.04059	valid eval 0.04025	test eval 0.04013
+GCNNRI Epoch 287        	train loss 0.036 (best 0.032)	valid loss 0.036 (best 0.032)	best test loss 0.032	train eval 0.03180	valid eval 0.03189	test eval 0.03173
+Universal Epoch 2247    	train loss 0.015 (best 0.015)	valid loss 0.015 (best 0.015)	best test loss 0.015	train eval 0.01467	valid eval 0.01474	test eval 0.01475
+0.03719  0.03313  0.09341  0.03758  0.04013  0.03173  0.01475 
+MLP Epoch 230           	train loss 0.036 (best 0.035)	valid loss 0.036 (best 0.035)	best test loss 0.035	train eval 0.03512	valid eval 0.03537	test eval 0.03514
+GCN Epoch 873           	train loss 0.033 (best 0.033)	valid loss 0.033 (best 0.033)	best test loss 0.033	train eval 0.03287	valid eval 0.03302	test eval 0.03291
+APPNP Epoch 114         	train loss 0.103 (best 0.079)	valid loss 0.102 (best 0.078)	best test loss 0.079	train eval 0.07748	valid eval 0.07815	test eval 0.07761
+GAT Epoch 483           	train loss 0.036 (best 0.035)	valid loss 0.036 (best 0.036)	best test loss 0.035	train eval 0.03543	valid eval 0.03558	test eval 0.03544
+GCNII Epoch 182         	train loss 0.037 (best 0.037)	valid loss 0.037 (best 0.037)	best test loss 0.037	train eval 0.03688	valid eval 0.03706	test eval 0.03686
+GCNNRI Epoch 275        	train loss 0.035 (best 0.032)	valid loss 0.035 (best 0.032)	best test loss 0.032	train eval 0.03170	valid eval 0.03174	test eval 0.03176
+Universal Epoch 970     	train loss 0.014 (best 0.013)	valid loss 0.014 (best 0.013)	best test loss 0.013	train eval 0.01343	valid eval 0.01339	test eval 0.01339
+0.03514  0.03291  0.07761  0.03544  0.03686  0.03176  0.01339 
+MLP Epoch 221           	train loss 0.036 (best 0.035)	valid loss 0.036 (best 0.035)	best test loss 0.035	train eval 0.03528	valid eval 0.03549	test eval 0.03535
+GCN Epoch 952           	train loss 0.034 (best 0.034)	valid loss 0.034 (best 0.034)	best test loss 0.034	train eval 0.03355	valid eval 0.03381	test eval 0.03368
+APPNP Epoch 109         	train loss 0.044 (best 0.041)	valid loss 0.045 (best 0.040)	best test loss 0.041	train eval 0.03970	valid eval 0.04009	test eval 0.03972
+GAT Epoch 557           	train loss 0.035 (best 0.035)	valid loss 0.036 (best 0.036)	best test loss 0.035	train eval 0.03534	valid eval 0.03560	test eval 0.03543
+GCNII Epoch 334         	train loss 0.037 (best 0.037)	valid loss 0.037 (best 0.037)	best test loss 0.037	train eval 0.03686	valid eval 0.03709	test eval 0.03693
+GCNNRI Epoch 163        	train loss 0.035 (best 0.034)	valid loss 0.036 (best 0.034)	best test loss 0.034	train eval 0.03408	valid eval 0.03450	test eval 0.03420
+Universal Epoch 1626    	train loss 0.013 (best 0.012)	valid loss 0.013 (best 0.013)	best test loss 0.012	train eval 0.01229	valid eval 0.01251	test eval 0.01243
+0.03535  0.03368  0.03972  0.03543  0.03693  0.03420  0.01243 
+MLP Epoch 272           	train loss 0.033 (best 0.033)	valid loss 0.034 (best 0.033)	best test loss 0.032	train eval 0.03277	valid eval 0.03312	test eval 0.03232
+GCN Epoch 1192          	train loss 0.026 (best 0.026)	valid loss 0.027 (best 0.026)	best test loss 0.025	train eval 0.02596	valid eval 0.02641	test eval 0.02534
+APPNP Epoch 102         	train loss 0.118 (best 0.084)	valid loss 0.119 (best 0.083)	best test loss 0.084	train eval 0.08178	valid eval 0.08321	test eval 0.08167
+GAT Epoch 648           	train loss 0.033 (best 0.033)	valid loss 0.033 (best 0.033)	best test loss 0.032	train eval 0.03289	valid eval 0.03310	test eval 0.03247
+GCNII Epoch 161         	train loss 0.035 (best 0.034)	valid loss 0.035 (best 0.035)	best test loss 0.034	train eval 0.03420	valid eval 0.03465	test eval 0.03374
+GCNNRI Epoch 212        	train loss 0.023 (best 0.021)	valid loss 0.024 (best 0.021)	best test loss 0.021	train eval 0.02095	valid eval 0.02141	test eval 0.02075
+Universal Epoch 1997    	train loss 0.010 (best 0.009)	valid loss 0.010 (best 0.009)	best test loss 0.009	train eval 0.00922	valid eval 0.00935	test eval 0.00911
+0.03232  0.02534  0.08167  0.03247  0.03374  0.02075  0.00911 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.035    0.032    0.067    0.035    0.037    0.030    0.012   
+Standard deviations
+0.002    0.003    0.022    0.002    0.002    0.005    0.002   
+Nemenyi ranks
+4.0      5.2      1.0      3.0      2.0      5.8      7.0     
+Latex
+0.035 (4.0) & 0.032 (5.2) & 0.067 (1.0) & 0.035 (3.0) & 0.037 (2.0) & 0.030 (5.8) & 0.012 (7.0)
+Setting:  propagation
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 159           	train loss 1.268 (best 1.245)	valid loss 1.270 (best 1.244)	best test loss 1.242	train eval 0.46567	valid eval 0.45591	test eval 0.46615
+GCN Epoch 533           	train loss 1.208 (best 1.190)	valid loss 1.219 (best 1.200)	best test loss 1.192	train eval 0.45945	valid eval 0.43763	test eval 0.45344
+APPNP Epoch 276         	train loss 1.258 (best 1.247)	valid loss 1.264 (best 1.252)	best test loss 1.248	train eval 0.47976	valid eval 0.46914	test eval 0.47732
+GAT Epoch 548           	train loss 1.262 (best 1.261)	valid loss 1.269 (best 1.267)	best test loss 1.260	train eval 0.40934	valid eval 0.39348	test eval 0.40739
+GCNII Epoch 274         	train loss 1.306 (best 1.304)	valid loss 1.308 (best 1.306)	best test loss 1.302	train eval 0.40582	valid eval 0.39095	test eval 0.40429
+GCNNRI Epoch 231        	train loss 1.305 (best 1.217)	valid loss 1.316 (best 1.218)	best test loss 1.219	train eval 0.48252	valid eval 0.47420	test eval 0.48013
+Universal Epoch 1701    	train loss 0.467 (best 0.460)	valid loss 0.480 (best 0.471)	best test loss 0.466	train eval 0.81931	valid eval 0.81667	test eval 0.81680
+0.46615  0.45344  0.47732  0.40739  0.40429  0.48013  0.81680 
+MLP Epoch 120           	train loss 1.204 (best 1.170)	valid loss 1.197 (best 1.166)	best test loss 1.166	train eval 0.46717	valid eval 0.47613	test eval 0.47766
+GCN Epoch 566           	train loss 1.178 (best 1.171)	valid loss 1.172 (best 1.165)	best test loss 1.163	train eval 0.46317	valid eval 0.46938	test eval 0.47211
+APPNP Epoch 294         	train loss 1.210 (best 1.200)	valid loss 1.202 (best 1.194)	best test loss 1.192	train eval 0.45714	valid eval 0.46576	test eval 0.46746
+GAT Epoch 568           	train loss 1.230 (best 1.227)	valid loss 1.223 (best 1.220)	best test loss 1.219	train eval 0.45701	valid eval 0.46576	test eval 0.46721
+GCNII Epoch 305         	train loss 1.271 (best 1.266)	valid loss 1.266 (best 1.260)	best test loss 1.259	train eval 0.45701	valid eval 0.46576	test eval 0.46721
+GCNNRI Epoch 220        	train loss 1.265 (best 1.259)	valid loss 1.259 (best 1.244)	best test loss 1.253	train eval 0.45944	valid eval 0.46626	test eval 0.46837
+Universal Epoch 4078    	train loss 0.400 (best 0.398)	valid loss 0.400 (best 0.399)	best test loss 0.395	train eval 0.85039	valid eval 0.85591	test eval 0.85588
+0.47766  0.47211  0.46746  0.46721  0.46721  0.46837  0.85588 
+MLP Epoch 141           	train loss 1.211 (best 1.129)	valid loss 1.213 (best 1.131)	best test loss 1.129	train eval 0.59806	valid eval 0.60347	test eval 0.60431
+GCN Epoch 318           	train loss 1.141 (best 1.137)	valid loss 1.143 (best 1.140)	best test loss 1.136	train eval 0.57632	valid eval 0.56777	test eval 0.57456
+APPNP Epoch 245         	train loss 1.248 (best 1.191)	valid loss 1.249 (best 1.192)	best test loss 1.191	train eval 0.63368	valid eval 0.62183	test eval 0.63014
+GAT Epoch 411           	train loss 1.201 (best 1.199)	valid loss 1.206 (best 1.203)	best test loss 1.198	train eval 0.44800	valid eval 0.45706	test eval 0.45864
+GCNII Epoch 105         	train loss 1.256 (best 1.250)	valid loss 1.260 (best 1.257)	best test loss 1.252	train eval 0.39929	valid eval 0.41348	test eval 0.40891
+GCNNRI Epoch 133        	train loss 1.251 (best 1.183)	valid loss 1.256 (best 1.177)	best test loss 1.178	train eval 0.51568	valid eval 0.51655	test eval 0.52299
+Universal Epoch 2755    	train loss 0.307 (best 0.299)	valid loss 0.317 (best 0.307)	best test loss 0.304	train eval 0.89852	valid eval 0.89227	test eval 0.89600
+0.60431  0.57456  0.63014  0.45864  0.40891  0.52299  0.89600 
+MLP Epoch 168           	train loss 1.177 (best 1.147)	valid loss 1.169 (best 1.141)	best test loss 1.139	train eval 0.55106	valid eval 0.57875	test eval 0.57556
+GCN Epoch 458           	train loss 1.094 (best 1.089)	valid loss 1.081 (best 1.070)	best test loss 1.077	train eval 0.48663	valid eval 0.52217	test eval 0.51294
+APPNP Epoch 211         	train loss 1.157 (best 1.141)	valid loss 1.142 (best 1.125)	best test loss 1.130	train eval 0.44641	valid eval 0.48667	test eval 0.47763
+GAT Epoch 292           	train loss 1.165 (best 1.163)	valid loss 1.148 (best 1.146)	best test loss 1.149	train eval 0.43212	valid eval 0.47028	test eval 0.46542
+GCNII Epoch 277         	train loss 1.221 (best 1.216)	valid loss 1.214 (best 1.206)	best test loss 1.208	train eval 0.42788	valid eval 0.46430	test eval 0.46107
+GCNNRI Epoch 163        	train loss 1.225 (best 1.137)	valid loss 1.210 (best 1.081)	best test loss 1.084	train eval 0.54493	valid eval 0.56002	test eval 0.55992
+Universal Epoch 1612    	train loss 0.376 (best 0.368)	valid loss 0.367 (best 0.364)	best test loss 0.365	train eval 0.86285	valid eval 0.86188	test eval 0.86332
+0.57556  0.51294  0.47763  0.46542  0.46107  0.55992  0.86332 
+MLP Epoch 116           	train loss 1.116 (best 1.061)	valid loss 1.116 (best 1.056)	best test loss 1.062	train eval 0.53049	valid eval 0.52939	test eval 0.53219
+GCN Epoch 289           	train loss 1.072 (best 1.066)	valid loss 1.071 (best 1.064)	best test loss 1.069	train eval 0.49138	valid eval 0.48978	test eval 0.49044
+APPNP Epoch 232         	train loss 1.142 (best 1.110)	valid loss 1.141 (best 1.108)	best test loss 1.113	train eval 0.49872	valid eval 0.49821	test eval 0.49777
+GAT Epoch 476           	train loss 1.116 (best 1.115)	valid loss 1.114 (best 1.113)	best test loss 1.116	train eval 0.47371	valid eval 0.47521	test eval 0.47646
+GCNII Epoch 107         	train loss 1.169 (best 1.159)	valid loss 1.167 (best 1.155)	best test loss 1.160	train eval 0.47352	valid eval 0.47381	test eval 0.47575
+GCNNRI Epoch 184        	train loss 1.157 (best 1.144)	valid loss 1.155 (best 1.130)	best test loss 1.133	train eval 0.48211	valid eval 0.48160	test eval 0.48328
+Universal Epoch 2799    	train loss 0.350 (best 0.342)	valid loss 0.351 (best 0.341)	best test loss 0.344	train eval 0.87465	valid eval 0.87273	test eval 0.87181
+0.53219  0.49044  0.49777  0.47646  0.47575  0.48328  0.87181 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.531    0.501    0.510    0.455    0.443    0.503    0.861   
+Standard deviations
+0.054    0.042    0.061    0.024    0.030    0.034    0.026   
+Nemenyi ranks
+2.6      4.0      3.6      6.1      6.9      3.8      1.0     
+Latex
+0.531 (2.6) & 0.501 (4.0) & 0.510 (3.6) & 0.455 (6.1) & 0.443 (6.9) & 0.503 (3.8) & 0.861 (1.0)
+Setting:  degree
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 243           	train loss 2.298 (best 2.298)	valid loss 2.342 (best 2.341)	best test loss 2.316	train eval 0.16080	valid eval 0.14115	test eval 0.15675
+GCN Epoch 1255          	train loss 2.049 (best 2.036)	valid loss 2.065 (best 2.053)	best test loss 2.047	train eval 0.30022	valid eval 0.28814	test eval 0.29374
+APPNP Epoch 474         	train loss 2.320 (best 2.318)	valid loss 2.345 (best 2.343)	best test loss 2.330	train eval 0.17055	valid eval 0.16284	test eval 0.17052
+GAT Epoch 186           	train loss 2.363 (best 2.272)	valid loss 2.439 (best 2.310)	best test loss 2.284	train eval 0.16651	valid eval 0.14531	test eval 0.16467
+GCNII Epoch 1153        	train loss 2.241 (best 2.240)	valid loss 2.269 (best 2.265)	best test loss 2.252	train eval 0.19553	valid eval 0.17855	test eval 0.19323
+GCNNRI Epoch 516        	train loss 1.632 (best 0.965)	valid loss 1.853 (best 1.048)	best test loss 1.032	train eval 0.58055	valid eval 0.55447	test eval 0.56245
+Universal Epoch 1532    	train loss 1.279 (best 1.279)	valid loss 1.365 (best 1.361)	best test loss 1.310	train eval 0.57453	valid eval 0.51850	test eval 0.53798
+0.15675  0.29374  0.17052  0.16467  0.19323  0.56245  0.53798 
+MLP Epoch 391           	train loss 2.376 (best 2.375)	valid loss 2.279 (best 2.277)	best test loss 2.301	train eval 0.15763	valid eval 0.17557	test eval 0.16246
+GCN Epoch 1186          	train loss 2.088 (best 2.085)	valid loss 2.046 (best 2.035)	best test loss 2.051	train eval 0.29303	valid eval 0.29245	test eval 0.29412
+APPNP Epoch 874         	train loss 2.369 (best 2.366)	valid loss 2.307 (best 2.297)	best test loss 2.314	train eval 0.12873	valid eval 0.13833	test eval 0.13238
+GAT Epoch 196           	train loss 2.467 (best 2.339)	valid loss 2.255 (best 2.207)	best test loss 2.252	train eval 0.14219	valid eval 0.17775	test eval 0.15665
+GCNII Epoch 1507        	train loss 2.301 (best 2.295)	valid loss 2.226 (best 2.223)	best test loss 2.237	train eval 0.14715	valid eval 0.16889	test eval 0.15964
+GCNNRI Epoch 676        	train loss 1.026 (best 0.917)	valid loss 1.232 (best 1.167)	best test loss 1.085	train eval 0.60123	valid eval 0.49910	test eval 0.53188
+Universal Epoch 3146    	train loss 1.355 (best 1.269)	valid loss 1.283 (best 1.217)	best test loss 1.264	train eval 0.54369	valid eval 0.54842	test eval 0.53491
+0.16246  0.29412  0.13238  0.15665  0.15964  0.53188  0.53491 
+MLP Epoch 343           	train loss 2.252 (best 2.251)	valid loss 2.414 (best 2.413)	best test loss 2.293	train eval 0.17670	valid eval 0.13980	test eval 0.16564
+GCN Epoch 1601          	train loss 1.987 (best 1.981)	valid loss 2.136 (best 2.131)	best test loss 2.024	train eval 0.32428	valid eval 0.26393	test eval 0.30525
+APPNP Epoch 370         	train loss 2.268 (best 2.265)	valid loss 2.422 (best 2.419)	best test loss 2.304	train eval 0.16856	valid eval 0.12963	test eval 0.15704
+GAT Epoch 183           	train loss 2.292 (best 2.214)	valid loss 2.541 (best 2.380)	best test loss 2.256	train eval 0.17285	valid eval 0.13203	test eval 0.15959
+GCNII Epoch 931         	train loss 2.192 (best 2.192)	valid loss 2.355 (best 2.355)	best test loss 2.233	train eval 0.18471	valid eval 0.14028	test eval 0.17209
+GCNNRI Epoch 728        	train loss 4.220 (best 1.091)	valid loss 4.021 (best 1.258)	best test loss 1.191	train eval 0.54761	valid eval 0.46424	test eval 0.50727
+Universal Epoch 3186    	train loss 1.116 (best 1.112)	valid loss 1.339 (best 1.334)	best test loss 1.208	train eval 0.60304	valid eval 0.47584	test eval 0.54005
+0.16564  0.30525  0.15704  0.15959  0.17209  0.50727  0.54005 
+MLP Epoch 576           	train loss 2.324 (best 2.323)	valid loss 2.248 (best 2.247)	best test loss 2.285	train eval 0.15903	valid eval 0.18257	test eval 0.17649
+GCN Epoch 1960          	train loss 2.056 (best 2.039)	valid loss 2.032 (best 2.008)	best test loss 2.016	train eval 0.31079	valid eval 0.30699	test eval 0.31853
+APPNP Epoch 310         	train loss 2.330 (best 2.327)	valid loss 2.281 (best 2.279)	best test loss 2.299	train eval 0.16005	valid eval 0.16916	test eval 0.17077
+GAT Epoch 190           	train loss 2.397 (best 2.299)	valid loss 2.229 (best 2.190)	best test loss 2.243	train eval 0.15492	valid eval 0.18063	test eval 0.17470
+GCNII Epoch 1165        	train loss 2.254 (best 2.250)	valid loss 2.203 (best 2.196)	best test loss 2.222	train eval 0.18304	valid eval 0.19920	test eval 0.19306
+GCNNRI Epoch 204        	train loss 2.221 (best 1.991)	valid loss 2.217 (best 1.965)	best test loss 1.984	train eval 0.21591	valid eval 0.23608	test eval 0.23012
+Universal Epoch 2680    	train loss 1.184 (best 1.179)	valid loss 1.187 (best 1.180)	best test loss 1.176	train eval 0.57299	valid eval 0.52450	test eval 0.54604
+0.17649  0.31853  0.17077  0.17470  0.19306  0.23012  0.54604 
+MLP Epoch 290           	train loss 2.348 (best 2.347)	valid loss 2.365 (best 2.364)	best test loss 2.340	train eval 0.16402	valid eval 0.14383	test eval 0.15054
+GCN Epoch 1418          	train loss 2.107 (best 2.086)	valid loss 2.118 (best 2.094)	best test loss 2.077	train eval 0.26307	valid eval 0.24502	test eval 0.25204
+APPNP Epoch 572         	train loss 2.354 (best 2.351)	valid loss 2.375 (best 2.370)	best test loss 2.350	train eval 0.17689	valid eval 0.16608	test eval 0.16791
+GAT Epoch 184           	train loss 2.443 (best 2.311)	valid loss 2.439 (best 2.323)	best test loss 2.301	train eval 0.16925	valid eval 0.17377	test eval 0.17296
+GCNII Epoch 1070        	train loss 2.279 (best 2.277)	valid loss 2.301 (best 2.299)	best test loss 2.277	train eval 0.17111	valid eval 0.14823	test eval 0.15418
+GCNNRI Epoch 696        	train loss 1.323 (best 1.027)	valid loss 1.364 (best 1.173)	best test loss 1.119	train eval 0.57670	valid eval 0.50226	test eval 0.53207
+Universal Epoch 1999    	train loss 1.263 (best 1.239)	valid loss 1.294 (best 1.277)	best test loss 1.250	train eval 0.56662	valid eval 0.52426	test eval 0.54758
+0.15054  0.25204  0.16791  0.17296  0.15418  0.53207  0.54758 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.162    0.293    0.160    0.166    0.174    0.473    0.541   
+Standard deviations
+0.009    0.022    0.015    0.007    0.016    0.123    0.005   
+Nemenyi ranks
+5.6      2.8      6.2      5.6      4.6      2.0      1.2     
+Latex
+0.162 (5.6) & 0.293 (2.8) & 0.160 (6.2) & 0.166 (5.6) & 0.174 (4.6) & 0.473 (2.0) & 0.541 (1.2)
+
+C:\Users\manio\PycharmProjects\universal_gnn\venv\Scripts\python.exe C:\Users\manio\PycharmProjects\universal_gnn\test.py 
+Device:   cuda
+Setting:  scoorefixeddiffusion
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 354           	train loss 0.021 (best 0.021)	valid loss 0.020 (best 0.020)	best test loss 0.021	train eval 0.02086	valid eval 0.02035	test eval 0.02086
+GCN Epoch 424           	train loss 0.018 (best 0.018)	valid loss 0.018 (best 0.018)	best test loss 0.018	train eval 0.01795	valid eval 0.01750	test eval 0.01796
+APPNP Epoch 419         	train loss 0.032 (best 0.029)	valid loss 0.031 (best 0.027)	best test loss 0.028	train eval 0.02830	valid eval 0.02747	test eval 0.02802
+GAT Epoch 734           	train loss 0.020 (best 0.020)	valid loss 0.020 (best 0.020)	best test loss 0.020	train eval 0.02036	valid eval 0.01988	test eval 0.02034
+GCNII Epoch 236         	train loss 0.021 (best 0.021)	valid loss 0.021 (best 0.021)	best test loss 0.021	train eval 0.02121	valid eval 0.02069	test eval 0.02120
+GCNNRI Epoch 494        	train loss 0.013 (best 0.011)	valid loss 0.013 (best 0.011)	best test loss 0.011	train eval 0.01091	valid eval 0.01100	test eval 0.01100
+Universal Epoch 828     	train loss 0.008 (best 0.007)	valid loss 0.008 (best 0.006)	best test loss 0.007	train eval 0.00650	valid eval 0.00645	test eval 0.00652
+0.02086  0.01796  0.02802  0.02034  0.02120  0.01100  0.00652 
+MLP Epoch 361           	train loss 0.019 (best 0.019)	valid loss 0.019 (best 0.019)	best test loss 0.018	train eval 0.01849	valid eval 0.01862	test eval 0.01845
+GCN Epoch 1391          	train loss 0.013 (best 0.013)	valid loss 0.013 (best 0.013)	best test loss 0.012	train eval 0.01286	valid eval 0.01273	test eval 0.01216
+APPNP Epoch 328         	train loss 0.035 (best 0.032)	valid loss 0.035 (best 0.026)	best test loss 0.031	train eval 0.02642	valid eval 0.02627	test eval 0.02560
+GAT Epoch 251           	train loss 0.019 (best 0.018)	valid loss 0.019 (best 0.019)	best test loss 0.018	train eval 0.01842	valid eval 0.01856	test eval 0.01846
+GCNII Epoch 211         	train loss 0.019 (best 0.019)	valid loss 0.019 (best 0.019)	best test loss 0.019	train eval 0.01875	valid eval 0.01885	test eval 0.01864
+GCNNRI Epoch 482        	train loss 0.008 (best 0.008)	valid loss 0.008 (best 0.007)	best test loss 0.007	train eval 0.00752	valid eval 0.00728	test eval 0.00692
+Universal Epoch 1032    	train loss 0.007 (best 0.005)	valid loss 0.006 (best 0.004)	best test loss 0.004	train eval 0.00457	valid eval 0.00449	test eval 0.00429
+0.01845  0.01216  0.02560  0.01846  0.01864  0.00692  0.00429 
+MLP Epoch 596           	train loss 0.022 (best 0.022)	valid loss 0.022 (best 0.022)	best test loss 0.022	train eval 0.02179	valid eval 0.02161	test eval 0.02191
+GCN Epoch 1189          	train loss 0.015 (best 0.015)	valid loss 0.015 (best 0.015)	best test loss 0.015	train eval 0.01524	valid eval 0.01486	test eval 0.01522
+APPNP Epoch 104         	train loss 0.104 (best 0.083)	valid loss 0.104 (best 0.047)	best test loss 0.083	train eval 0.04718	valid eval 0.04667	test eval 0.04752
+GAT Epoch 351           	train loss 0.022 (best 0.022)	valid loss 0.022 (best 0.021)	best test loss 0.022	train eval 0.02156	valid eval 0.02141	test eval 0.02170
+GCNII Epoch 159         	train loss 0.022 (best 0.022)	valid loss 0.022 (best 0.022)	best test loss 0.022	train eval 0.02212	valid eval 0.02188	test eval 0.02222
+GCNNRI Epoch 594        	train loss 0.010 (best 0.009)	valid loss 0.010 (best 0.009)	best test loss 0.009	train eval 0.00911	valid eval 0.00884	test eval 0.00890
+Universal Epoch 684     	train loss 0.013 (best 0.013)	valid loss 0.012 (best 0.012)	best test loss 0.013	train eval 0.01279	valid eval 0.01223	test eval 0.01254
+0.02191  0.01522  0.04752  0.02170  0.02222  0.00890  0.01254 
+MLP Epoch 320           	train loss 0.023 (best 0.023)	valid loss 0.023 (best 0.023)	best test loss 0.023	train eval 0.02331	valid eval 0.02310	test eval 0.02346
+GCN Epoch 1149          	train loss 0.016 (best 0.015)	valid loss 0.016 (best 0.015)	best test loss 0.015	train eval 0.01471	valid eval 0.01476	test eval 0.01484
+APPNP Epoch 505         	train loss 0.047 (best 0.043)	valid loss 0.048 (best 0.043)	best test loss 0.043	train eval 0.04249	valid eval 0.04294	test eval 0.04243
+GAT Epoch 309           	train loss 0.024 (best 0.023)	valid loss 0.023 (best 0.023)	best test loss 0.023	train eval 0.02330	valid eval 0.02307	test eval 0.02346
+GCNII Epoch 186         	train loss 0.025 (best 0.024)	valid loss 0.025 (best 0.024)	best test loss 0.024	train eval 0.02399	valid eval 0.02388	test eval 0.02413
+GCNNRI Epoch 276        	train loss 0.010 (best 0.009)	valid loss 0.010 (best 0.009)	best test loss 0.009	train eval 0.00893	valid eval 0.00935	test eval 0.00909
+Universal Epoch 2425    	train loss 0.007 (best 0.007)	valid loss 0.007 (best 0.007)	best test loss 0.007	train eval 0.00705	valid eval 0.00743	test eval 0.00722
+0.02346  0.01484  0.04243  0.02346  0.02413  0.00909  0.00722 
+MLP Epoch 500           	train loss 0.019 (best 0.019)	valid loss 0.019 (best 0.019)	best test loss 0.019	train eval 0.01916	valid eval 0.01866	test eval 0.01873
+GCN Epoch 950           	train loss 0.015 (best 0.015)	valid loss 0.015 (best 0.015)	best test loss 0.014	train eval 0.01494	valid eval 0.01457	test eval 0.01442
+APPNP Epoch 593         	train loss 0.031 (best 0.030)	valid loss 0.031 (best 0.029)	best test loss 0.029	train eval 0.02914	valid eval 0.02878	test eval 0.02886
+GAT Epoch 397           	train loss 0.019 (best 0.019)	valid loss 0.019 (best 0.019)	best test loss 0.019	train eval 0.01903	valid eval 0.01854	test eval 0.01863
+GCNII Epoch 163         	train loss 0.020 (best 0.020)	valid loss 0.019 (best 0.019)	best test loss 0.019	train eval 0.01953	valid eval 0.01902	test eval 0.01908
+GCNNRI Epoch 709        	train loss 0.010 (best 0.010)	valid loss 0.010 (best 0.010)	best test loss 0.009	train eval 0.00964	valid eval 0.00952	test eval 0.00936
+Universal Epoch 873     	train loss 0.007 (best 0.006)	valid loss 0.007 (best 0.006)	best test loss 0.006	train eval 0.00627	valid eval 0.00617	test eval 0.00617
+0.01873  0.01442  0.02886  0.01863  0.01908  0.00936  0.00617 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.021    0.015    0.034    0.021    0.021    0.009    0.007   
+Standard deviations
+0.002    0.002    0.009    0.002    0.002    0.001    0.003   
+Nemenyi ranks
+3.4      5.0      1.0      3.6      2.0      6.2      6.8     
+Latex
+0.021 (3.4) & 0.015 (5.0) & 0.034 (1.0) & 0.021 (3.6) & 0.021 (2.0) & 0.009 (6.2) & 0.007 (6.8)
+Setting:  fixedpropagation
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 114           	train loss 1.326 (best 1.271)	valid loss 1.337 (best 1.280)	best test loss 1.278	train eval 0.48415	valid eval 0.46524	test eval 0.46877
+GCN Epoch 287           	train loss 1.209 (best 1.188)	valid loss 1.233 (best 1.211)	best test loss 1.203	train eval 0.57058	valid eval 0.53268	test eval 0.54960
+APPNP Epoch 181         	train loss 1.286 (best 1.248)	valid loss 1.300 (best 1.261)	best test loss 1.256	train eval 0.43124	valid eval 0.38677	test eval 0.40774
+GAT Epoch 403           	train loss 1.282 (best 1.278)	valid loss 1.299 (best 1.295)	best test loss 1.291	train eval 0.41599	valid eval 0.38184	test eval 0.39218
+GCNII Epoch 148         	train loss 1.363 (best 1.341)	valid loss 1.368 (best 1.348)	best test loss 1.347	train eval 0.33189	valid eval 0.30674	test eval 0.31278
+GCNNRI Epoch 257        	train loss 1.133 (best 1.008)	valid loss 1.194 (best 1.037)	best test loss 1.018	train eval 0.58031	valid eval 0.56316	test eval 0.57229
+Universal Epoch 573     	train loss 0.436 (best 0.435)	valid loss 0.466 (best 0.458)	best test loss 0.449	train eval 0.83512	valid eval 0.82970	test eval 0.83440
+0.46877  0.54960  0.40774  0.39218  0.31278  0.57229  0.83440 
+MLP Epoch 155           	train loss 1.102 (best 1.082)	valid loss 1.134 (best 1.113)	best test loss 1.100	train eval 0.50721	valid eval 0.47587	test eval 0.49691
+GCN Epoch 345           	train loss 1.023 (best 1.013)	valid loss 1.060 (best 1.052)	best test loss 1.038	train eval 0.52573	valid eval 0.49438	test eval 0.51440
+APPNP Epoch 293         	train loss 1.091 (best 1.069)	valid loss 1.121 (best 1.103)	best test loss 1.090	train eval 0.50971	valid eval 0.48010	test eval 0.49974
+GAT Epoch 176           	train loss 1.083 (best 1.082)	valid loss 1.123 (best 1.120)	best test loss 1.106	train eval 0.50727	valid eval 0.47627	test eval 0.49713
+GCNII Epoch 230         	train loss 1.143 (best 1.134)	valid loss 1.166 (best 1.158)	best test loss 1.150	train eval 0.50715	valid eval 0.47587	test eval 0.49691
+GCNNRI Epoch 224        	train loss 1.138 (best 1.096)	valid loss 1.179 (best 1.088)	best test loss 1.074	train eval 0.52964	valid eval 0.50853	test eval 0.52353
+Universal Epoch 1161    	train loss 0.445 (best 0.441)	valid loss 0.476 (best 0.473)	best test loss 0.459	train eval 0.82826	valid eval 0.82679	test eval 0.82530
+0.49691  0.51440  0.49974  0.49713  0.49691  0.52353  0.82530 
+MLP Epoch 162           	train loss 1.250 (best 1.228)	valid loss 1.246 (best 1.226)	best test loss 1.227	train eval 0.41796	valid eval 0.43372	test eval 0.42926
+GCN Epoch 384           	train loss 1.149 (best 1.141)	valid loss 1.154 (best 1.144)	best test loss 1.142	train eval 0.46737	valid eval 0.47127	test eval 0.47145
+APPNP Epoch 206         	train loss 1.228 (best 1.199)	valid loss 1.231 (best 1.198)	best test loss 1.196	train eval 0.48552	valid eval 0.48319	test eval 0.48666
+GAT Epoch 436           	train loss 1.231 (best 1.228)	valid loss 1.227 (best 1.226)	best test loss 1.227	train eval 0.41147	valid eval 0.42649	test eval 0.42260
+GCNII Epoch 105         	train loss 1.308 (best 1.296)	valid loss 1.308 (best 1.289)	best test loss 1.294	train eval 0.41101	valid eval 0.42585	test eval 0.42172
+GCNNRI Epoch 1055       	train loss 0.845 (best 0.831)	valid loss 0.874 (best 0.853)	best test loss 0.844	train eval 0.66848	valid eval 0.66142	test eval 0.66161
+Universal Epoch 1069    	train loss 0.406 (best 0.406)	valid loss 0.415 (best 0.414)	best test loss 0.411	train eval 0.84495	valid eval 0.84460	test eval 0.84472
+0.42926  0.47145  0.48666  0.42260  0.42172  0.66161  0.84472 
+MLP Epoch 162           	train loss 1.328 (best 1.292)	valid loss 1.328 (best 1.293)	best test loss 1.292	train eval 0.35131	valid eval 0.35260	test eval 0.35410
+GCN Epoch 467           	train loss 1.211 (best 1.200)	valid loss 1.203 (best 1.190)	best test loss 1.196	train eval 0.48833	valid eval 0.49601	test eval 0.49670
+APPNP Epoch 191         	train loss 1.263 (best 1.245)	valid loss 1.257 (best 1.238)	best test loss 1.241	train eval 0.41393	valid eval 0.41697	test eval 0.42336
+GAT Epoch 351           	train loss 1.291 (best 1.290)	valid loss 1.285 (best 1.284)	best test loss 1.287	train eval 0.35144	valid eval 0.35389	test eval 0.35545
+GCNII Epoch 201         	train loss 1.350 (best 1.345)	valid loss 1.349 (best 1.344)	best test loss 1.344	train eval 0.34382	valid eval 0.34475	test eval 0.34670
+GCNNRI Epoch 290        	train loss 1.352 (best 1.217)	valid loss 1.349 (best 1.205)	best test loss 1.219	train eval 0.46460	valid eval 0.45919	test eval 0.46228
+Universal Epoch 940     	train loss 0.449 (best 0.447)	valid loss 0.466 (best 0.464)	best test loss 0.461	train eval 0.82692	valid eval 0.81861	test eval 0.82202
+0.35410  0.49670  0.42336  0.35545  0.34670  0.46228  0.82202 
+MLP Epoch 164           	train loss 1.279 (best 1.238)	valid loss 1.289 (best 1.245)	best test loss 1.236	train eval 0.42231	valid eval 0.40987	test eval 0.43040
+GCN Epoch 591           	train loss 1.154 (best 1.148)	valid loss 1.170 (best 1.164)	best test loss 1.146	train eval 0.47374	valid eval 0.46261	test eval 0.48235
+APPNP Epoch 189         	train loss 1.226 (best 1.198)	valid loss 1.243 (best 1.212)	best test loss 1.195	train eval 0.43108	valid eval 0.41742	test eval 0.44083
+GAT Epoch 403           	train loss 1.242 (best 1.239)	valid loss 1.254 (best 1.250)	best test loss 1.235	train eval 0.41645	valid eval 0.40332	test eval 0.42453
+GCNII Epoch 185         	train loss 1.316 (best 1.302)	valid loss 1.322 (best 1.307)	best test loss 1.299	train eval 0.41812	valid eval 0.40458	test eval 0.42648
+GCNNRI Epoch 185        	train loss 1.311 (best 1.255)	valid loss 1.323 (best 1.181)	best test loss 1.163	train eval 0.50467	valid eval 0.50617	test eval 0.51241
+Universal Epoch 937     	train loss 0.277 (best 0.276)	valid loss 0.295 (best 0.293)	best test loss 0.283	train eval 0.90572	valid eval 0.90257	test eval 0.90347
+0.43040  0.48235  0.44083  0.42453  0.42648  0.51241  0.90347 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.436    0.503    0.452    0.418    0.401    0.546    0.846   
+Standard deviations
+0.048    0.027    0.036    0.047    0.065    0.067    0.030   
+Nemenyi ranks
+5.3      3.0      4.0      5.8      6.7      2.2      1.0     
+Latex
+0.436 (5.3) & 0.503 (3.0) & 0.452 (4.0) & 0.418 (5.8) & 0.401 (6.7) & 0.546 (2.2) & 0.846 (1.0)
+
+
+
+
+
+C:\Users\manio\PycharmProjects\universal_gnn\venv\Scripts\python.exe C:\Users\manio\PycharmProjects\universal_gnn\test.py 
+Device:   cuda
+Setting:  cora overtrain
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 672           	train loss 0.584 (best 0.576)	valid loss 0.584 (best 0.576)	best test loss 0.576	train eval 0.90140	valid eval 0.90140	test eval 0.90140
+GCN Epoch 755           	train loss 0.406 (best 0.403)	valid loss 0.406 (best 0.403)	best test loss 0.403	train eval 0.91433	valid eval 0.91433	test eval 0.91433
+APPNP Epoch 681         	train loss 0.485 (best 0.474)	valid loss 0.485 (best 0.474)	best test loss 0.474	train eval 0.90288	valid eval 0.90288	test eval 0.90288
+GAT Epoch 502           	train loss 0.470 (best 0.467)	valid loss 0.470 (best 0.466)	best test loss 0.467	train eval 0.90953	valid eval 0.90953	test eval 0.90953
+GCNII Epoch 1093        	train loss 0.681 (best 0.660)	valid loss 0.681 (best 0.659)	best test loss 0.660	train eval 0.85968	valid eval 0.85968	test eval 0.85968
+GCNNRI Epoch 417        	train loss 0.263 (best 0.231)	valid loss 0.263 (best 0.231)	best test loss 0.231	train eval 0.93058	valid eval 0.93058	test eval 0.93058
+Universal Epoch 1903    	train loss 0.053 (best 0.039)	valid loss 0.053 (best 0.038)	best test loss 0.039	train eval 0.99446	valid eval 0.99446	test eval 0.99446
+0.90140  0.91433  0.90288  0.90953  0.85968  0.93058  0.99446 
+MLP Epoch 685           	train loss 0.580 (best 0.580)	valid loss 0.580 (best 0.580)	best test loss 0.580	train eval 0.90842	valid eval 0.90842	test eval 0.90842
+GCN Epoch 1011          	train loss 0.402 (best 0.399)	valid loss 0.402 (best 0.399)	best test loss 0.399	train eval 0.91396	valid eval 0.91396	test eval 0.91396
+APPNP Epoch 929         	train loss 0.476 (best 0.473)	valid loss 0.476 (best 0.473)	best test loss 0.473	train eval 0.90473	valid eval 0.90473	test eval 0.90473
+GAT Epoch 694           	train loss 0.463 (best 0.459)	valid loss 0.463 (best 0.459)	best test loss 0.459	train eval 0.91322	valid eval 0.91322	test eval 0.91322
+GCNII Epoch 610         	train loss 0.707 (best 0.691)	valid loss 0.707 (best 0.690)	best test loss 0.691	train eval 0.85155	valid eval 0.85155	test eval 0.85155
+GCNNRI Epoch 847        	train loss 0.231 (best 0.212)	valid loss 0.231 (best 0.208)	best test loss 0.212	train eval 0.93538	valid eval 0.93538	test eval 0.93538
+Universal Epoch 1988    	train loss 0.044 (best 0.043)	valid loss 0.044 (best 0.041)	best test loss 0.043	train eval 0.99594	valid eval 0.99594	test eval 0.99594
+0.90842  0.91396  0.90473  0.91322  0.85155  0.93538  0.99594 
+MLP Epoch 765           	train loss 0.578 (best 0.572)	valid loss 0.578 (best 0.572)	best test loss 0.572	train eval 0.90731	valid eval 0.90731	test eval 0.90731
+GCN Epoch 1027          	train loss 0.404 (best 0.400)	valid loss 0.404 (best 0.399)	best test loss 0.400	train eval 0.91396	valid eval 0.91396	test eval 0.91396
+APPNP Epoch 1078        	train loss 0.473 (best 0.472)	valid loss 0.473 (best 0.471)	best test loss 0.472	train eval 0.90657	valid eval 0.90657	test eval 0.90657
+GAT Epoch 630           	train loss 0.467 (best 0.461)	valid loss 0.467 (best 0.461)	best test loss 0.461	train eval 0.90879	valid eval 0.90879	test eval 0.90879
+GCNII Epoch 726         	train loss 0.680 (best 0.658)	valid loss 0.680 (best 0.656)	best test loss 0.658	train eval 0.86706	valid eval 0.86706	test eval 0.86706
+GCNNRI Epoch 315        	train loss 0.267 (best 0.260)	valid loss 0.267 (best 0.257)	best test loss 0.260	train eval 0.92061	valid eval 0.92061	test eval 0.92061
+Universal Epoch 1730    	train loss 0.051 (best 0.037)	valid loss 0.051 (best 0.037)	best test loss 0.037	train eval 0.99668	valid eval 0.99668	test eval 0.99668
+0.90731  0.91396  0.90657  0.90879  0.86706  0.92061  0.99668 
+MLP Epoch 809           	train loss 0.586 (best 0.577)	valid loss 0.586 (best 0.576)	best test loss 0.577	train eval 0.90288	valid eval 0.90288	test eval 0.90288
+GCN Epoch 853           	train loss 0.399 (best 0.399)	valid loss 0.399 (best 0.398)	best test loss 0.399	train eval 0.91248	valid eval 0.91248	test eval 0.91248
+APPNP Epoch 1148        	train loss 0.475 (best 0.471)	valid loss 0.475 (best 0.471)	best test loss 0.471	train eval 0.90436	valid eval 0.90436	test eval 0.90436
+GAT Epoch 606           	train loss 0.466 (best 0.461)	valid loss 0.466 (best 0.460)	best test loss 0.461	train eval 0.91507	valid eval 0.91507	test eval 0.91507
+GCNII Epoch 1166        	train loss 0.668 (best 0.635)	valid loss 0.668 (best 0.634)	best test loss 0.635	train eval 0.86780	valid eval 0.86780	test eval 0.86780
+GCNNRI Epoch 608        	train loss 0.327 (best 0.219)	valid loss 0.327 (best 0.218)	best test loss 0.219	train eval 0.93427	valid eval 0.93427	test eval 0.93427
+Universal Epoch 1791    	train loss 0.054 (best 0.044)	valid loss 0.054 (best 0.044)	best test loss 0.044	train eval 0.99483	valid eval 0.99483	test eval 0.99483
+0.90288  0.91248  0.90436  0.91507  0.86780  0.93427  0.99483 
+MLP Epoch 720           	train loss 0.584 (best 0.581)	valid loss 0.584 (best 0.581)	best test loss 0.581	train eval 0.90399	valid eval 0.90399	test eval 0.90399
+GCN Epoch 823           	train loss 0.403 (best 0.401)	valid loss 0.403 (best 0.401)	best test loss 0.401	train eval 0.91544	valid eval 0.91544	test eval 0.91544
+APPNP Epoch 848         	train loss 0.477 (best 0.474)	valid loss 0.477 (best 0.473)	best test loss 0.474	train eval 0.90436	valid eval 0.90436	test eval 0.90436
+GAT Epoch 632           	train loss 0.467 (best 0.462)	valid loss 0.467 (best 0.462)	best test loss 0.462	train eval 0.90953	valid eval 0.90953	test eval 0.90953
+GCNII Epoch 602         	train loss 0.687 (best 0.657)	valid loss 0.687 (best 0.656)	best test loss 0.657	train eval 0.87260	valid eval 0.87260	test eval 0.87260
+GCNNRI Epoch 450        	train loss 0.259 (best 0.240)	valid loss 0.259 (best 0.239)	best test loss 0.240	train eval 0.92688	valid eval 0.92688	test eval 0.92688
+Universal Epoch 1398    	train loss 0.046 (best 0.042)	valid loss 0.046 (best 0.042)	best test loss 0.042	train eval 0.99631	valid eval 0.99631	test eval 0.99631
+0.90399  0.91544  0.90436  0.90953  0.87260  0.92688  0.99631 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.905    0.914    0.905    0.911    0.864    0.930    0.996   
+Standard deviations
+0.003    0.001    0.001    0.002    0.007    0.005    0.001   
+Nemenyi ranks
+5.6      3.2      5.4      3.8      7.0      2.0      1.0     
+Latex
+0.905 (5.6) & 0.914 (3.2) & 0.905 (5.4) & 0.911 (3.8) & 0.864 (7.0) & 0.930 (2.0) & 0.996 (1.0)
+Setting:  citeseer overtrain
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 801           	train loss 0.630 (best 0.628)	valid loss 0.630 (best 0.628)	best test loss 0.628	train eval 0.86444	valid eval 0.86444	test eval 0.86444
+GCN Epoch 1553          	train loss 0.642 (best 0.638)	valid loss 0.642 (best 0.638)	best test loss 0.638	train eval 0.82056	valid eval 0.82056	test eval 0.82056
+APPNP Epoch 707         	train loss 0.792 (best 0.784)	valid loss 0.792 (best 0.784)	best test loss 0.784	train eval 0.78960	valid eval 0.78960	test eval 0.78960
+GAT Epoch 679           	train loss 0.764 (best 0.760)	valid loss 0.764 (best 0.759)	best test loss 0.760	train eval 0.80854	valid eval 0.80854	test eval 0.80854
+GCNII Epoch 561         	train loss 1.041 (best 1.010)	valid loss 1.041 (best 1.008)	best test loss 1.010	train eval 0.76435	valid eval 0.76435	test eval 0.76435
+GCNNRI Epoch 809        	train loss 0.402 (best 0.337)	valid loss 0.402 (best 0.336)	best test loss 0.337	train eval 0.86835	valid eval 0.86835	test eval 0.86835
+Universal Epoch 2323    	train loss 0.138 (best 0.132)	valid loss 0.138 (best 0.131)	best test loss 0.132	train eval 0.96333	valid eval 0.96333	test eval 0.96333
+0.86444  0.82056  0.78960  0.80854  0.76435  0.86835  0.96333 
+MLP Epoch 1240          	train loss 0.634 (best 0.626)	valid loss 0.634 (best 0.626)	best test loss 0.626	train eval 0.86985	valid eval 0.86985	test eval 0.86985
+GCN Epoch 971           	train loss 0.647 (best 0.643)	valid loss 0.647 (best 0.643)	best test loss 0.643	train eval 0.81635	valid eval 0.81635	test eval 0.81635
+APPNP Epoch 605         	train loss 0.793 (best 0.789)	valid loss 0.793 (best 0.789)	best test loss 0.789	train eval 0.79651	valid eval 0.79651	test eval 0.79651
+GAT Epoch 647           	train loss 0.765 (best 0.761)	valid loss 0.765 (best 0.760)	best test loss 0.760	train eval 0.80854	valid eval 0.80854	test eval 0.80854
+GCNII Epoch 494         	train loss 1.076 (best 1.054)	valid loss 1.076 (best 1.050)	best test loss 1.054	train eval 0.76495	valid eval 0.76495	test eval 0.76495
+GCNNRI Epoch 833        	train loss 0.485 (best 0.395)	valid loss 0.485 (best 0.392)	best test loss 0.395	train eval 0.86144	valid eval 0.86144	test eval 0.86144
+Universal Epoch 1597    	train loss 0.161 (best 0.143)	valid loss 0.161 (best 0.141)	best test loss 0.141	train eval 0.95401	valid eval 0.95401	test eval 0.95401
+0.86985  0.81635  0.79651  0.80854  0.76495  0.86144  0.95401 
+MLP Epoch 589           	train loss 0.640 (best 0.637)	valid loss 0.640 (best 0.637)	best test loss 0.637	train eval 0.86354	valid eval 0.86354	test eval 0.86354
+GCN Epoch 1170          	train loss 0.644 (best 0.641)	valid loss 0.644 (best 0.641)	best test loss 0.641	train eval 0.81665	valid eval 0.81665	test eval 0.81665
+APPNP Epoch 731         	train loss 0.799 (best 0.787)	valid loss 0.799 (best 0.786)	best test loss 0.787	train eval 0.79982	valid eval 0.79982	test eval 0.79982
+GAT Epoch 441           	train loss 0.765 (best 0.763)	valid loss 0.765 (best 0.762)	best test loss 0.763	train eval 0.81004	valid eval 0.81004	test eval 0.81004
+GCNII Epoch 820         	train loss 1.007 (best 1.003)	valid loss 1.007 (best 1.001)	best test loss 1.003	train eval 0.77036	valid eval 0.77036	test eval 0.77036
+GCNNRI Epoch 1197       	train loss 0.455 (best 0.384)	valid loss 0.455 (best 0.381)	best test loss 0.384	train eval 0.85723	valid eval 0.85723	test eval 0.85723
+Universal Epoch 1217    	train loss 0.151 (best 0.144)	valid loss 0.151 (best 0.144)	best test loss 0.144	train eval 0.95552	valid eval 0.95552	test eval 0.95552
+0.86354  0.81665  0.79982  0.81004  0.77036  0.85723  0.95552 
+MLP Epoch 953           	train loss 0.627 (best 0.624)	valid loss 0.627 (best 0.624)	best test loss 0.624	train eval 0.86625	valid eval 0.86625	test eval 0.86625
+GCN Epoch 1127          	train loss 0.643 (best 0.639)	valid loss 0.643 (best 0.639)	best test loss 0.639	train eval 0.81605	valid eval 0.81605	test eval 0.81605
+APPNP Epoch 855         	train loss 0.799 (best 0.789)	valid loss 0.799 (best 0.789)	best test loss 0.789	train eval 0.78810	valid eval 0.78810	test eval 0.78810
+GAT Epoch 448           	train loss 0.768 (best 0.762)	valid loss 0.768 (best 0.762)	best test loss 0.762	train eval 0.80553	valid eval 0.80553	test eval 0.80553
+GCNII Epoch 657         	train loss 1.004 (best 0.980)	valid loss 1.004 (best 0.980)	best test loss 0.980	train eval 0.76766	valid eval 0.76766	test eval 0.76766
+GCNNRI Epoch 388        	train loss 0.681 (best 0.625)	valid loss 0.681 (best 0.622)	best test loss 0.625	train eval 0.81214	valid eval 0.81214	test eval 0.81214
+Universal Epoch 1992    	train loss 0.144 (best 0.132)	valid loss 0.144 (best 0.131)	best test loss 0.132	train eval 0.96183	valid eval 0.96183	test eval 0.96183
+0.86625  0.81605  0.78810  0.80553  0.76766  0.81214  0.96183 
+MLP Epoch 562           	train loss 0.639 (best 0.635)	valid loss 0.639 (best 0.634)	best test loss 0.635	train eval 0.86204	valid eval 0.86204	test eval 0.86204
+GCN Epoch 1089          	train loss 0.642 (best 0.640)	valid loss 0.642 (best 0.639)	best test loss 0.640	train eval 0.82056	valid eval 0.82056	test eval 0.82056
+APPNP Epoch 855         	train loss 0.791 (best 0.784)	valid loss 0.791 (best 0.784)	best test loss 0.784	train eval 0.79621	valid eval 0.79621	test eval 0.79621
+GAT Epoch 520           	train loss 0.766 (best 0.762)	valid loss 0.766 (best 0.762)	best test loss 0.762	train eval 0.80944	valid eval 0.80944	test eval 0.80944
+GCNII Epoch 835         	train loss 1.013 (best 1.010)	valid loss 1.013 (best 1.008)	best test loss 1.010	train eval 0.76946	valid eval 0.76946	test eval 0.76946
+GCNNRI Epoch 697        	train loss 0.542 (best 0.527)	valid loss 0.542 (best 0.527)	best test loss 0.527	train eval 0.84671	valid eval 0.84671	test eval 0.84671
+Universal Epoch 2393    	train loss 0.145 (best 0.133)	valid loss 0.145 (best 0.132)	best test loss 0.133	train eval 0.96213	valid eval 0.96213	test eval 0.96213
+0.86204  0.82056  0.79621  0.80944  0.76946  0.84671  0.96213 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.865    0.818    0.794    0.808    0.767    0.849    0.959   
+Standard deviations
+0.003    0.002    0.004    0.002    0.002    0.020    0.004   
+Nemenyi ranks
+2.2      3.8      6.0      5.0      7.0      3.0      1.0     
+Latex
+0.865 (2.2) & 0.818 (3.8) & 0.794 (6.0) & 0.808 (5.0) & 0.767 (7.0) & 0.849 (3.0) & 0.959 (1.0)
+Setting:  pubmed overtrain
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 580           	train loss 0.407 (best 0.405)	valid loss 0.407 (best 0.405)	best test loss 0.405	train eval 0.86783	valid eval 0.86783	test eval 0.86783
+GCN Epoch 737           	train loss 0.388 (best 0.385)	valid loss 0.388 (best 0.385)	best test loss 0.385	train eval 0.87092	valid eval 0.87092	test eval 0.87092
+APPNP Epoch 773         	train loss 0.426 (best 0.423)	valid loss 0.426 (best 0.423)	best test loss 0.423	train eval 0.86174	valid eval 0.86174	test eval 0.86174
+GAT Epoch 564           	train loss 0.445 (best 0.442)	valid loss 0.445 (best 0.442)	best test loss 0.442	train eval 0.85261	valid eval 0.85261	test eval 0.85261
+GCNII Epoch 844         	train loss 0.439 (best 0.438)	valid loss 0.439 (best 0.438)	best test loss 0.438	train eval 0.86195	valid eval 0.86195	test eval 0.86195
+GCNNRI Epoch 420        	train loss 0.362 (best 0.351)	valid loss 0.362 (best 0.350)	best test loss 0.351	train eval 0.86758	valid eval 0.86758	test eval 0.86758
+Universal Epoch 3661    	train loss 0.144 (best 0.142)	valid loss 0.144 (best 0.142)	best test loss 0.142	train eval 0.95628	valid eval 0.95628	test eval 0.95628
+0.86783  0.87092  0.86174  0.85261  0.86195  0.86758  0.95628 
+MLP Epoch 825           	train loss 0.408 (best 0.405)	valid loss 0.408 (best 0.404)	best test loss 0.405	train eval 0.86778	valid eval 0.86778	test eval 0.86778
+GCN Epoch 793           	train loss 0.386 (best 0.385)	valid loss 0.386 (best 0.385)	best test loss 0.385	train eval 0.87021	valid eval 0.87021	test eval 0.87021
+APPNP Epoch 764         	train loss 0.427 (best 0.423)	valid loss 0.427 (best 0.423)	best test loss 0.423	train eval 0.86190	valid eval 0.86190	test eval 0.86190
+GAT Epoch 517           	train loss 0.443 (best 0.442)	valid loss 0.443 (best 0.442)	best test loss 0.442	train eval 0.85637	valid eval 0.85637	test eval 0.85637
+GCNII Epoch 538         	train loss 0.454 (best 0.451)	valid loss 0.454 (best 0.451)	best test loss 0.451	train eval 0.85561	valid eval 0.85561	test eval 0.85561
+GCNNRI Epoch 1264       	train loss 0.345 (best 0.340)	valid loss 0.345 (best 0.339)	best test loss 0.339	train eval 0.86996	valid eval 0.86996	test eval 0.86996
+Universal Epoch 3612    	train loss 0.150 (best 0.144)	valid loss 0.150 (best 0.144)	best test loss 0.144	train eval 0.95638	valid eval 0.95638	test eval 0.95638
+0.86778  0.87021  0.86190  0.85637  0.85561  0.86996  0.95638 
+MLP Epoch 786           	train loss 0.404 (best 0.403)	valid loss 0.404 (best 0.403)	best test loss 0.403	train eval 0.86717	valid eval 0.86717	test eval 0.86717
+GCN Epoch 983           	train loss 0.386 (best 0.384)	valid loss 0.386 (best 0.384)	best test loss 0.384	train eval 0.87077	valid eval 0.87077	test eval 0.87077
+APPNP Epoch 724         	train loss 0.426 (best 0.424)	valid loss 0.426 (best 0.424)	best test loss 0.424	train eval 0.86337	valid eval 0.86337	test eval 0.86337
+GAT Epoch 608           	train loss 0.446 (best 0.442)	valid loss 0.446 (best 0.441)	best test loss 0.442	train eval 0.85718	valid eval 0.85718	test eval 0.85718
+GCNII Epoch 775         	train loss 0.445 (best 0.438)	valid loss 0.445 (best 0.438)	best test loss 0.438	train eval 0.86154	valid eval 0.86154	test eval 0.86154
+GCNNRI Epoch 803        	train loss 0.345 (best 0.345)	valid loss 0.345 (best 0.345)	best test loss 0.345	train eval 0.86874	valid eval 0.86874	test eval 0.86874
+Universal Epoch 4596    	train loss 0.154 (best 0.151)	valid loss 0.154 (best 0.151)	best test loss 0.151	train eval 0.95197	valid eval 0.95197	test eval 0.95197
+0.86717  0.87077  0.86337  0.85718  0.86154  0.86874  0.95197 
+MLP Epoch 744           	train loss 0.406 (best 0.404)	valid loss 0.406 (best 0.403)	best test loss 0.404	train eval 0.86793	valid eval 0.86793	test eval 0.86793
+GCN Epoch 1106          	train loss 0.386 (best 0.385)	valid loss 0.386 (best 0.385)	best test loss 0.385	train eval 0.87113	valid eval 0.87113	test eval 0.87113
+APPNP Epoch 693         	train loss 0.426 (best 0.424)	valid loss 0.426 (best 0.424)	best test loss 0.424	train eval 0.86291	valid eval 0.86291	test eval 0.86291
+GAT Epoch 654           	train loss 0.446 (best 0.442)	valid loss 0.446 (best 0.442)	best test loss 0.442	train eval 0.85525	valid eval 0.85525	test eval 0.85525
+GCNII Epoch 854         	train loss 0.456 (best 0.452)	valid loss 0.456 (best 0.452)	best test loss 0.452	train eval 0.85779	valid eval 0.85779	test eval 0.85779
+GCNNRI Epoch 755        	train loss 0.358 (best 0.345)	valid loss 0.358 (best 0.344)	best test loss 0.345	train eval 0.86920	valid eval 0.86920	test eval 0.86920
+Universal Epoch 4341    	train loss 0.137 (best 0.137)	valid loss 0.137 (best 0.137)	best test loss 0.137	train eval 0.95861	valid eval 0.95861	test eval 0.95861
+0.86793  0.87113  0.86291  0.85525  0.85779  0.86920  0.95861 
+MLP Epoch 855           	train loss 0.407 (best 0.403)	valid loss 0.407 (best 0.403)	best test loss 0.403	train eval 0.86747	valid eval 0.86747	test eval 0.86747
+GCN Epoch 910           	train loss 0.387 (best 0.384)	valid loss 0.387 (best 0.384)	best test loss 0.384	train eval 0.87168	valid eval 0.87168	test eval 0.87168
+APPNP Epoch 872         	train loss 0.426 (best 0.423)	valid loss 0.426 (best 0.423)	best test loss 0.423	train eval 0.86256	valid eval 0.86256	test eval 0.86256
+GAT Epoch 432           	train loss 0.446 (best 0.443)	valid loss 0.446 (best 0.443)	best test loss 0.443	train eval 0.85241	valid eval 0.85241	test eval 0.85241
+GCNII Epoch 626         	train loss 0.443 (best 0.440)	valid loss 0.443 (best 0.440)	best test loss 0.440	train eval 0.85870	valid eval 0.85870	test eval 0.85870
+GCNNRI Epoch 549        	train loss 0.356 (best 0.348)	valid loss 0.356 (best 0.348)	best test loss 0.348	train eval 0.86768	valid eval 0.86768	test eval 0.86768
+Universal Epoch 3629    	train loss 0.149 (best 0.146)	valid loss 0.149 (best 0.145)	best test loss 0.145	train eval 0.95593	valid eval 0.95593	test eval 0.95593
+0.86747  0.87168  0.86256  0.85241  0.85870  0.86768  0.95593 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.868    0.871    0.862    0.855    0.859    0.869    0.956   
+Standard deviations
+0.000    0.000    0.001    0.002    0.002    0.001    0.002   
+Nemenyi ranks
+3.8      2.0      5.2      6.8      6.0      3.2      1.0     
+Latex
+0.868 (3.8) & 0.871 (2.0) & 0.862 (5.2) & 0.855 (6.8) & 0.859 (6.0) & 0.869 (3.2) & 0.956 (1.0)
+Setting:  triangle overtrain
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 176           	train loss 1.631 (best 1.631)	valid loss 1.631 (best 1.631)	best test loss 1.631	train eval 0.49474	valid eval 0.49474	test eval 0.49474
+GCN Epoch 1611          	train loss 1.546 (best 1.541)	valid loss 1.546 (best 1.540)	best test loss 1.541	train eval 0.49474	valid eval 0.49474	test eval 0.49474
+APPNP Epoch 157         	train loss 1.694 (best 1.689)	valid loss 1.694 (best 1.688)	best test loss 1.689	train eval 0.49474	valid eval 0.49474	test eval 0.49474
+GAT Epoch 238           	train loss 1.636 (best 1.620)	valid loss 1.636 (best 1.620)	best test loss 1.620	train eval 0.49474	valid eval 0.49474	test eval 0.49474
+GCNII Epoch 1980        	train loss 1.615 (best 1.615)	valid loss 1.615 (best 1.615)	best test loss 1.615	train eval 0.49474	valid eval 0.49474	test eval 0.49474
+GCNNRI Epoch 1290       	train loss 1.635 (best 1.096)	valid loss 1.635 (best 1.095)	best test loss 1.096	train eval 0.55530	valid eval 0.55530	test eval 0.55530
+Universal Epoch 5042    	train loss 1.134 (best 1.128)	valid loss 1.134 (best 1.128)	best test loss 1.128	train eval 0.55549	valid eval 0.55549	test eval 0.55549
+0.49474  0.49474  0.49474  0.49474  0.49474  0.55530  0.55549 
+MLP Epoch 176           	train loss 1.554 (best 1.554)	valid loss 1.554 (best 1.554)	best test loss 1.554	train eval 0.52262	valid eval 0.52262	test eval 0.52262
+GCN Epoch 1539          	train loss 1.462 (best 1.450)	valid loss 1.462 (best 1.448)	best test loss 1.450	train eval 0.52262	valid eval 0.52262	test eval 0.52262
+APPNP Epoch 161         	train loss 1.618 (best 1.614)	valid loss 1.618 (best 1.614)	best test loss 1.614	train eval 0.52262	valid eval 0.52262	test eval 0.52262
+GAT Epoch 254           	train loss 1.576 (best 1.544)	valid loss 1.576 (best 1.544)	best test loss 1.544	train eval 0.52262	valid eval 0.52262	test eval 0.52262
+GCNII Epoch 2936        	train loss 1.541 (best 1.538)	valid loss 1.541 (best 1.538)	best test loss 1.538	train eval 0.52262	valid eval 0.52262	test eval 0.52262
+GCNNRI Epoch 283        	train loss 1.540 (best 1.520)	valid loss 1.540 (best 1.515)	best test loss 1.515	train eval 0.52262	valid eval 0.52262	test eval 0.52262
+Universal Epoch 3644    	train loss 1.106 (best 1.065)	valid loss 1.106 (best 1.065)	best test loss 1.065	train eval 0.58143	valid eval 0.58143	test eval 0.58143
+0.52262  0.52262  0.52262  0.52262  0.52262  0.52262  0.58143 
+MLP Epoch 449           	train loss 1.506 (best 1.506)	valid loss 1.506 (best 1.506)	best test loss 1.506	train eval 0.52946	valid eval 0.52946	test eval 0.52946
+GCN Epoch 2045          	train loss 1.425 (best 1.422)	valid loss 1.425 (best 1.421)	best test loss 1.421	train eval 0.52946	valid eval 0.52946	test eval 0.52946
+APPNP Epoch 183         	train loss 1.570 (best 1.567)	valid loss 1.570 (best 1.567)	best test loss 1.567	train eval 0.52946	valid eval 0.52946	test eval 0.52946
+GAT Epoch 238           	train loss 1.511 (best 1.494)	valid loss 1.511 (best 1.493)	best test loss 1.494	train eval 0.52946	valid eval 0.52946	test eval 0.52946
+GCNII Epoch 2520        	train loss 1.487 (best 1.486)	valid loss 1.487 (best 1.486)	best test loss 1.486	train eval 0.52946	valid eval 0.52946	test eval 0.52946
+GCNNRI Epoch 277        	train loss 1.509 (best 1.472)	valid loss 1.509 (best 1.466)	best test loss 1.472	train eval 0.52946	valid eval 0.52946	test eval 0.52946
+Universal Epoch 3795    	train loss 1.056 (best 1.048)	valid loss 1.056 (best 1.047)	best test loss 1.047	train eval 0.58128	valid eval 0.58128	test eval 0.58128
+0.52946  0.52946  0.52946  0.52946  0.52946  0.52946  0.58128 
+MLP Epoch 178           	train loss 1.621 (best 1.621)	valid loss 1.621 (best 1.621)	best test loss 1.621	train eval 0.49089	valid eval 0.49089	test eval 0.49089
+GCN Epoch 1681          	train loss 1.525 (best 1.518)	valid loss 1.525 (best 1.517)	best test loss 1.518	train eval 0.49141	valid eval 0.49141	test eval 0.49141
+APPNP Epoch 213         	train loss 1.681 (best 1.678)	valid loss 1.681 (best 1.678)	best test loss 1.678	train eval 0.49089	valid eval 0.49089	test eval 0.49089
+GAT Epoch 254           	train loss 1.627 (best 1.607)	valid loss 1.627 (best 1.606)	best test loss 1.607	train eval 0.49089	valid eval 0.49089	test eval 0.49089
+GCNII Epoch 1961        	train loss 1.608 (best 1.607)	valid loss 1.608 (best 1.607)	best test loss 1.607	train eval 0.49089	valid eval 0.49089	test eval 0.49089
+GCNNRI Epoch 1325       	train loss 1.618 (best 1.085)	valid loss 1.618 (best 1.084)	best test loss 1.085	train eval 0.55943	valid eval 0.55943	test eval 0.55943
+Universal Epoch 2348    	train loss 1.178 (best 1.168)	valid loss 1.178 (best 1.168)	best test loss 1.168	train eval 0.54628	valid eval 0.54628	test eval 0.54628
+0.49089  0.49141  0.49089  0.49089  0.49089  0.55943  0.54628 
+MLP Epoch 175           	train loss 1.575 (best 1.575)	valid loss 1.575 (best 1.575)	best test loss 1.575	train eval 0.51249	valid eval 0.51249	test eval 0.51249
+GCN Epoch 1299          	train loss 1.485 (best 1.481)	valid loss 1.485 (best 1.481)	best test loss 1.481	train eval 0.51249	valid eval 0.51249	test eval 0.51249
+APPNP Epoch 158         	train loss 1.638 (best 1.635)	valid loss 1.638 (best 1.635)	best test loss 1.635	train eval 0.51249	valid eval 0.51249	test eval 0.51249
+GAT Epoch 251           	train loss 1.591 (best 1.564)	valid loss 1.591 (best 1.564)	best test loss 1.564	train eval 0.51249	valid eval 0.51249	test eval 0.51249
+GCNII Epoch 2403        	train loss 1.559 (best 1.558)	valid loss 1.559 (best 1.558)	best test loss 1.558	train eval 0.51249	valid eval 0.51249	test eval 0.51249
+GCNNRI Epoch 353        	train loss 1.577 (best 1.543)	valid loss 1.577 (best 1.524)	best test loss 1.543	train eval 0.51221	valid eval 0.51221	test eval 0.51221
+Universal Epoch 4949    	train loss 1.102 (best 1.076)	valid loss 1.102 (best 1.076)	best test loss 1.076	train eval 0.57385	valid eval 0.57385	test eval 0.57385
+0.51249  0.51249  0.51249  0.51249  0.51249  0.51221  0.57385 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.510    0.510    0.510    0.510    0.510    0.536    0.568   
+Standard deviations
+0.015    0.015    0.015    0.015    0.015    0.018    0.014   
+Nemenyi ranks
+4.7      4.2      4.7      4.7      4.7      3.8      1.2     
+Latex
+0.510 (4.7) & 0.510 (4.2) & 0.510 (4.7) & 0.510 (4.7) & 0.510 (4.7) & 0.536 (3.8) & 0.568 (1.2)
+Setting:  square overtrain
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 146           	train loss 0.611 (best 0.611)	valid loss 0.611 (best 0.611)	best test loss 0.611	train eval 0.69744	valid eval 0.69744	test eval 0.69744
+GCN Epoch 162           	train loss 0.741 (best 0.560)	valid loss 0.741 (best 0.559)	best test loss 0.560	train eval 0.84384	valid eval 0.84384	test eval 0.84384
+APPNP Epoch 346         	train loss 0.618 (best 0.615)	valid loss 0.618 (best 0.615)	best test loss 0.615	train eval 0.69744	valid eval 0.69744	test eval 0.69744
+GAT Epoch 421           	train loss 0.557 (best 0.547)	valid loss 0.557 (best 0.546)	best test loss 0.547	train eval 0.69744	valid eval 0.69744	test eval 0.69744
+GCNII Epoch 343         	train loss 0.607 (best 0.605)	valid loss 0.607 (best 0.605)	best test loss 0.605	train eval 0.69744	valid eval 0.69744	test eval 0.69744
+GCNNRI Epoch 715        	train loss 0.301 (best 0.263)	valid loss 0.301 (best 0.262)	best test loss 0.262	train eval 0.88438	valid eval 0.88438	test eval 0.88438
+Universal Epoch 2308    	train loss 0.258 (best 0.258)	valid loss 0.258 (best 0.258)	best test loss 0.258	train eval 0.89041	valid eval 0.89041	test eval 0.89041
+0.69744  0.84384  0.69744  0.69744  0.69744  0.88438  0.89041 
+MLP Epoch 409           	train loss 0.639 (best 0.639)	valid loss 0.639 (best 0.639)	best test loss 0.639	train eval 0.65713	valid eval 0.65713	test eval 0.65713
+GCN Epoch 140           	train loss 0.851 (best 0.589)	valid loss 0.851 (best 0.588)	best test loss 0.589	train eval 0.79280	valid eval 0.79280	test eval 0.79280
+APPNP Epoch 209         	train loss 0.640 (best 0.638)	valid loss 0.640 (best 0.638)	best test loss 0.638	train eval 0.65504	valid eval 0.65504	test eval 0.65504
+GAT Epoch 285           	train loss 0.574 (best 0.570)	valid loss 0.574 (best 0.567)	best test loss 0.570	train eval 0.65713	valid eval 0.65713	test eval 0.65713
+GCNII Epoch 309         	train loss 0.633 (best 0.631)	valid loss 0.633 (best 0.631)	best test loss 0.631	train eval 0.65633	valid eval 0.65633	test eval 0.65633
+GCNNRI Epoch 1725       	train loss 0.647 (best 0.229)	valid loss 0.647 (best 0.227)	best test loss 0.227	train eval 0.90371	valid eval 0.90371	test eval 0.90371
+Universal Epoch 1722    	train loss 0.266 (best 0.266)	valid loss 0.266 (best 0.265)	best test loss 0.266	train eval 0.88587	valid eval 0.88587	test eval 0.88587
+0.65713  0.79280  0.65504  0.65713  0.65633  0.90371  0.88587 
+MLP Epoch 222           	train loss 0.631 (best 0.631)	valid loss 0.631 (best 0.631)	best test loss 0.631	train eval 0.66953	valid eval 0.66953	test eval 0.66953
+GCN Epoch 157           	train loss 0.734 (best 0.560)	valid loss 0.734 (best 0.559)	best test loss 0.560	train eval 0.80273	valid eval 0.80273	test eval 0.80273
+APPNP Epoch 424         	train loss 0.625 (best 0.625)	valid loss 0.625 (best 0.625)	best test loss 0.625	train eval 0.66142	valid eval 0.66142	test eval 0.66142
+GAT Epoch 423           	train loss 0.561 (best 0.545)	valid loss 0.561 (best 0.535)	best test loss 0.535	train eval 0.66953	valid eval 0.66953	test eval 0.66953
+GCNII Epoch 266         	train loss 0.620 (best 0.619)	valid loss 0.620 (best 0.619)	best test loss 0.619	train eval 0.66953	valid eval 0.66953	test eval 0.66953
+GCNNRI Epoch 1200       	train loss 0.633 (best 0.226)	valid loss 0.633 (best 0.226)	best test loss 0.226	train eval 0.89906	valid eval 0.89906	test eval 0.89906
+Universal Epoch 2127    	train loss 0.221 (best 0.219)	valid loss 0.221 (best 0.219)	best test loss 0.219	train eval 0.90733	valid eval 0.90733	test eval 0.90733
+0.66953  0.80273  0.66142  0.66953  0.66953  0.89906  0.90733 
+MLP Epoch 126           	train loss 0.635 (best 0.635)	valid loss 0.635 (best 0.635)	best test loss 0.635	train eval 0.66412	valid eval 0.66412	test eval 0.66412
+GCN Epoch 145           	train loss 0.876 (best 0.578)	valid loss 0.876 (best 0.578)	best test loss 0.578	train eval 0.73031	valid eval 0.73031	test eval 0.73031
+APPNP Epoch 236         	train loss 0.637 (best 0.636)	valid loss 0.637 (best 0.636)	best test loss 0.636	train eval 0.66412	valid eval 0.66412	test eval 0.66412
+GAT Epoch 387           	train loss 0.584 (best 0.573)	valid loss 0.584 (best 0.570)	best test loss 0.573	train eval 0.66412	valid eval 0.66412	test eval 0.66412
+GCNII Epoch 339         	train loss 0.629 (best 0.628)	valid loss 0.629 (best 0.628)	best test loss 0.628	train eval 0.66412	valid eval 0.66412	test eval 0.66412
+GCNNRI Epoch 2302       	train loss 0.211 (best 0.204)	valid loss 0.211 (best 0.204)	best test loss 0.204	train eval 0.90883	valid eval 0.90883	test eval 0.90883
+Universal Epoch 1583    	train loss 0.323 (best 0.252)	valid loss 0.323 (best 0.252)	best test loss 0.252	train eval 0.89483	valid eval 0.89483	test eval 0.89483
+0.66412  0.73031  0.66412  0.66412  0.66412  0.90883  0.89483 
+MLP Epoch 326           	train loss 0.650 (best 0.649)	valid loss 0.650 (best 0.649)	best test loss 0.649	train eval 0.63720	valid eval 0.63720	test eval 0.63720
+GCN Epoch 134           	train loss 0.901 (best 0.580)	valid loss 0.901 (best 0.579)	best test loss 0.580	train eval 0.72770	valid eval 0.72770	test eval 0.72770
+APPNP Epoch 264         	train loss 0.635 (best 0.632)	valid loss 0.635 (best 0.631)	best test loss 0.632	train eval 0.60821	valid eval 0.60821	test eval 0.60821
+GAT Epoch 373           	train loss 0.586 (best 0.572)	valid loss 0.586 (best 0.570)	best test loss 0.572	train eval 0.63720	valid eval 0.63720	test eval 0.63720
+GCNII Epoch 376         	train loss 0.629 (best 0.627)	valid loss 0.629 (best 0.627)	best test loss 0.627	train eval 0.62512	valid eval 0.62512	test eval 0.62512
+GCNNRI Epoch 1298       	train loss 0.381 (best 0.241)	valid loss 0.381 (best 0.240)	best test loss 0.240	train eval 0.89533	valid eval 0.89533	test eval 0.89533
+Universal Epoch 2395    	train loss 0.263 (best 0.262)	valid loss 0.263 (best 0.262)	best test loss 0.262	train eval 0.88969	valid eval 0.88969	test eval 0.88969
+0.63720  0.72770  0.60821  0.63720  0.62512  0.89533  0.88969 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.665    0.779    0.657    0.665    0.663    0.898    0.894   
+Standard deviations
+0.020    0.045    0.029    0.020    0.023    0.008    0.007   
+Nemenyi ranks
+5.0      3.0      6.4      5.0      5.6      1.4      1.6     
+Latex
+0.665 (5.0) & 0.779 (3.0) & 0.657 (6.4) & 0.665 (5.0) & 0.663 (5.6) & 0.898 (1.4) & 0.894 (1.6)
+Setting:  longest overtrain
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 228           	train loss 2.105 (best 2.104)	valid loss 2.105 (best 2.104)	best test loss 2.104	train eval 0.34101	valid eval 0.34101	test eval 0.34101
+GCN Epoch 725           	train loss 1.936 (best 1.933)	valid loss 1.936 (best 1.932)	best test loss 1.933	train eval 0.40670	valid eval 0.40670	test eval 0.40670
+APPNP Epoch 267         	train loss 2.118 (best 2.115)	valid loss 2.118 (best 2.114)	best test loss 2.114	train eval 0.34101	valid eval 0.34101	test eval 0.34101
+GAT Epoch 710           	train loss 2.005 (best 2.002)	valid loss 2.005 (best 1.996)	best test loss 2.002	train eval 0.34121	valid eval 0.34121	test eval 0.34121
+GCNII Epoch 738         	train loss 2.097 (best 2.096)	valid loss 2.097 (best 2.096)	best test loss 2.096	train eval 0.34101	valid eval 0.34101	test eval 0.34101
+GCNNRI Epoch 2269       	train loss 1.474 (best 0.973)	valid loss 1.474 (best 0.973)	best test loss 0.973	train eval 0.63501	valid eval 0.63501	test eval 0.63501
+Universal Epoch 5711    	train loss 0.901 (best 0.898)	valid loss 0.901 (best 0.898)	best test loss 0.898	train eval 0.66041	valid eval 0.66041	test eval 0.66041
+0.34101  0.40670  0.34101  0.34121  0.34101  0.63501  0.66041 
+MLP Epoch 180           	train loss 2.076 (best 2.076)	valid loss 2.076 (best 2.076)	best test loss 2.076	train eval 0.30945	valid eval 0.30945	test eval 0.30945
+GCN Epoch 1346          	train loss 1.866 (best 1.856)	valid loss 1.866 (best 1.855)	best test loss 1.856	train eval 0.36254	valid eval 0.36254	test eval 0.36254
+APPNP Epoch 163         	train loss 2.088 (best 2.087)	valid loss 2.088 (best 2.087)	best test loss 2.087	train eval 0.30945	valid eval 0.30945	test eval 0.30945
+GAT Epoch 724           	train loss 1.995 (best 1.984)	valid loss 1.995 (best 1.983)	best test loss 1.984	train eval 0.32288	valid eval 0.32288	test eval 0.32288
+GCNII Epoch 1054        	train loss 2.067 (best 2.067)	valid loss 2.067 (best 2.067)	best test loss 2.067	train eval 0.30945	valid eval 0.30945	test eval 0.30945
+GCNNRI Epoch 1133       	train loss 1.254 (best 1.137)	valid loss 1.254 (best 1.134)	best test loss 1.137	train eval 0.56731	valid eval 0.56731	test eval 0.56731
+Universal Epoch 4952    	train loss 0.809 (best 0.805)	valid loss 0.809 (best 0.805)	best test loss 0.805	train eval 0.68682	valid eval 0.68682	test eval 0.68682
+0.30945  0.36254  0.30945  0.32288  0.30945  0.56731  0.68682 
+MLP Epoch 180           	train loss 1.921 (best 1.920)	valid loss 1.921 (best 1.920)	best test loss 1.920	train eval 0.36635	valid eval 0.36635	test eval 0.36635
+GCN Epoch 1239          	train loss 1.759 (best 1.750)	valid loss 1.759 (best 1.748)	best test loss 1.748	train eval 0.41704	valid eval 0.41704	test eval 0.41704
+APPNP Epoch 255         	train loss 1.932 (best 1.928)	valid loss 1.932 (best 1.927)	best test loss 1.928	train eval 0.36635	valid eval 0.36635	test eval 0.36635
+GAT Epoch 603           	train loss 1.843 (best 1.828)	valid loss 1.843 (best 1.824)	best test loss 1.828	train eval 0.36727	valid eval 0.36727	test eval 0.36727
+GCNII Epoch 1959        	train loss 1.906 (best 1.904)	valid loss 1.906 (best 1.904)	best test loss 1.904	train eval 0.36635	valid eval 0.36635	test eval 0.36635
+GCNNRI Epoch 1369       	train loss 1.922 (best 0.875)	valid loss 1.922 (best 0.875)	best test loss 0.875	train eval 0.66111	valid eval 0.66111	test eval 0.66111
+Universal Epoch 3371    	train loss 0.762 (best 0.759)	valid loss 0.762 (best 0.759)	best test loss 0.759	train eval 0.70126	valid eval 0.70126	test eval 0.70126
+0.36635  0.41704  0.36635  0.36727  0.36635  0.66111  0.70126 
+MLP Epoch 322           	train loss 2.083 (best 2.083)	valid loss 2.083 (best 2.083)	best test loss 2.083	train eval 0.37235	valid eval 0.37235	test eval 0.37235
+GCN Epoch 992           	train loss 1.929 (best 1.924)	valid loss 1.929 (best 1.924)	best test loss 1.924	train eval 0.38389	valid eval 0.38389	test eval 0.38389
+APPNP Epoch 200         	train loss 2.115 (best 2.105)	valid loss 2.115 (best 2.105)	best test loss 2.105	train eval 0.37235	valid eval 0.37235	test eval 0.37235
+GAT Epoch 330           	train loss 1.999 (best 1.984)	valid loss 1.999 (best 1.984)	best test loss 1.984	train eval 0.37238	valid eval 0.37238	test eval 0.37238
+GCNII Epoch 968         	train loss 2.076 (best 2.076)	valid loss 2.076 (best 2.076)	best test loss 2.076	train eval 0.37235	valid eval 0.37235	test eval 0.37235
+GCNNRI Epoch 1955       	train loss 1.224 (best 0.959)	valid loss 1.224 (best 0.958)	best test loss 0.959	train eval 0.64043	valid eval 0.64043	test eval 0.64043
+Universal Epoch 5992    	train loss 0.819 (best 0.818)	valid loss 0.819 (best 0.818)	best test loss 0.818	train eval 0.69282	valid eval 0.69282	test eval 0.69282
+0.37235  0.38389  0.37235  0.37238  0.37235  0.64043  0.69282 
+MLP Epoch 299           	train loss 2.060 (best 2.059)	valid loss 2.060 (best 2.059)	best test loss 2.059	train eval 0.34484	valid eval 0.34484	test eval 0.34484
+GCN Epoch 1501          	train loss 1.885 (best 1.882)	valid loss 1.885 (best 1.879)	best test loss 1.879	train eval 0.38279	valid eval 0.38279	test eval 0.38279
+APPNP Epoch 209         	train loss 2.080 (best 2.077)	valid loss 2.080 (best 2.076)	best test loss 2.077	train eval 0.34484	valid eval 0.34484	test eval 0.34484
+GAT Epoch 570           	train loss 1.966 (best 1.961)	valid loss 1.966 (best 1.960)	best test loss 1.961	train eval 0.34922	valid eval 0.34922	test eval 0.34922
+GCNII Epoch 803         	train loss 2.058 (best 2.058)	valid loss 2.058 (best 2.058)	best test loss 2.058	train eval 0.34484	valid eval 0.34484	test eval 0.34484
+GCNNRI Epoch 327        	train loss 2.066 (best 1.819)	valid loss 2.066 (best 1.745)	best test loss 1.745	train eval 0.43850	valid eval 0.43850	test eval 0.43850
+Universal Epoch 7187    	train loss 0.784 (best 0.777)	valid loss 0.784 (best 0.777)	best test loss 0.777	train eval 0.70082	valid eval 0.70082	test eval 0.70082
+0.34484  0.38279  0.34484  0.34922  0.34484  0.43850  0.70082 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.347    0.391    0.347    0.351    0.347    0.588    0.688   
+Standard deviations
+0.022    0.019    0.022    0.018    0.022    0.081    0.015   
+Nemenyi ranks
+6.0      3.0      6.0      4.0      6.0      2.0      1.0     
+Latex
+0.347 (6.0) & 0.391 (3.0) & 0.347 (6.0) & 0.351 (4.0) & 0.347 (6.0) & 0.588 (2.0) & 0.688 (1.0)
+Setting:  scoorediffusion overtrain
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 285           	train loss 0.020 (best 0.020)	valid loss 0.020 (best 0.020)	best test loss 0.020	train eval 0.02000	valid eval 0.02000	test eval 0.02000
+GCN Epoch 1160          	train loss 0.017 (best 0.017)	valid loss 0.017 (best 0.017)	best test loss 0.017	train eval 0.01729	valid eval 0.01729	test eval 0.01729
+APPNP Epoch 110         	train loss 0.048 (best 0.039)	valid loss 0.048 (best 0.034)	best test loss 0.039	train eval 0.03427	valid eval 0.03427	test eval 0.03427
+GAT Epoch 455           	train loss 0.020 (best 0.020)	valid loss 0.020 (best 0.020)	best test loss 0.020	train eval 0.01979	valid eval 0.01979	test eval 0.01979
+GCNII Epoch 246         	train loss 0.021 (best 0.020)	valid loss 0.021 (best 0.020)	best test loss 0.020	train eval 0.02050	valid eval 0.02050	test eval 0.02050
+GCNNRI Epoch 338        	train loss 0.014 (best 0.013)	valid loss 0.014 (best 0.013)	best test loss 0.013	train eval 0.01263	valid eval 0.01263	test eval 0.01263
+Universal Epoch 762     	train loss 0.009 (best 0.009)	valid loss 0.009 (best 0.009)	best test loss 0.009	train eval 0.00910	valid eval 0.00910	test eval 0.00910
+0.02000  0.01729  0.03427  0.01979  0.02050  0.01263  0.00910 
+MLP Epoch 283           	train loss 0.033 (best 0.033)	valid loss 0.033 (best 0.033)	best test loss 0.033	train eval 0.03297	valid eval 0.03297	test eval 0.03297
+GCN Epoch 1376          	train loss 0.028 (best 0.027)	valid loss 0.028 (best 0.027)	best test loss 0.027	train eval 0.02704	valid eval 0.02704	test eval 0.02704
+APPNP Epoch 102         	train loss 0.139 (best 0.136)	valid loss 0.139 (best 0.102)	best test loss 0.136	train eval 0.10218	valid eval 0.10218	test eval 0.10218
+GAT Epoch 701           	train loss 0.033 (best 0.033)	valid loss 0.033 (best 0.033)	best test loss 0.033	train eval 0.03315	valid eval 0.03315	test eval 0.03315
+GCNII Epoch 211         	train loss 0.035 (best 0.035)	valid loss 0.035 (best 0.035)	best test loss 0.035	train eval 0.03475	valid eval 0.03475	test eval 0.03475
+GCNNRI Epoch 196        	train loss 0.026 (best 0.026)	valid loss 0.026 (best 0.026)	best test loss 0.026	train eval 0.02613	valid eval 0.02613	test eval 0.02613
+Universal Epoch 1777    	train loss 0.013 (best 0.012)	valid loss 0.013 (best 0.012)	best test loss 0.012	train eval 0.01191	valid eval 0.01191	test eval 0.01191
+0.03297  0.02704  0.10218  0.03315  0.03475  0.02613  0.01191 
+MLP Epoch 251           	train loss 0.023 (best 0.023)	valid loss 0.023 (best 0.023)	best test loss 0.023	train eval 0.02313	valid eval 0.02313	test eval 0.02313
+GCN Epoch 1247          	train loss 0.019 (best 0.018)	valid loss 0.019 (best 0.018)	best test loss 0.018	train eval 0.01822	valid eval 0.01822	test eval 0.01822
+APPNP Epoch 111         	train loss 0.071 (best 0.061)	valid loss 0.071 (best 0.051)	best test loss 0.061	train eval 0.05146	valid eval 0.05146	test eval 0.05146
+GAT Epoch 341           	train loss 0.023 (best 0.023)	valid loss 0.023 (best 0.023)	best test loss 0.023	train eval 0.02289	valid eval 0.02289	test eval 0.02289
+GCNII Epoch 182         	train loss 0.024 (best 0.024)	valid loss 0.024 (best 0.024)	best test loss 0.024	train eval 0.02360	valid eval 0.02360	test eval 0.02360
+GCNNRI Epoch 312        	train loss 0.015 (best 0.014)	valid loss 0.015 (best 0.013)	best test loss 0.013	train eval 0.01332	valid eval 0.01332	test eval 0.01332
+Universal Epoch 746     	train loss 0.009 (best 0.008)	valid loss 0.009 (best 0.008)	best test loss 0.008	train eval 0.00778	valid eval 0.00778	test eval 0.00778
+0.02313  0.01822  0.05146  0.02289  0.02360  0.01332  0.00778 
+MLP Epoch 205           	train loss 0.045 (best 0.044)	valid loss 0.045 (best 0.044)	best test loss 0.044	train eval 0.04391	valid eval 0.04391	test eval 0.04391
+GCN Epoch 1217          	train loss 0.042 (best 0.042)	valid loss 0.042 (best 0.042)	best test loss 0.042	train eval 0.04192	valid eval 0.04192	test eval 0.04192
+APPNP Epoch 875         	train loss 0.077 (best 0.072)	valid loss 0.077 (best 0.072)	best test loss 0.072	train eval 0.07204	valid eval 0.07204	test eval 0.07204
+GAT Epoch 552           	train loss 0.045 (best 0.045)	valid loss 0.045 (best 0.045)	best test loss 0.045	train eval 0.04493	valid eval 0.04493	test eval 0.04493
+GCNII Epoch 177         	train loss 0.047 (best 0.047)	valid loss 0.047 (best 0.047)	best test loss 0.047	train eval 0.04653	valid eval 0.04653	test eval 0.04653
+GCNNRI Epoch 209        	train loss 0.046 (best 0.042)	valid loss 0.046 (best 0.042)	best test loss 0.042	train eval 0.04191	valid eval 0.04191	test eval 0.04191
+Universal Epoch 1657    	train loss 0.019 (best 0.019)	valid loss 0.019 (best 0.019)	best test loss 0.019	train eval 0.01872	valid eval 0.01872	test eval 0.01872
+0.04391  0.04192  0.07204  0.04493  0.04653  0.04191  0.01872 
+MLP Epoch 247           	train loss 0.039 (best 0.039)	valid loss 0.039 (best 0.038)	best test loss 0.038	train eval 0.03849	valid eval 0.03849	test eval 0.03849
+GCN Epoch 579           	train loss 0.037 (best 0.037)	valid loss 0.037 (best 0.037)	best test loss 0.037	train eval 0.03668	valid eval 0.03668	test eval 0.03668
+APPNP Epoch 1007        	train loss 0.048 (best 0.045)	valid loss 0.048 (best 0.045)	best test loss 0.045	train eval 0.04526	valid eval 0.04526	test eval 0.04526
+GAT Epoch 562           	train loss 0.039 (best 0.039)	valid loss 0.039 (best 0.039)	best test loss 0.039	train eval 0.03885	valid eval 0.03885	test eval 0.03885
+GCNII Epoch 176         	train loss 0.041 (best 0.041)	valid loss 0.041 (best 0.041)	best test loss 0.041	train eval 0.04066	valid eval 0.04066	test eval 0.04066
+GCNNRI Epoch 169        	train loss 0.038 (best 0.037)	valid loss 0.038 (best 0.037)	best test loss 0.037	train eval 0.03656	valid eval 0.03656	test eval 0.03656
+Universal Epoch 562     	train loss 0.012 (best 0.012)	valid loss 0.012 (best 0.012)	best test loss 0.012	train eval 0.01176	valid eval 0.01176	test eval 0.01176
+0.03849  0.03668  0.04526  0.03885  0.04066  0.03656  0.01176 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.032    0.028    0.061    0.032    0.033    0.026    0.012   
+Standard deviations
+0.009    0.010    0.024    0.009    0.010    0.012    0.004   
+Nemenyi ranks
+3.6      5.0      1.0      3.4      2.0      6.0      7.0     
+Latex
+0.032 (3.6) & 0.028 (5.0) & 0.061 (1.0) & 0.032 (3.4) & 0.033 (2.0) & 0.026 (6.0) & 0.012 (7.0)
+Setting:  scorefixeddiffusion overtrain
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 332           	train loss 0.016 (best 0.016)	valid loss 0.016 (best 0.016)	best test loss 0.016	train eval 0.01560	valid eval 0.01560	test eval 0.01560
+GCN Epoch 1343          	train loss 0.013 (best 0.013)	valid loss 0.013 (best 0.013)	best test loss 0.013	train eval 0.01265	valid eval 0.01265	test eval 0.01265
+APPNP Epoch 629         	train loss 0.025 (best 0.024)	valid loss 0.025 (best 0.024)	best test loss 0.024	train eval 0.02402	valid eval 0.02402	test eval 0.02402
+GAT Epoch 518           	train loss 0.016 (best 0.015)	valid loss 0.016 (best 0.015)	best test loss 0.015	train eval 0.01539	valid eval 0.01539	test eval 0.01539
+GCNII Epoch 238         	train loss 0.016 (best 0.016)	valid loss 0.016 (best 0.016)	best test loss 0.016	train eval 0.01589	valid eval 0.01589	test eval 0.01589
+GCNNRI Epoch 743        	train loss 0.010 (best 0.009)	valid loss 0.010 (best 0.009)	best test loss 0.009	train eval 0.00857	valid eval 0.00857	test eval 0.00857
+Universal Epoch 808     	train loss 0.006 (best 0.005)	valid loss 0.006 (best 0.005)	best test loss 0.005	train eval 0.00458	valid eval 0.00458	test eval 0.00458
+0.01560  0.01265  0.02402  0.01539  0.01589  0.00857  0.00458 
+MLP Epoch 519           	train loss 0.022 (best 0.022)	valid loss 0.022 (best 0.022)	best test loss 0.022	train eval 0.02216	valid eval 0.02216	test eval 0.02216
+GCN Epoch 1348          	train loss 0.015 (best 0.015)	valid loss 0.015 (best 0.015)	best test loss 0.015	train eval 0.01492	valid eval 0.01492	test eval 0.01492
+APPNP Epoch 929         	train loss 0.040 (best 0.039)	valid loss 0.040 (best 0.039)	best test loss 0.039	train eval 0.03862	valid eval 0.03862	test eval 0.03862
+GAT Epoch 399           	train loss 0.022 (best 0.022)	valid loss 0.022 (best 0.022)	best test loss 0.022	train eval 0.02204	valid eval 0.02204	test eval 0.02204
+GCNII Epoch 194         	train loss 0.023 (best 0.023)	valid loss 0.023 (best 0.023)	best test loss 0.023	train eval 0.02258	valid eval 0.02258	test eval 0.02258
+GCNNRI Epoch 247        	train loss 0.012 (best 0.011)	valid loss 0.012 (best 0.011)	best test loss 0.011	train eval 0.01108	valid eval 0.01108	test eval 0.01108
+Universal Epoch 910     	train loss 0.006 (best 0.005)	valid loss 0.006 (best 0.005)	best test loss 0.005	train eval 0.00524	valid eval 0.00524	test eval 0.00524
+0.02216  0.01492  0.03862  0.02204  0.02258  0.01108  0.00524 
+MLP Epoch 520           	train loss 0.034 (best 0.034)	valid loss 0.034 (best 0.034)	best test loss 0.034	train eval 0.03360	valid eval 0.03360	test eval 0.03360
+GCN Epoch 1334          	train loss 0.021 (best 0.021)	valid loss 0.021 (best 0.021)	best test loss 0.021	train eval 0.02055	valid eval 0.02055	test eval 0.02055
+APPNP Epoch 109         	train loss 0.132 (best 0.086)	valid loss 0.132 (best 0.079)	best test loss 0.086	train eval 0.07871	valid eval 0.07871	test eval 0.07871
+GAT Epoch 359           	train loss 0.034 (best 0.034)	valid loss 0.034 (best 0.034)	best test loss 0.034	train eval 0.03352	valid eval 0.03352	test eval 0.03352
+GCNII Epoch 176         	train loss 0.036 (best 0.035)	valid loss 0.036 (best 0.035)	best test loss 0.035	train eval 0.03486	valid eval 0.03486	test eval 0.03486
+GCNNRI Epoch 355        	train loss 0.016 (best 0.014)	valid loss 0.016 (best 0.014)	best test loss 0.014	train eval 0.01361	valid eval 0.01361	test eval 0.01361
+Universal Epoch 1834    	train loss 0.007 (best 0.007)	valid loss 0.007 (best 0.007)	best test loss 0.007	train eval 0.00720	valid eval 0.00720	test eval 0.00720
+0.03360  0.02055  0.07871  0.03352  0.03486  0.01361  0.00720 
+MLP Epoch 344           	train loss 0.016 (best 0.016)	valid loss 0.016 (best 0.016)	best test loss 0.016	train eval 0.01591	valid eval 0.01591	test eval 0.01591
+GCN Epoch 1268          	train loss 0.013 (best 0.013)	valid loss 0.013 (best 0.013)	best test loss 0.013	train eval 0.01345	valid eval 0.01345	test eval 0.01345
+APPNP Epoch 111         	train loss 0.052 (best 0.038)	valid loss 0.052 (best 0.034)	best test loss 0.038	train eval 0.03447	valid eval 0.03447	test eval 0.03447
+GAT Epoch 648           	train loss 0.016 (best 0.016)	valid loss 0.016 (best 0.016)	best test loss 0.016	train eval 0.01560	valid eval 0.01560	test eval 0.01560
+GCNII Epoch 526         	train loss 0.016 (best 0.016)	valid loss 0.016 (best 0.016)	best test loss 0.016	train eval 0.01617	valid eval 0.01617	test eval 0.01617
+GCNNRI Epoch 709        	train loss 0.010 (best 0.008)	valid loss 0.010 (best 0.008)	best test loss 0.008	train eval 0.00835	valid eval 0.00835	test eval 0.00835
+Universal Epoch 536     	train loss 0.005 (best 0.005)	valid loss 0.005 (best 0.005)	best test loss 0.005	train eval 0.00468	valid eval 0.00468	test eval 0.00468
+0.01591  0.01345  0.03447  0.01560  0.01617  0.00835  0.00468 
+MLP Epoch 330           	train loss 0.021 (best 0.020)	valid loss 0.021 (best 0.020)	best test loss 0.020	train eval 0.02038	valid eval 0.02038	test eval 0.02038
+GCN Epoch 866           	train loss 0.017 (best 0.016)	valid loss 0.017 (best 0.016)	best test loss 0.016	train eval 0.01649	valid eval 0.01649	test eval 0.01649
+APPNP Epoch 564         	train loss 0.034 (best 0.031)	valid loss 0.034 (best 0.031)	best test loss 0.031	train eval 0.03143	valid eval 0.03143	test eval 0.03143
+GAT Epoch 248           	train loss 0.021 (best 0.020)	valid loss 0.021 (best 0.020)	best test loss 0.020	train eval 0.02022	valid eval 0.02022	test eval 0.02022
+GCNII Epoch 182         	train loss 0.021 (best 0.021)	valid loss 0.021 (best 0.021)	best test loss 0.021	train eval 0.02091	valid eval 0.02091	test eval 0.02091
+GCNNRI Epoch 849        	train loss 0.012 (best 0.011)	valid loss 0.012 (best 0.011)	best test loss 0.011	train eval 0.01121	valid eval 0.01121	test eval 0.01121
+Universal Epoch 748     	train loss 0.008 (best 0.007)	valid loss 0.008 (best 0.007)	best test loss 0.007	train eval 0.00689	valid eval 0.00689	test eval 0.00689
+0.02038  0.01649  0.03143  0.02022  0.02091  0.01121  0.00689 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.022    0.016    0.041    0.021    0.022    0.011    0.006   
+Standard deviations
+0.007    0.003    0.019    0.007    0.007    0.002    0.001   
+Nemenyi ranks
+5.0      3.0      7.0      4.0      6.0      2.0      1.0     
+Latex
+0.022 (5.0) & 0.016 (3.0) & 0.041 (7.0) & 0.021 (4.0) & 0.022 (6.0) & 0.011 (2.0) & 0.006 (1.0)
+Setting:  propagation overtrain
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 119           	train loss 1.348 (best 1.242)	valid loss 1.348 (best 1.242)	best test loss 1.242	train eval 0.52723	valid eval 0.52723	test eval 0.52723
+GCN Epoch 361           	train loss 1.254 (best 1.251)	valid loss 1.254 (best 1.251)	best test loss 1.251	train eval 0.48702	valid eval 0.48702	test eval 0.48702
+APPNP Epoch 159         	train loss 1.309 (best 1.288)	valid loss 1.309 (best 1.287)	best test loss 1.288	train eval 0.44811	valid eval 0.44811	test eval 0.44811
+GAT Epoch 310           	train loss 1.315 (best 1.314)	valid loss 1.315 (best 1.313)	best test loss 1.314	train eval 0.47135	valid eval 0.47135	test eval 0.47135
+GCNII Epoch 167         	train loss 1.362 (best 1.356)	valid loss 1.362 (best 1.355)	best test loss 1.356	train eval 0.31162	valid eval 0.31162	test eval 0.31162
+GCNNRI Epoch 320        	train loss 1.370 (best 1.313)	valid loss 1.370 (best 1.312)	best test loss 1.313	train eval 0.38931	valid eval 0.38931	test eval 0.38931
+Universal Epoch 4698    	train loss 0.429 (best 0.426)	valid loss 0.429 (best 0.426)	best test loss 0.426	train eval 0.84463	valid eval 0.84463	test eval 0.84463
+0.52723  0.48702  0.44811  0.47135  0.31162  0.38931  0.84463 
+MLP Epoch 150           	train loss 1.279 (best 1.235)	valid loss 1.279 (best 1.235)	best test loss 1.235	train eval 0.45561	valid eval 0.45561	test eval 0.45561
+GCN Epoch 504           	train loss 1.171 (best 1.161)	valid loss 1.171 (best 1.161)	best test loss 1.161	train eval 0.52026	valid eval 0.52026	test eval 0.52026
+APPNP Epoch 255         	train loss 1.241 (best 1.221)	valid loss 1.241 (best 1.219)	best test loss 1.219	train eval 0.41436	valid eval 0.41436	test eval 0.41436
+GAT Epoch 421           	train loss 1.248 (best 1.246)	valid loss 1.248 (best 1.246)	best test loss 1.246	train eval 0.44868	valid eval 0.44868	test eval 0.44868
+GCNII Epoch 223         	train loss 1.310 (best 1.308)	valid loss 1.310 (best 1.308)	best test loss 1.308	train eval 0.37431	valid eval 0.37431	test eval 0.37431
+GCNNRI Epoch 277        	train loss 1.310 (best 1.212)	valid loss 1.310 (best 1.168)	best test loss 1.212	train eval 0.49779	valid eval 0.49779	test eval 0.49779
+Universal Epoch 1137    	train loss 0.396 (best 0.388)	valid loss 0.396 (best 0.387)	best test loss 0.387	train eval 0.85587	valid eval 0.85587	test eval 0.85587
+0.45561  0.52026  0.41436  0.44868  0.37431  0.49779  0.85587 
+MLP Epoch 180           	train loss 1.146 (best 1.109)	valid loss 1.146 (best 1.107)	best test loss 1.109	train eval 0.48902	valid eval 0.48902	test eval 0.48902
+GCN Epoch 625           	train loss 1.116 (best 1.114)	valid loss 1.116 (best 1.113)	best test loss 1.114	train eval 0.50475	valid eval 0.50475	test eval 0.50475
+APPNP Epoch 362         	train loss 1.147 (best 1.144)	valid loss 1.147 (best 1.144)	best test loss 1.144	train eval 0.47846	valid eval 0.47846	test eval 0.47846
+GAT Epoch 833           	train loss 1.168 (best 1.167)	valid loss 1.168 (best 1.167)	best test loss 1.167	train eval 0.46606	valid eval 0.46606	test eval 0.46606
+GCNII Epoch 106         	train loss 1.227 (best 1.219)	valid loss 1.227 (best 1.215)	best test loss 1.219	train eval 0.46561	valid eval 0.46561	test eval 0.46561
+GCNNRI Epoch 137        	train loss 1.212 (best 1.212)	valid loss 1.212 (best 1.201)	best test loss 1.201	train eval 0.46567	valid eval 0.46567	test eval 0.46567
+Universal Epoch 3003    	train loss 0.401 (best 0.395)	valid loss 0.401 (best 0.395)	best test loss 0.395	train eval 0.85179	valid eval 0.85179	test eval 0.85179
+0.48902  0.50475  0.47846  0.46606  0.46561  0.46567  0.85179 
+MLP Epoch 204           	train loss 1.215 (best 1.213)	valid loss 1.215 (best 1.213)	best test loss 1.213	train eval 0.41918	valid eval 0.41918	test eval 0.41918
+GCN Epoch 637           	train loss 1.140 (best 1.122)	valid loss 1.140 (best 1.122)	best test loss 1.122	train eval 0.49605	valid eval 0.49605	test eval 0.49605
+APPNP Epoch 286         	train loss 1.177 (best 1.158)	valid loss 1.177 (best 1.157)	best test loss 1.157	train eval 0.43358	valid eval 0.43358	test eval 0.43358
+GAT Epoch 400           	train loss 1.186 (best 1.184)	valid loss 1.186 (best 1.184)	best test loss 1.184	train eval 0.42540	valid eval 0.42540	test eval 0.42540
+GCNII Epoch 105         	train loss 1.243 (best 1.237)	valid loss 1.243 (best 1.236)	best test loss 1.237	train eval 0.41918	valid eval 0.41918	test eval 0.41918
+GCNNRI Epoch 319        	train loss 0.904 (best 0.858)	valid loss 0.904 (best 0.847)	best test loss 0.858	train eval 0.67101	valid eval 0.67101	test eval 0.67101
+Universal Epoch 2508    	train loss 0.426 (best 0.410)	valid loss 0.426 (best 0.410)	best test loss 0.410	train eval 0.83929	valid eval 0.83929	test eval 0.83929
+0.41918  0.49605  0.43358  0.42540  0.41918  0.67101  0.83929 
+MLP Epoch 162           	train loss 1.198 (best 1.176)	valid loss 1.198 (best 1.175)	best test loss 1.176	train eval 0.49232	valid eval 0.49232	test eval 0.49232
+GCN Epoch 550           	train loss 1.100 (best 1.099)	valid loss 1.100 (best 1.099)	best test loss 1.099	train eval 0.50072	valid eval 0.50072	test eval 0.50072
+APPNP Epoch 321         	train loss 1.188 (best 1.161)	valid loss 1.188 (best 1.158)	best test loss 1.161	train eval 0.49532	valid eval 0.49532	test eval 0.49532
+GAT Epoch 388           	train loss 1.175 (best 1.173)	valid loss 1.175 (best 1.173)	best test loss 1.173	train eval 0.49232	valid eval 0.49232	test eval 0.49232
+GCNII Epoch 104         	train loss 1.260 (best 1.239)	valid loss 1.260 (best 1.238)	best test loss 1.238	train eval 0.49232	valid eval 0.49232	test eval 0.49232
+GCNNRI Epoch 120        	train loss 1.233 (best 1.228)	valid loss 1.233 (best 1.208)	best test loss 1.208	train eval 0.49232	valid eval 0.49232	test eval 0.49232
+Universal Epoch 1218    	train loss 0.449 (best 0.446)	valid loss 0.449 (best 0.446)	best test loss 0.446	train eval 0.83024	valid eval 0.83024	test eval 0.83024
+0.49232  0.50072  0.49532  0.49232  0.49232  0.49232  0.83024 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.477    0.502    0.454    0.461    0.413    0.503    0.844   
+Standard deviations
+0.037    0.011    0.029    0.023    0.065    0.092    0.009   
+Nemenyi ranks
+4.2      2.4      4.4      4.9      6.6      4.5      1.0     
+Latex
+0.477 (4.2) & 0.502 (2.4) & 0.454 (4.4) & 0.461 (4.9) & 0.413 (6.6) & 0.503 (4.5) & 0.844 (1.0)
+Setting:  fixedpropagation overtrain
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 118           	train loss 1.220 (best 1.202)	valid loss 1.220 (best 1.200)	best test loss 1.202	train eval 0.52064	valid eval 0.52064	test eval 0.52064
+GCN Epoch 779           	train loss 1.144 (best 1.130)	valid loss 1.144 (best 1.129)	best test loss 1.130	train eval 0.51169	valid eval 0.51169	test eval 0.51169
+APPNP Epoch 249         	train loss 1.203 (best 1.181)	valid loss 1.203 (best 1.178)	best test loss 1.181	train eval 0.52467	valid eval 0.52467	test eval 0.52467
+GAT Epoch 647           	train loss 1.209 (best 1.208)	valid loss 1.209 (best 1.207)	best test loss 1.207	train eval 0.42954	valid eval 0.42954	test eval 0.42954
+GCNII Epoch 105         	train loss 1.279 (best 1.266)	valid loss 1.279 (best 1.265)	best test loss 1.266	train eval 0.41801	valid eval 0.41801	test eval 0.41801
+GCNNRI Epoch 422        	train loss 1.028 (best 0.892)	valid loss 1.028 (best 0.883)	best test loss 0.892	train eval 0.63181	valid eval 0.63181	test eval 0.63181
+Universal Epoch 4287    	train loss 0.319 (best 0.315)	valid loss 0.319 (best 0.314)	best test loss 0.314	train eval 0.89179	valid eval 0.89179	test eval 0.89179
+0.52064  0.51169  0.52467  0.42954  0.41801  0.63181  0.89179 
+MLP Epoch 119           	train loss 1.202 (best 1.178)	valid loss 1.202 (best 1.176)	best test loss 1.178	train eval 0.46574	valid eval 0.46574	test eval 0.46574
+GCN Epoch 538           	train loss 1.112 (best 1.104)	valid loss 1.112 (best 1.103)	best test loss 1.104	train eval 0.49606	valid eval 0.49606	test eval 0.49606
+APPNP Epoch 192         	train loss 1.198 (best 1.172)	valid loss 1.198 (best 1.170)	best test loss 1.172	train eval 0.46826	valid eval 0.46826	test eval 0.46826
+GAT Epoch 318           	train loss 1.182 (best 1.179)	valid loss 1.182 (best 1.179)	best test loss 1.179	train eval 0.46382	valid eval 0.46382	test eval 0.46382
+GCNII Epoch 105         	train loss 1.249 (best 1.235)	valid loss 1.249 (best 1.235)	best test loss 1.235	train eval 0.46350	valid eval 0.46350	test eval 0.46350
+GCNNRI Epoch 162        	train loss 1.239 (best 1.216)	valid loss 1.239 (best 1.195)	best test loss 1.216	train eval 0.46429	valid eval 0.46429	test eval 0.46429
+Universal Epoch 4689    	train loss 0.351 (best 0.324)	valid loss 0.351 (best 0.324)	best test loss 0.324	train eval 0.88893	valid eval 0.88893	test eval 0.88893
+0.46574  0.49606  0.46826  0.46382  0.46350  0.46429  0.88893 
+MLP Epoch 159           	train loss 1.236 (best 1.215)	valid loss 1.236 (best 1.214)	best test loss 1.215	train eval 0.44890	valid eval 0.44890	test eval 0.44890
+GCN Epoch 734           	train loss 1.153 (best 1.148)	valid loss 1.153 (best 1.147)	best test loss 1.148	train eval 0.45832	valid eval 0.45832	test eval 0.45832
+APPNP Epoch 255         	train loss 1.211 (best 1.192)	valid loss 1.211 (best 1.191)	best test loss 1.192	train eval 0.45014	valid eval 0.45014	test eval 0.45014
+GAT Epoch 526           	train loss 1.227 (best 1.226)	valid loss 1.227 (best 1.226)	best test loss 1.226	train eval 0.44884	valid eval 0.44884	test eval 0.44884
+GCNII Epoch 366         	train loss 1.274 (best 1.271)	valid loss 1.274 (best 1.271)	best test loss 1.271	train eval 0.44884	valid eval 0.44884	test eval 0.44884
+GCNNRI Epoch 274        	train loss 1.285 (best 1.251)	valid loss 1.285 (best 1.234)	best test loss 1.234	train eval 0.45466	valid eval 0.45466	test eval 0.45466
+Universal Epoch 1335    	train loss 0.495 (best 0.493)	valid loss 0.495 (best 0.492)	best test loss 0.493	train eval 0.81000	valid eval 0.81000	test eval 0.81000
+0.44890  0.45832  0.45014  0.44884  0.44884  0.45466  0.81000 
+MLP Epoch 118           	train loss 1.335 (best 1.293)	valid loss 1.335 (best 1.291)	best test loss 1.293	train eval 0.43874	valid eval 0.43874	test eval 0.43874
+GCN Epoch 479           	train loss 1.226 (best 1.210)	valid loss 1.226 (best 1.209)	best test loss 1.210	train eval 0.55274	valid eval 0.55274	test eval 0.55274
+APPNP Epoch 167         	train loss 1.279 (best 1.258)	valid loss 1.279 (best 1.258)	best test loss 1.258	train eval 0.49407	valid eval 0.49407	test eval 0.49407
+GAT Epoch 609           	train loss 1.300 (best 1.297)	valid loss 1.300 (best 1.297)	best test loss 1.297	train eval 0.36354	valid eval 0.36354	test eval 0.36354
+GCNII Epoch 156         	train loss 1.368 (best 1.359)	valid loss 1.368 (best 1.359)	best test loss 1.359	train eval 0.47814	valid eval 0.47814	test eval 0.47814
+GCNNRI Epoch 291        	train loss 1.115 (best 1.101)	valid loss 1.115 (best 1.092)	best test loss 1.101	train eval 0.51149	valid eval 0.51149	test eval 0.51149
+Universal Epoch 2123    	train loss 0.351 (best 0.350)	valid loss 0.351 (best 0.349)	best test loss 0.349	train eval 0.87576	valid eval 0.87576	test eval 0.87576
+0.43874  0.55274  0.49407  0.36354  0.47814  0.51149  0.87576 
+MLP Epoch 123           	train loss 1.121 (best 1.112)	valid loss 1.121 (best 1.110)	best test loss 1.112	train eval 0.59191	valid eval 0.59191	test eval 0.59191
+GCN Epoch 611           	train loss 1.034 (best 1.030)	valid loss 1.034 (best 1.030)	best test loss 1.030	train eval 0.61608	valid eval 0.61608	test eval 0.61608
+APPNP Epoch 300         	train loss 1.111 (best 1.097)	valid loss 1.111 (best 1.096)	best test loss 1.097	train eval 0.73115	valid eval 0.73115	test eval 0.73115
+GAT Epoch 513           	train loss 1.108 (best 1.107)	valid loss 1.108 (best 1.106)	best test loss 1.107	train eval 0.51445	valid eval 0.51445	test eval 0.51445
+GCNII Epoch 109         	train loss 1.180 (best 1.172)	valid loss 1.180 (best 1.170)	best test loss 1.170	train eval 0.44744	valid eval 0.44744	test eval 0.44744
+GCNNRI Epoch 204        	train loss 1.167 (best 1.082)	valid loss 1.167 (best 1.081)	best test loss 1.082	train eval 0.61015	valid eval 0.61015	test eval 0.61015
+Universal Epoch 852     	train loss 0.284 (best 0.276)	valid loss 0.284 (best 0.276)	best test loss 0.276	train eval 0.89864	valid eval 0.89864	test eval 0.89864
+0.59191  0.61608  0.73115  0.51445  0.44744  0.61015  0.89864 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.493    0.527    0.534    0.444    0.451    0.534    0.873   
+Standard deviations
+0.057    0.054    0.102    0.049    0.020    0.074    0.032   
+Nemenyi ranks
+4.8      2.8      3.2      6.3      6.5      3.4      1.0     
+Latex
+0.493 (4.8) & 0.527 (2.8) & 0.534 (3.2) & 0.444 (6.3) & 0.451 (6.5) & 0.534 (3.4) & 0.873 (1.0)
+Setting:  degree overtrain
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+MLP Epoch 269           	train loss 2.282 (best 2.281)	valid loss 2.282 (best 2.281)	best test loss 2.281	train eval 0.16760	valid eval 0.16760	test eval 0.16760
+GCN Epoch 1775          	train loss 2.020 (best 2.009)	valid loss 2.020 (best 2.008)	best test loss 2.009	train eval 0.33228	valid eval 0.33228	test eval 0.33228
+APPNP Epoch 530         	train loss 2.293 (best 2.292)	valid loss 2.293 (best 2.292)	best test loss 2.292	train eval 0.17333	valid eval 0.17333	test eval 0.17333
+GAT Epoch 165           	train loss 2.368 (best 2.244)	valid loss 2.368 (best 2.244)	best test loss 2.244	train eval 0.16648	valid eval 0.16648	test eval 0.16648
+GCNII Epoch 1195        	train loss 2.216 (best 2.214)	valid loss 2.216 (best 2.213)	best test loss 2.214	train eval 0.19516	valid eval 0.19516	test eval 0.19516
+GCNNRI Epoch 612        	train loss 1.505 (best 0.959)	valid loss 1.505 (best 0.955)	best test loss 0.959	train eval 0.58734	valid eval 0.58734	test eval 0.58734
+Universal Epoch 3355    	train loss 1.155 (best 1.145)	valid loss 1.155 (best 1.145)	best test loss 1.145	train eval 0.57335	valid eval 0.57335	test eval 0.57335
+0.16760  0.33228  0.17333  0.16648  0.19516  0.58734  0.57335 
+MLP Epoch 292           	train loss 2.293 (best 2.292)	valid loss 2.293 (best 2.292)	best test loss 2.292	train eval 0.19666	valid eval 0.19666	test eval 0.19666
+GCN Epoch 749           	train loss 2.042 (best 2.035)	valid loss 2.042 (best 2.034)	best test loss 2.035	train eval 0.37714	valid eval 0.37714	test eval 0.37714
+APPNP Epoch 368         	train loss 2.309 (best 2.307)	valid loss 2.309 (best 2.307)	best test loss 2.307	train eval 0.18970	valid eval 0.18970	test eval 0.18970
+GAT Epoch 169           	train loss 2.381 (best 2.256)	valid loss 2.381 (best 2.256)	best test loss 2.256	train eval 0.19666	valid eval 0.19666	test eval 0.19666
+GCNII Epoch 1001        	train loss 2.242 (best 2.238)	valid loss 2.242 (best 2.238)	best test loss 2.238	train eval 0.19702	valid eval 0.19702	test eval 0.19702
+GCNNRI Epoch 543        	train loss 3.063 (best 0.890)	valid loss 3.063 (best 0.888)	best test loss 0.890	train eval 0.63553	valid eval 0.63553	test eval 0.63553
+Universal Epoch 2235    	train loss 1.239 (best 1.216)	valid loss 1.239 (best 1.216)	best test loss 1.216	train eval 0.56971	valid eval 0.56971	test eval 0.56971
+0.19666  0.37714  0.18970  0.19666  0.19702  0.63553  0.56971 
+MLP Epoch 325           	train loss 2.303 (best 2.303)	valid loss 2.303 (best 2.303)	best test loss 2.303	train eval 0.16619	valid eval 0.16619	test eval 0.16619
+GCN Epoch 1554          	train loss 2.057 (best 2.038)	valid loss 2.057 (best 2.035)	best test loss 2.035	train eval 0.32830	valid eval 0.32830	test eval 0.32830
+APPNP Epoch 697         	train loss 2.315 (best 2.314)	valid loss 2.315 (best 2.314)	best test loss 2.314	train eval 0.16535	valid eval 0.16535	test eval 0.16535
+GAT Epoch 160           	train loss 2.429 (best 2.268)	valid loss 2.429 (best 2.268)	best test loss 2.268	train eval 0.17996	valid eval 0.17996	test eval 0.17996
+GCNII Epoch 1311        	train loss 2.241 (best 2.238)	valid loss 2.241 (best 2.238)	best test loss 2.238	train eval 0.19694	valid eval 0.19694	test eval 0.19694
+GCNNRI Epoch 545        	train loss 1.058 (best 1.027)	valid loss 1.058 (best 1.019)	best test loss 1.027	train eval 0.55614	valid eval 0.55614	test eval 0.55614
+Universal Epoch 2945    	train loss 1.235 (best 1.168)	valid loss 1.235 (best 1.168)	best test loss 1.168	train eval 0.57097	valid eval 0.57097	test eval 0.57097
+0.16619  0.32830  0.16535  0.17996  0.19694  0.55614  0.57097 
+MLP Epoch 263           	train loss 2.316 (best 2.316)	valid loss 2.316 (best 2.316)	best test loss 2.316	train eval 0.16259	valid eval 0.16259	test eval 0.16259
+GCN Epoch 1560          	train loss 2.032 (best 2.024)	valid loss 2.032 (best 2.022)	best test loss 2.024	train eval 0.31867	valid eval 0.31867	test eval 0.31867
+APPNP Epoch 467         	train loss 2.322 (best 2.321)	valid loss 2.322 (best 2.321)	best test loss 2.321	train eval 0.15669	valid eval 0.15669	test eval 0.15669
+GAT Epoch 167           	train loss 2.358 (best 2.274)	valid loss 2.358 (best 2.273)	best test loss 2.274	train eval 0.16124	valid eval 0.16124	test eval 0.16124
+GCNII Epoch 1300        	train loss 2.248 (best 2.246)	valid loss 2.248 (best 2.245)	best test loss 2.246	train eval 0.16349	valid eval 0.16349	test eval 0.16349
+GCNNRI Epoch 1162       	train loss 0.842 (best 0.627)	valid loss 0.842 (best 0.620)	best test loss 0.620	train eval 0.76157	valid eval 0.76157	test eval 0.76157
+Universal Epoch 2562    	train loss 1.186 (best 1.175)	valid loss 1.186 (best 1.174)	best test loss 1.174	train eval 0.56938	valid eval 0.56938	test eval 0.56938
+0.16259  0.31867  0.15669  0.16124  0.16349  0.76157  0.56938 
+MLP Epoch 305           	train loss 2.300 (best 2.299)	valid loss 2.300 (best 2.299)	best test loss 2.299	train eval 0.16562	valid eval 0.16562	test eval 0.16562
+GCN Epoch 1103          	train loss 2.038 (best 2.037)	valid loss 2.038 (best 2.033)	best test loss 2.037	train eval 0.30092	valid eval 0.30092	test eval 0.30092
+APPNP Epoch 396         	train loss 2.315 (best 2.313)	valid loss 2.315 (best 2.313)	best test loss 2.313	train eval 0.16514	valid eval 0.16514	test eval 0.16514
+GAT Epoch 180           	train loss 2.372 (best 2.266)	valid loss 2.372 (best 2.266)	best test loss 2.266	train eval 0.17148	valid eval 0.17148	test eval 0.17148
+GCNII Epoch 1110        	train loss 2.240 (best 2.240)	valid loss 2.240 (best 2.239)	best test loss 2.239	train eval 0.17969	valid eval 0.17969	test eval 0.17969
+GCNNRI Epoch 798        	train loss 1.020 (best 0.887)	valid loss 1.020 (best 0.882)	best test loss 0.887	train eval 0.62058	valid eval 0.62058	test eval 0.62058
+Universal Epoch 3727    	train loss 1.190 (best 1.179)	valid loss 1.190 (best 1.178)	best test loss 1.179	train eval 0.56953	valid eval 0.56953	test eval 0.56953
+0.16562  0.30092  0.16514  0.17148  0.17969  0.62058  0.56953 
+
+==== Summary ====
+MLP      GCN      APPNP    GAT      GCNII    GCNNRI   Universal
+0.172    0.331    0.170    0.175    0.186    0.632    0.571   
+Standard deviations
+0.013    0.025    0.011    0.012    0.013    0.070    0.001   
+Nemenyi ranks
+5.7      3.0      6.6      5.7      4.0      1.2      1.8     
+Latex
+0.172 (5.7) & 0.331 (3.0) & 0.170 (6.6) & 0.175 (5.7) & 0.186 (4.0) & 0.632 (1.2) & 0.571 (1.8)
+
+Process finished with exit code 0
+

@@ -74,10 +74,10 @@ class ClassificationTask:
         labels = self.labels[self.mask]
         loss = F.nll_loss(out, labels)
         # loss = torch.exp(loss)
-        if self.l1 != 0:
-            #towards = torch.empty(outall.shape[0], outall.shape[1], device=out.device)
-            #torch.nn.init.uniform_(towards, a=-1.0, b=1.0)
-            loss = loss + self.l1 * torch.mean((outall-towards).abs())
+        if self.l1 != 0 and towards is not None:
+            towards = towards[self.mask, :]
+            #out = model.intermediate[self.mask, :]
+            loss = loss + self.l1 * torch.mean((out-towards).abs())
         return loss
 
     def evaluate(self, model: torch.nn.Module):
@@ -93,7 +93,7 @@ class ClassificationTask:
         return {
             "train": self.range(0, training),
             "valid": self.range(training, training + validation),
-            "test": self.range(training + validation, 1),
+            "test": self.range(training - validation, 1),
         }
 
     def overtrain(self):

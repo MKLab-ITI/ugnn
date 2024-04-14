@@ -1,9 +1,10 @@
 import torch
 import torch.nn.functional as F
 from ugnn.utils import GraphConv
+from ugnn.utils import HashedModule
 
 
-class APPNP(torch.nn.Module):
+class APPNP(HashedModule):
     def __init__(self, feats, classes, hidden=64, alpha=0.1, depth=10):
         super().__init__()
         self.embed1 = torch.nn.Linear(feats, hidden)
@@ -15,7 +16,7 @@ class APPNP(torch.nn.Module):
         self.depth = depth
         self.feats_dropout = True
 
-    def forward(self, data):
+    def _forward(self, data):
         x, edges = data.x, data.edges
         if self.feats_dropout:
             x = F.dropout(x, training=self.training and x.shape[1] > 1, p=0.6)

@@ -11,14 +11,10 @@ class Universal(HashedModule):
         super().__init__()
         self.nri = nri
 
-        self.inconv1 = GCNConv(feats, hidden)
-        self.inconv2 = GCNConv(hidden,  hidden-nri)
         self.dimreduce = torch.nn.Linear(feats, hidden-nri)
         feats = hidden
 
-        #self.toclasses1 = torch.nn.Linear(feats, hidden)
-        #self.toclasses2 = torch.nn.Linear(hidden, hidden)
-        self.toclasses3 = torch.nn.Linear(hidden, classes)
+        self.toclasses = torch.nn.Linear(hidden, classes)
 
         embedding_dim = int(1 + math.log2(feats))
         hidden = 4 + embedding_dim
@@ -40,17 +36,15 @@ class Universal(HashedModule):
         dropout = self.dropout
 
         # convert features to lower representation
+        x = self.dimreduce(x)
 
         if self.nri > 0:
-            x = self.dimreduce(x)
             #x = F.tanh(self.inconv1(x, edges))
             #x = self.inconv2(x, edges)
             random_dims = torch.empty(x.shape[0], self.nri, device=x.device)
             torch.nn.init.kaiming_uniform_(random_dims)
             #torch.nn.init.uniform_(random_dims, a=-1.0, b=1.0)
             x = torch.cat([x, random_dims], dim=1)
-        else:
-            x = self.dimreduce(x)
 
         # diffuse feature representations
         h0 = x
@@ -100,9 +94,6 @@ class Universal(HashedModule):
             x = self.conv(x, edges) * diffusion + (1.0 - diffusion) * h0
 
         # reduce to classes
-        #x = F.elu(self.toclasses1(x))
-        #x = F.dropout(x, training=self.training, p=dropout)
-        #x = F.elu(self.toclasses2(x))
-        x = self.toclasses3(x)
+        x = self.toclasses(x)
 
         return x
